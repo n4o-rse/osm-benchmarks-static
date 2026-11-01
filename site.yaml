@@ -21,4 +21,8 @@ formatter_property: P5
 license:
   name: ODbL 1.0, © OpenStreetMap contributors
   url: https://opendatacommons.org/licenses/odbl/1-0/
+# The logo: a pen drawing of a benchmark (a cut mark on a bridge pier); it is copied into docs/assets/logo/.
+logo: assets/logo.png
+# Accent colour of links and headings: sandstone brown, from the drawing.
+colour: "#8a5a2b"
 wkt_property: P111          # geometry history (WKT): the page draws the last shape, the RDF export gets GeoSPARQL

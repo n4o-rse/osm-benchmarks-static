@@ -9,10 +9,10 @@ element's version history is tracked as statements on that item, and every item 
 CIDOC CRM class (`crm:E25 Human-Made Feature`). The geometry of each version is kept as WKT, so
 the model also carries ways and relations.
 
-**State (S4):** the first stock. The history of 21 benchmark nodes (59 versions, in `data/raw/osm/history/`) is turned into
-21 items by `python main.py import-osm --offline`; the pages, the RDF and the SPARQL page are built from them. Harvest from the
-network, ways and relations, and publishing on GitHub Pages are the steps that follow. The work plan, the decisions made so far
-and the steps ahead are in [`PRIMER.md`](PRIMER.md) (German).
+**State (S5):** the first harvest. Overpass and the OSM API were asked once: 23 benchmark nodes (65 versions) are stored as received
+in `data/raw/osm/` and turned into 23 items by `python main.py import-osm`; the pages, the RDF and the SPARQL page are built from
+them. A second run asks Overpass only. Ways and relations, and publishing on GitHub Pages, are the steps that follow. The work plan,
+the decisions made so far and the steps ahead are in [`PRIMER.md`](PRIMER.md) (German).
 
 ## Build
 

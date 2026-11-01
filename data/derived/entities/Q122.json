@@ -437,16 +437,24 @@
     ]
   },
   "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Höhenmarke (OpenStreetMap-Node 14257817434)"
+    },
     "en": {
       "language": "en",
-      "value": "OpenStreetMap node 14257817434"
+      "value": "Benchmark (OpenStreetMap node 14257817434)"
     }
   },
   "id": "Q122",
   "labels": {
+    "de": {
+      "language": "de",
+      "value": "Second Presbyterian Church, Ballybay"
+    },
     "en": {
       "language": "en",
-      "value": "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138"
+      "value": "Second Presbyterian Church, Ballybay"
     }
   },
   "sitelinks": {},

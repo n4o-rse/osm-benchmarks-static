@@ -664,13 +664,21 @@
     ]
   },
   "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Höhenmarke (OpenStreetMap-Node 12923752174)"
+    },
     "en": {
       "language": "en",
-      "value": "OpenStreetMap node 12923752174"
+      "value": "Benchmark (OpenStreetMap node 12923752174)"
     }
   },
   "id": "Q108",
   "labels": {
+    "de": {
+      "language": "de",
+      "value": "Benchmark at the corner of Trongate- Chrisholm Street"
+    },
     "en": {
       "language": "en",
       "value": "Benchmark at the corner of Trongate- Chrisholm Street"

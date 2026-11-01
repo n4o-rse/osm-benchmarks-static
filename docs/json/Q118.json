@@ -868,16 +868,24 @@
     ]
   },
   "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Meilenstein, Inschrift „P.O Dublin 8 Howth 1“ (OpenStreetMap-Node 6666122939)"
+    },
     "en": {
       "language": "en",
-      "value": "OpenStreetMap node 6666122939"
+      "value": "Milestone, inscription “P.O Dublin 8 Howth 1” (OpenStreetMap node 6666122939)"
     }
   },
   "id": "Q118",
   "labels": {
+    "de": {
+      "language": "de",
+      "value": "Milestone Dublin 8 Howth 1"
+    },
     "en": {
       "language": "en",
-      "value": "MilestoneDublin8Howth1"
+      "value": "Milestone Dublin 8 Howth 1"
     }
   },
   "sitelinks": {},

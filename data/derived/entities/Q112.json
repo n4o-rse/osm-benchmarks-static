@@ -518,13 +518,21 @@
     ]
   },
   "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Höhenmarke (OpenStreetMap-Node 12924784584)"
+    },
     "en": {
       "language": "en",
-      "value": "OpenStreetMap node 12924784584"
+      "value": "Benchmark (OpenStreetMap node 12924784584)"
     }
   },
   "id": "Q112",
   "labels": {
+    "de": {
+      "language": "de",
+      "value": "Benchmark on the South side of the City Chambers"
+    },
     "en": {
       "language": "en",
       "value": "Benchmark on the South side of the City Chambers"

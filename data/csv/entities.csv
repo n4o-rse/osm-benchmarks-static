@@ -1,28 +1,28 @@
 id,kind,datatype,origin,label_en,label_de,description_en,description_de
 Q100,class,,,Benchmark,Höhenmarke,"A fixed survey marker (benchmark, survey point, milestone) that is mapped as one element in OpenStreetMap.","Eine fest verbaute Vermessungsmarke (Höhenmarke, Vermessungspunkt, Meilenstein), die in OpenStreetMap als ein Element kartiert ist."
-Q101,item,,osm,Benchmark at St. Nicholas' Collegiate Church,,OpenStreetMap node 12600848879,
-Q102,item,,osm,Benchmark at Ardreigh Lock,,OpenStreetMap node 12888689968,
-Q103,item,,osm,"NO145 BATH ST SE FACE E ANG 1989 37,995m",,OpenStreetMap node 12919476068,
-Q104,item,,osm,Benchmark at St George's Tron Parish Church,,OpenStreetMap node 12919738910,
-Q105,item,,osm,Benchmark at corner of Blantyre St and Argyle St,,OpenStreetMap node 12922675575,
-Q106,item,,osm,Benchmark on City Union Railway Bridge,,OpenStreetMap node 12923698705,
-Q107,item,,osm,Benchmark on Albert Bridge,,OpenStreetMap node 12923704831,
-Q108,item,,osm,Benchmark at the corner of Trongate- Chrisholm Street,,OpenStreetMap node 12923752174,
-Q109,item,,osm,Benchmark at Blackstock's Close (Saltmarket),,OpenStreetMap node 12923754806,
-Q110,item,,osm,Benchmark in the East side of the City Chambers,,OpenStreetMap node 12924781327,
-Q111,item,,osm,Benchmark on the North side of the City Chambers,,OpenStreetMap node 12924782280,
-Q112,item,,osm,Benchmark on the South side of the City Chambers,,OpenStreetMap node 12924784584,
-Q113,item,,osm,Benchmark on the Cathedral gate lodge,,OpenStreetMap node 12925489820,
-Q114,item,,osm,Barony Halls benchmark,,OpenStreetMap node 12925655350,
-Q115,item,,osm,Govan Road benchmark,,OpenStreetMap node 12925919541,
-Q116,item,,osm,Benchmark at Melrose Abbey,,OpenStreetMap node 12936028929,
-Q117,item,,osm,OS benchmark,,OpenStreetMap node 13331549275,
-Q118,item,,osm,MilestoneDublin8Howth1,,OpenStreetMap node 6666122939,
-Q119,item,,osm,MilestoneDublin9Howth,,OpenStreetMap node 6721748182,
-Q120,item,,osm,Milestone Old Dublin Road,,OpenStreetMap node 6967103228,
-Q121,item,,osm,Benchmark at Scots Church,,OpenStreetMap node 7873204616,
-Q122,item,,osm,"Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138",,OpenStreetMap node 14257817434,
-Q123,item,,osm,Ballingarry benchmark,,OpenStreetMap node 7709937682,
+Q101,item,,osm,Benchmark at St. Nicholas' Collegiate Church,Benchmark at St. Nicholas' Collegiate Church,"Benchmark, inscription “LM 2” (OpenStreetMap node 12600848879)","Höhenmarke, Inschrift „LM 2“ (OpenStreetMap-Node 12600848879)"
+Q102,item,,osm,Benchmark at Ardreigh Lock,Benchmark at Ardreigh Lock,Benchmark (OpenStreetMap node 12888689968),Höhenmarke (OpenStreetMap-Node 12888689968)
+Q103,item,,osm,"NO145 BATH ST SE FACE E ANG 1989 37,995m","NO145 BATH ST SE FACE E ANG 1989 37,995m",Benchmark (OpenStreetMap node 12919476068),Höhenmarke (OpenStreetMap-Node 12919476068)
+Q104,item,,osm,Benchmark at St George's Tron Parish Church,Benchmark at St George's Tron Parish Church,Benchmark (OpenStreetMap node 12919738910),Höhenmarke (OpenStreetMap-Node 12919738910)
+Q105,item,,osm,Benchmark at corner of Blantyre St and Argyle St,Benchmark at corner of Blantyre St and Argyle St,Benchmark (OpenStreetMap node 12922675575),Höhenmarke (OpenStreetMap-Node 12922675575)
+Q106,item,,osm,Benchmark on City Union Railway Bridge,Benchmark on City Union Railway Bridge,Benchmark (OpenStreetMap node 12923698705),Höhenmarke (OpenStreetMap-Node 12923698705)
+Q107,item,,osm,Benchmark on Albert Bridge,Benchmark on Albert Bridge,Benchmark (OpenStreetMap node 12923704831),Höhenmarke (OpenStreetMap-Node 12923704831)
+Q108,item,,osm,Benchmark at the corner of Trongate- Chrisholm Street,Benchmark at the corner of Trongate- Chrisholm Street,Benchmark (OpenStreetMap node 12923752174),Höhenmarke (OpenStreetMap-Node 12923752174)
+Q109,item,,osm,Benchmark at Blackstock's Close (Saltmarket),Benchmark at Blackstock's Close (Saltmarket),Benchmark (OpenStreetMap node 12923754806),Höhenmarke (OpenStreetMap-Node 12923754806)
+Q110,item,,osm,Benchmark in the East side of the City Chambers,Benchmark in the East side of the City Chambers,Benchmark (OpenStreetMap node 12924781327),Höhenmarke (OpenStreetMap-Node 12924781327)
+Q111,item,,osm,Benchmark on the North side of the City Chambers,Benchmark on the North side of the City Chambers,Benchmark (OpenStreetMap node 12924782280),Höhenmarke (OpenStreetMap-Node 12924782280)
+Q112,item,,osm,Benchmark on the South side of the City Chambers,Benchmark on the South side of the City Chambers,Benchmark (OpenStreetMap node 12924784584),Höhenmarke (OpenStreetMap-Node 12924784584)
+Q113,item,,osm,Benchmark on the Cathedral gate lodge,Benchmark on the Cathedral gate lodge,Benchmark (OpenStreetMap node 12925489820),Höhenmarke (OpenStreetMap-Node 12925489820)
+Q114,item,,osm,Barony Halls benchmark,Barony Halls benchmark,Benchmark (OpenStreetMap node 12925655350),Höhenmarke (OpenStreetMap-Node 12925655350)
+Q115,item,,osm,Govan Road benchmark,Govan Road benchmark,Benchmark (OpenStreetMap node 12925919541),Höhenmarke (OpenStreetMap-Node 12925919541)
+Q116,item,,osm,Benchmark at Melrose Abbey,Benchmark at Melrose Abbey,Benchmark (OpenStreetMap node 12936028929),Höhenmarke (OpenStreetMap-Node 12936028929)
+Q117,item,,osm,OS benchmark,OS benchmark,Benchmark (OpenStreetMap node 13331549275),Höhenmarke (OpenStreetMap-Node 13331549275)
+Q118,item,,osm,Milestone Dublin 8 Howth 1,Milestone Dublin 8 Howth 1,"Milestone, inscription “P.O Dublin 8 Howth 1” (OpenStreetMap node 6666122939)","Meilenstein, Inschrift „P.O Dublin 8 Howth 1“ (OpenStreetMap-Node 6666122939)"
+Q119,item,,osm,Milestone Dublin 9 Howth,Milestone Dublin 9 Howth,"Milestone, inscription “P.O Dublin 9 Howth” (OpenStreetMap node 6721748182)","Meilenstein, Inschrift „P.O Dublin 9 Howth“ (OpenStreetMap-Node 6721748182)"
+Q120,item,,osm,Milestone Old Dublin Road,Milestone Old Dublin Road,"Milestone, inscription “CARLOW 17 [...] ROYAL OAK 9” (OpenStreetMap node 6967103228)","Meilenstein, Inschrift „CARLOW 17 [...] ROYAL OAK 9“ (OpenStreetMap-Node 6967103228)"
+Q121,item,,osm,Benchmark at Scots Church,Benchmark at Scots Church,Benchmark (OpenStreetMap node 7873204616),Höhenmarke (OpenStreetMap-Node 7873204616)
+Q122,item,,osm,"Second Presbyterian Church, Ballybay","Second Presbyterian Church, Ballybay",Benchmark (OpenStreetMap node 14257817434),Höhenmarke (OpenStreetMap-Node 14257817434)
+Q123,item,,osm,Ballingarry benchmark,Ballingarry benchmark,Benchmark (OpenStreetMap node 7709937682),Höhenmarke (OpenStreetMap-Node 7709937682)
 P100,property,url,,OSM element,OSM-Element,"The OpenStreetMap element (node, way or relation) this item describes; the URL names its type and ID.","Das OpenStreetMap-Element (Node, Way oder Relation), das dieses Item beschreibt; die URL nennt Typ und ID."
 P101,property,url,,OSM version,OSM-Version,"One version of the OSM element, as the URL of that version; one statement per version.",Eine Version des OSM-Elements als URL dieser Version; ein Statement je Version.
 P102,property,quantity,,OSM version number,OSM-Versionsnummer,Number of an OSM version (qualifier).,Nummer einer OSM-Version (Qualifier).

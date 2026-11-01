@@ -518,13 +518,21 @@
     ]
   },
   "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Höhenmarke (OpenStreetMap-Node 12923704831)"
+    },
     "en": {
       "language": "en",
-      "value": "OpenStreetMap node 12923704831"
+      "value": "Benchmark (OpenStreetMap node 12923704831)"
     }
   },
   "id": "Q107",
   "labels": {
+    "de": {
+      "language": "de",
+      "value": "Benchmark on Albert Bridge"
+    },
     "en": {
       "language": "en",
       "value": "Benchmark on Albert Bridge"

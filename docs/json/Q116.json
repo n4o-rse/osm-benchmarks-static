@@ -729,13 +729,21 @@
     ]
   },
   "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Höhenmarke (OpenStreetMap-Node 12936028929)"
+    },
     "en": {
       "language": "en",
-      "value": "OpenStreetMap node 12936028929"
+      "value": "Benchmark (OpenStreetMap node 12936028929)"
     }
   },
   "id": "Q116",
   "labels": {
+    "de": {
+      "language": "de",
+      "value": "Benchmark at Melrose Abbey"
+    },
     "en": {
       "language": "en",
       "value": "Benchmark at Melrose Abbey"

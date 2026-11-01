@@ -36,12 +36,14 @@
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12923698705"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12923698705)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12923698705)"@de ;
     dcterms:identifier "Q106" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q106 ;
-    dcterms:title "Benchmark on City Union Railway Bridge"@en ;
+    dcterms:title "Benchmark on City Union Railway Bridge"@de,
+        "Benchmark on City Union Railway Bridge"@en ;
     schema:about obs:Q106 ;
     dcat:distribution obsdist:Q106-html,
         obsdist:Q106-json,
@@ -61,7 +63,7 @@ obsdist:Q106-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q106, as archived from the Wikibase API"@en ;
-    dcat:byteSize "13516"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "13732"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q106.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,14 +78,18 @@ obsdist:Q106-ttl
 obs:Q106
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12923698705"@en ;
-    schema:name "Benchmark on City Union Railway Bridge"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12923698705)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12923698705)"@de ;
+    schema:name "Benchmark on City Union Railway Bridge"@de,
+        "Benchmark on City Union Railway Bridge"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q106-83CC5E99-8167-56A6-BF7D-8129623A459A ;
     geo:hasGeometry obss:Q106-83CC5E99-8167-56A6-BF7D-8129623A459A ;
-    rdfs:label "Benchmark on City Union Railway Bridge"@en ;
-    skos:prefLabel "Benchmark on City Union Railway Bridge"@en ;
+    rdfs:label "Benchmark on City Union Railway Bridge"@de,
+        "Benchmark on City Union Railway Bridge"@en ;
+    skos:prefLabel "Benchmark on City Union Railway Bridge"@de,
+        "Benchmark on City Union Railway Bridge"@en ;
     obsp:P2 obss:Q106-2FE8F952-DFA1-59DA-8735-99A45223DCAB ;
     obsp:P100 obss:Q106-0DF0D498-7D17-5715-A3F5-3B9946A3E309 ;
     obsp:P101 obss:Q106-52EF5FD6-B910-5C33-9128-13CADDC444D9,

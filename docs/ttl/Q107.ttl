@@ -36,12 +36,14 @@
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12923704831"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12923704831)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12923704831)"@de ;
     dcterms:identifier "Q107" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q107 ;
-    dcterms:title "Benchmark on Albert Bridge"@en ;
+    dcterms:title "Benchmark on Albert Bridge"@de,
+        "Benchmark on Albert Bridge"@en ;
     schema:about obs:Q107 ;
     dcat:distribution obsdist:Q107-html,
         obsdist:Q107-json,
@@ -61,7 +63,7 @@ obsdist:Q107-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q107, as archived from the Wikibase API"@en ;
-    dcat:byteSize "13490"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "13694"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q107.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,14 +78,18 @@ obsdist:Q107-ttl
 obs:Q107
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12923704831"@en ;
-    schema:name "Benchmark on Albert Bridge"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12923704831)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12923704831)"@de ;
+    schema:name "Benchmark on Albert Bridge"@de,
+        "Benchmark on Albert Bridge"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q107-0FF1A56B-DA06-5BF0-9771-ED2F691A5C24 ;
     geo:hasGeometry obss:Q107-0FF1A56B-DA06-5BF0-9771-ED2F691A5C24 ;
-    rdfs:label "Benchmark on Albert Bridge"@en ;
-    skos:prefLabel "Benchmark on Albert Bridge"@en ;
+    rdfs:label "Benchmark on Albert Bridge"@de,
+        "Benchmark on Albert Bridge"@en ;
+    skos:prefLabel "Benchmark on Albert Bridge"@de,
+        "Benchmark on Albert Bridge"@en ;
     obsp:P2 obss:Q107-1F93CACF-4E8A-55D5-865C-8181373DD66C ;
     obsp:P100 obss:Q107-A6EA8EE8-7424-55EE-AD0A-F8084CBB9715 ;
     obsp:P101 obss:Q107-223E544F-40C8-5F0A-8DAA-9B80346FE935,

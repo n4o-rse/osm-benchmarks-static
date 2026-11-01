@@ -36,12 +36,14 @@
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12925919541"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12925919541)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12925919541)"@de ;
     dcterms:identifier "Q115" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q115 ;
-    dcterms:title "Govan Road benchmark"@en ;
+    dcterms:title "Govan Road benchmark"@de,
+        "Govan Road benchmark"@en ;
     schema:about obs:Q115 ;
     dcat:distribution obsdist:Q115-html,
         obsdist:Q115-json,
@@ -61,7 +63,7 @@ obsdist:Q115-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q115, as archived from the Wikibase API"@en ;
-    dcat:byteSize "13480"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "13678"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q115.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,14 +78,18 @@ obsdist:Q115-ttl
 obs:Q115
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12925919541"@en ;
-    schema:name "Govan Road benchmark"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12925919541)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12925919541)"@de ;
+    schema:name "Govan Road benchmark"@de,
+        "Govan Road benchmark"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q115-FD8ED23F-7DFF-5D0C-9C88-C67C169FE38C ;
     geo:hasGeometry obss:Q115-FD8ED23F-7DFF-5D0C-9C88-C67C169FE38C ;
-    rdfs:label "Govan Road benchmark"@en ;
-    skos:prefLabel "Govan Road benchmark"@en ;
+    rdfs:label "Govan Road benchmark"@de,
+        "Govan Road benchmark"@en ;
+    skos:prefLabel "Govan Road benchmark"@de,
+        "Govan Road benchmark"@en ;
     obsp:P2 obss:Q115-8E0C29EA-5138-56C2-A65B-8AC331159EFE ;
     obsp:P100 obss:Q115-2141BF48-5BB2-58DC-ACA7-D47C3B3A5004 ;
     obsp:P101 obss:Q115-1C656306-9D2B-5E71-B67B-3D3AB9ABBE71,

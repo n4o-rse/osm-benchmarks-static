@@ -36,12 +36,14 @@
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 13331549275"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 13331549275)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13331549275)"@de ;
     dcterms:identifier "Q117" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q117 ;
-    dcterms:title "OS benchmark"@en ;
+    dcterms:title "OS benchmark"@de,
+        "OS benchmark"@en ;
     schema:about obs:Q117 ;
     dcat:distribution obsdist:Q117-html,
         obsdist:Q117-json,
@@ -61,7 +63,7 @@ obsdist:Q117-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q117, as archived from the Wikibase API"@en ;
-    dcat:byteSize "13464"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "13654"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q117.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,14 +78,18 @@ obsdist:Q117-ttl
 obs:Q117
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 13331549275"@en ;
-    schema:name "OS benchmark"@en ;
+    schema:description "Benchmark (OpenStreetMap node 13331549275)"@en,
+        "Höhenmarke (OpenStreetMap-Node 13331549275)"@de ;
+    schema:name "OS benchmark"@de,
+        "OS benchmark"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q117-3060092D-2C48-5398-8DEC-0DF2C52F910B ;
     geo:hasGeometry obss:Q117-3060092D-2C48-5398-8DEC-0DF2C52F910B ;
-    rdfs:label "OS benchmark"@en ;
-    skos:prefLabel "OS benchmark"@en ;
+    rdfs:label "OS benchmark"@de,
+        "OS benchmark"@en ;
+    skos:prefLabel "OS benchmark"@de,
+        "OS benchmark"@en ;
     obsp:P2 obss:Q117-6D087126-E8B0-5594-9CEE-72945CDD606C ;
     obsp:P100 obss:Q117-781898A6-F0A2-572E-ADCE-E6774120B4AC ;
     obsp:P101 obss:Q117-9F31AB9F-C2D0-5633-94DF-BB9D3AE85C9D,

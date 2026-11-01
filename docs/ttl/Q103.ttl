@@ -36,12 +36,14 @@
     a schema:Dataset,
         dcat:Dataset ;
     cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
-    dcterms:description "OpenStreetMap node 12919476068"@en ;
+    dcterms:description "Benchmark (OpenStreetMap node 12919476068)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12919476068)"@de ;
     dcterms:identifier "Q103" ;
     dcterms:isPartOf obscat:items ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:subject obs:Q103 ;
-    dcterms:title "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
+    dcterms:title "NO145 BATH ST SE FACE E ANG 1989 37,995m"@de,
+        "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
     schema:about obs:Q103 ;
     dcat:distribution obsdist:Q103-html,
         obsdist:Q103-json,
@@ -61,7 +63,7 @@ obsdist:Q103-json
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
     dcterms:title "Q103, as archived from the Wikibase API"@en ;
-    dcat:byteSize "26202"^^xsd:nonNegativeInteger ;
+    dcat:byteSize "26420"^^xsd:nonNegativeInteger ;
     dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q103.json> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
@@ -76,15 +78,19 @@ obsdist:Q103-ttl
 obs:Q103
     a wikibase:Item,
         geo:Feature ;
-    schema:description "OpenStreetMap node 12919476068"@en ;
-    schema:name "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
+    schema:description "Benchmark (OpenStreetMap node 12919476068)"@en,
+        "Höhenmarke (OpenStreetMap-Node 12919476068)"@de ;
+    schema:name "NO145 BATH ST SE FACE E ANG 1989 37,995m"@de,
+        "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "20"^^xsd:integer ;
     geo:hasDefaultGeometry obss:Q103-7FDD4E6B-FF40-5625-8B5B-DAD5E020C44C ;
     geo:hasGeometry obss:Q103-7FDD4E6B-FF40-5625-8B5B-DAD5E020C44C,
         obss:Q103-85672352-62D4-5E88-8286-F81E3A8D4C8C ;
-    rdfs:label "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
-    skos:prefLabel "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
+    rdfs:label "NO145 BATH ST SE FACE E ANG 1989 37,995m"@de,
+        "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
+    skos:prefLabel "NO145 BATH ST SE FACE E ANG 1989 37,995m"@de,
+        "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
     obsp:P2 obss:Q103-54055322-9D86-5B37-A1AE-D6BEFA56FDEC ;
     obsp:P100 obss:Q103-C8133615-A16D-5C74-9FA4-F14CEE5A4573 ;
     obsp:P101 obss:Q103-45893AB4-3F6E-5163-AF51-CFAF22EA3228,

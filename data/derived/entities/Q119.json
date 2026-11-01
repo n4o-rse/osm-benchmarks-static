@@ -766,16 +766,24 @@
     ]
   },
   "descriptions": {
+    "de": {
+      "language": "de",
+      "value": "Meilenstein, Inschrift „P.O Dublin 9 Howth“ (OpenStreetMap-Node 6721748182)"
+    },
     "en": {
       "language": "en",
-      "value": "OpenStreetMap node 6721748182"
+      "value": "Milestone, inscription “P.O Dublin 9 Howth” (OpenStreetMap node 6721748182)"
     }
   },
   "id": "Q119",
   "labels": {
+    "de": {
+      "language": "de",
+      "value": "Milestone Dublin 9 Howth"
+    },
     "en": {
       "language": "en",
-      "value": "MilestoneDublin9Howth"
+      "value": "Milestone Dublin 9 Howth"
     }
   },
   "sitelinks": {},

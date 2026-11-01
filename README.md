@@ -37,3 +37,6 @@ The code of this repository is under the [MIT licence](LICENSE).
 The data are derived from OpenStreetMap: © OpenStreetMap contributors, available under the
 [Open Database Licence (ODbL) 1.0](https://opendatacommons.org/licenses/odbl/1-0/).
 Every page of the site carries that notice (`license` in `site.yaml`).
+
+The logo (`assets/logo.png`, a pen drawing of a benchmark) is by Florian Thiery, generated with ChatGPT (GPT-6.1 Sol) and
+published under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The licence of the code (MIT) does not cover it.

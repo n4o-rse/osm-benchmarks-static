@@ -1,7 +1,9 @@
 # Checks the committed site and publishes docs/ to GitHub Pages. The logic is in the reusable workflow of
-# wikibase-static (PRIMER.md there, S8): `python main.py --strict` twice, the working tree must be clean after
+# wikibase-static (PRIMER.md there, S8): the command below twice, the working tree must be clean after
 # each run (so docs/ is what a fresh build makes), a dead internal link makes the run red, and docs/ is
 # deployed only after that, on the default branch.
+# The command adds check_attribution.py (PRIMER.md here, S8): every page and Turtle file must carry
+# "© OpenStreetMap contributors", the ODbL asks for it; a missing notice stops the run before docs/ is published.
 #
 # Once per repository: Settings -> Pages -> Source: "GitHub Actions".
 
@@ -20,6 +22,5 @@ jobs:
       contents: read
       pages: write
       id-token: write
-    # Check only until there is a docs/ folder to publish (PRIMER.md, S4); S8 removes this block to switch publishing on.
     with:
-      deploy: false
+      command: python main.py --strict && python check_attribution.py

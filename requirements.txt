@@ -1,0 +1,4 @@
+# The tool that renders this site.
+# Needs wikibase-static 0.19.0 or later; the importer for OpenStreetMap data (verb import-osm) comes with 0.20.0 (PRIMER.md, S3).
+# Pin a tag or commit here once wikibase-static has releases.
+wikibase-static @ git+https://github.com/n4o-rse/wikibase-static.git

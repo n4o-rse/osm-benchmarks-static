@@ -1,6 +1,6 @@
 # PRIMER — osm-benchmarks-static
 
-Arbeitsplan für `n4o-rse/osm-benchmarks-static` (Repo-Name: Vorschlag 2026-11-01). Wird zu Beginn jedes Chats hochgeladen (Bundle, siehe A5) und am Ende zurückgeschrieben. Stand: 2026-11-01 (S0: Festlegungen; History-Probe an den 21 Benchmark-Nodes, Befunde 1 bis 13).
+Arbeitsplan für `n4o-rse/osm-benchmarks-static` (Repo-Name: Vorschlag 2026-11-01). Wird zu Beginn jedes Chats hochgeladen (Bundle, siehe A5) und am Ende zurückgeschrieben. Stand: 2026-11-01 (S0: Festlegungen; History-Probe an den 21 Benchmark-Nodes, Befunde 1 bis 13; S1: Skeleton, Befund 14).
 
 Sprache: dieses Dokument ist deutsch, alles andere im Repo (Code, Kommentare, README) ist britisches Englisch.
 
@@ -14,7 +14,7 @@ Sprache: dieses Dokument ist deutsch, alles andere im Repo (Code, Kommentare, RE
 |---|---|---|
 | `Research-Squirrel-Engineers/osm2lod` | Prototyp: Overpass-Abfrage je Export-Typ, CSV, TTL und QuickStatements je Lauf, Import in die echte Wikibase osm2wiki | vorhanden, wird nicht umgebaut |
 | `n4o-rse/wikibase-static` | Paket (0.19.0): CSV (vier Tabellen) → Wikibase-JSON → Seiten, RDF, SPARQL; CRM-Overlay `data/crm.csv`; Muster für Verben mit Netz (`import-wikidata`, `import-open-archaeo`) | vorhanden; dort ist S15 („Konverter OSM und FACEM → CSV“) offen |
-| `n4o-rse/osm-benchmarks-static` | dieses Repo: Site-Repo mit den Benchmarks als statische Wikibase | neu, S0 erledigt |
+| `n4o-rse/osm-benchmarks-static` | dieses Repo: Site-Repo mit den Benchmarks als statische Wikibase | neu, S0 und S1 erledigt |
 | `n4o-rse/fuzzy-sl-static`, `n4o-rse/chublets-wikibase-demo` | Vorlagen für Site-Repos: dünnes `main.py` (setzt `WBS_ROOT`), `site.yaml`, `requirements.txt` mit `wikibase-static @ git+…`, `update.cmd`, `.github/workflows/site.yml` als Aufrufer | vorhanden |
 
 Nicht neu zu bauen: die Overpass-Abfrage und die Auswahl der Elemente (kommen aus osm2lod), CSV-Format, Seiten, RDF, SPARQL-Seite, `check-crm` (kommen aus dem Paket).
@@ -50,6 +50,7 @@ Nicht neu zu bauen: die Overpass-Abfrage und die Auswahl der Elemente (kommen au
 11. **Netz.** Die Sandbox der Chats erreicht `api.openstreetmap.org` nicht (HTTP 403 vom Proxy, 2026-11-01); Overpass wurde nicht geprüft. Der Harvest läuft bei Flo; `--from-dir` und `--offline` sind Pflicht, und die Tests laufen gegen die 21 gesicherten JSON-Dateien (100 KB) als Fixtures.
 12. **Paket, CRM.** `crm.py` kennt `crm:E25_Human-Made_Feature` nicht und erlaubt je Klasse nur eine direkte Oberklasse (E25 hat zwei: E24 und E26). Erlaubte Familien: `crm`, `crmarchaeo`, `crmdig`, `crmgeo`, `crmsci`. Eine Ergänzung im Paket ist nötig (S3).
 13. **Paket, Modell.** Der Kern ist Q1 bis Q3 und P1 bis P10; Klassen ab Q100 und Properties ab P100 kommen aus der CSV des Site-Repos (Muster `chublets-wikibase-demo`). Verben mit Netz holen und wandeln in einem Zug (`import-wikidata`), mit `--offline`, `--from-dir` und `--dry-run`.
+14. **Paket ohne Daten (S1, geprüft 2026-11-01 mit `wikibase-static` 0.19.0).** `python main.py --strict` in einem Repo ohne `data/csv/` und ohne `data/raw/entities/` meldet bei jedem Schritt „nothing to do“, endet mit Exit-Code 0 und erzeugt keine Datei; `docs/` und `dist/` entstehen erst mit den ersten Daten (S4).
 
 ### A2 Zielbild
 
@@ -131,6 +132,7 @@ Die Ergebnisse müssen diese Eigenschaften haben, jede ist prüfbar:
 | Label | `name`, sonst `name:en`, sonst der Commons-Dateititel ohne `File:` und Endung, sonst `OSM node <id>` | Vorschlag 2026-11-01 |
 | Seeds | Die Abfrage steht als Datei unter `data/seeds/` und wird unverändert aus osm2lod übernommen | 2026-11-01 |
 | Verb | `python main.py import-osm` (Netz), mit `--offline`, `--from-dir DIR`, `--dry-run`, `--contact`; erscheint im Paket als Version 0.20.0 | Vorschlag 2026-11-01 |
+| Skeleton | Dünnes `main.py` nach dem Muster von `fuzzy-sl-static` (setzt `WBS_ROOT`); Schritte `from-csv`, `load`, `build`, `search`, `rdf`, `sparql` im Standardlauf, `csv-fmt` und `check-crm` als Verben; `import-osm` kommt mit S3 dazu. Lizenz des Codes MIT, `CITATION.cff` Version 0.1.0, `rdf_prefix: obs` und `license` ODbL in `site.yaml` (vorerst ohne Logo) | 2026-11-01 (S1) |
 | Startumfang | Die 21 Nodes des Laufs vom 2026-03-22, danach alle Elemente der Abfrage | 2026-11-01 |
 
 ### A5 Was in welchem Chat hochgeladen wird
@@ -162,7 +164,7 @@ Alles `geplant`, bis S1 die Basis festlegt. Vorschlag: `rdf_base` = `https://n4o
 | ID | Schritt | Repo | hängt ab von | Status |
 |---|---|---|---|---|
 | S0 | Festlegungen und History-Probe an den 21 Nodes | osm-benchmarks-static | – | erledigt 2026-11-01 |
-| S1 | Skeleton: Layout, `main.py`, `site.yaml`, `requirements.txt`, Lizenz, Citation, Workflow-Aufrufer, `update.cmd` | osm-benchmarks-static | S0 | offen |
+| S1 | Skeleton: Layout, `main.py`, `site.yaml`, `requirements.txt`, Lizenz, Citation, Workflow-Aufrufer, `update.cmd` | osm-benchmarks-static | S0 | erledigt 2026-11-01 (Patch-ZIP; Einspielen, Pages-Einstellung und erster Lauf der CI auf GitHub offen) |
 | S2 | Modell: Klasse „Benchmark“, Properties (OSM-Element, OSM-Version, Kriterium erfüllt seit, Geometrie-Verlauf, …), `data/crm.csv`, Mapping-Datei der Rollen | osm-benchmarks-static | S1 | offen |
 | S3 | Konverter `import-osm --offline`: History-JSON und Overpass-Antwort → CSV; Ergänzung von `crm:E25` im Paket (Paket-S15a) | wikibase-static | S2 | offen |
 | S4 | Erstbestand: die 21 Nodes aus den gesicherten JSON-Dateien → Seiten, RDF, SPARQL, `check-crm` | osm-benchmarks-static | S3 | offen |
@@ -193,6 +195,10 @@ S1 und S2 folgen aufeinander; danach sind S3 und die Vorarbeiten für S6 unabhä
 Inhalt: `main.py` (dünner Wrapper um das Paket, mit dem zusätzlichen Verb `import-osm`, sobald es existiert), `requirements.txt` mit `wikibase-static @ git+https://github.com/n4o-rse/wikibase-static.git`, `site.yaml` (Titel, `pages_url`, `rdf_base`, `rdf_prefix`, Sprachen, `license` ODbL), `LICENSE` (MIT für den Code), `CITATION.cff`, `update.cmd`, `.github/workflows/site.yml` als Aufrufer (`examples/site-caller.yml` im Paket), Logo (falls vorhanden), README mit Namensnennung.
 
 **Abnahme:** `python main.py --list` nennt die Schritte; `python main.py --strict` läuft ohne Daten durch und meldet für jeden Schritt „nichts zu tun“; zwei Läufe hintereinander, `git status --porcelain` leer.
+
+### Erledigt 2026-11-01
+
+Gebaut: `main.py`, `requirements.txt`, `site.yaml`, `LICENSE`, `CITATION.cff`, `update.cmd`, `.github/workflows/site.yml`, neues `README.md` (Befund 14, A4 „Skeleton“). Abnahme in einer frischen Kopie des Repos erfüllt: `--list` nennt acht Schritte (sechs im Standardlauf, zwei Verben), `--strict` zweimal hintereinander mit Exit-Code 0, sechsmal „nothing to do“, danach keine neue Datei außer den Quellen des Skeletons. Der Aufrufer `site.yml` steht auf `deploy: false`: der Job „check“ (zweimal `--strict`, Baum sauber) läuft von Anfang an, das Veröffentlichen kommt in S8, weil der Deploy-Job ohne `docs/` scheitern würde (`upload-pages-artifact` mit Pfad `docs`). Nicht geprüft: der Lauf des Workflows auf GitHub und `update.cmd` unter Windows. Der Befehl `import-osm` fehlt absichtlich in `main.py`.
 
 ### S2 — Modell
 
@@ -250,7 +256,7 @@ Inhalt: „Elemente nach Eintrittsversion“, „Elemente, die seit Datum X geä
 
 **Ziel:** Die Seite ist veröffentlicht, jede Änderung wird geprüft.
 
-Inhalt: `site.yml` als Aufrufer des Paket-Workflows, Pages auf „GitHub Actions“, `--strict` zweimal mit leerem `git status`, Prüfung des Namensnennungs-Hinweises.
+Inhalt: `site.yml` als Aufrufer des Paket-Workflows (der Block `with: deploy: false` aus S1 fällt weg), Pages auf „GitHub Actions“, `--strict` zweimal mit leerem `git status`, Prüfung des Namensnennungs-Hinweises.
 
 **Abnahme:** Lauf auf GitHub grün, Live-Seite erreichbar, `Q`-Seite und Turtle-Datei einer Entität abrufbar.
 
@@ -274,4 +280,7 @@ Inhalt: Entscheidung, ob je Typ ein Repo oder ein Seed in diesem Repo; CRM-Klass
 - **uid und Benutzername im RDF:** Beide Werte sind in OSM öffentlich, stehen aber dauerhaft in den Daten; falls es Widerspruch gibt, wäre ein Schalter in `site.yaml` zu erwägen (beschlossen ist: beides).
 - **Label-Vorschlag:** Der Commons-Titel als Rückfall ist nicht bestätigt (A4 „Label“).
 - **Netz bei Flo:** `import-osm` ist bei Flo noch nicht gelaufen (S5); beim ersten Lauf `--contact` setzen und die Pause prüfen.
+- **Pages einschalten (S1):** Einmal in den Einstellungen des Repos: Settings → Pages → Source „GitHub Actions“. Der Aufrufer `site.yml` steht seit S1 auf `deploy: false` und prüft nur; die Einstellung wird mit S8 gebraucht, wenn das Veröffentlichen eingeschaltet wird.
+- **Logo (S1):** `site.yaml` hat kein `logo`; falls eines gewünscht ist, die Datei nach `assets/` und die Zeile `logo: assets/<datei>` ergänzen.
+- **`rdf_prefix` und `data_as_of` (S1):** `obs` ist ein Vorschlag; `data_as_of` fehlt in `site.yaml` und wird mit den ersten Daten (S4) gesetzt, weil die CSV keine eigene Änderungszeit trägt (so macht es `chublets-wikibase-demo`).
 - **Probe-Skript:** `osm_history_probe.py` (lokal in `C:\tmp\pytemp`) wird mit S5 durch `import-osm` ersetzt; bis dahin nicht ins Repo, weil es nach `data/raw/osm_history` schreibt und nicht nach `data/raw/osm/history`.

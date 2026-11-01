@@ -1,0 +1,21 @@
+# Site metadata for the static Wikibase of OpenStreetMap benchmarks (schema: PRIMER.md of wikibase-static, A4).
+title: OSM benchmarks (static Wikibase)
+description: A static, read-only Wikibase of OpenStreetMap benchmarks (survey points with a Wikimedia Commons image) in Ireland, Northern Ireland and Scotland. One item per OSM element, its version history as statements, anchored in CIDOC CRM.
+# Where docs/ is published; the RDF export needs it for the download URLs of its DCAT distributions.
+pages_url: https://n4o-rse.github.io/osm-benchmarks-static/
+# Base of the entity URIs in the RDF export. The numbers of this site are its own, so it does not borrow another address.
+# A w3id prefix is open (PRIMER.md, A6).
+rdf_base: https://n4o-rse.github.io/osm-benchmarks-static
+# The prefix names of the export: obs:, obst:, obsp:, ... and not wd:, wdt:, p:, ..., which are those of Wikidata.
+# A proposal (PRIMER.md, A4 "URIs"); change it before the first publication if another name is wanted.
+rdf_prefix: obs
+edit_url: https://github.com/n4o-rse/osm-benchmarks-static/edit/main/data/csv
+languages:
+  default: en
+  second: de
+# The kernel keeps the formatter URL of external-id properties in P5 (Wikidata uses P1630).
+formatter_property: P5
+# The data are OpenStreetMap data, not CC0 (the default of the package): the licence and the attribution travel with them.
+license:
+  name: ODbL 1.0, © OpenStreetMap contributors
+  url: https://opendatacommons.org/licenses/odbl/1-0/

@@ -1,5 +1,5 @@
 # RDF export of OSM benchmarks (static Wikibase), Wikibase data model; base URI https://n4o-rse.github.io/osm-benchmarks-static
-# Generated with wikibase-static 0.19.0; data as of unknown
+# Generated with wikibase-static 0.20.0; data as of unknown
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -3484,7 +3484,7 @@ obst:P3
 # with the superclasses of an extension class up to its first class of the CIDOC CRM, and subclass of / instance of spelled out as rdfs:subClassOf / rdf:type. Not part of the Wikibase data model.
 
 obs:Q100
-    rdfs:subClassOf crm:E25 .
+    rdfs:subClassOf crm:E25_Human-Made_Feature .
 
 obs:Q1000
     a obs:Q100 .

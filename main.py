@@ -5,13 +5,15 @@
     python main.py --strict             the same, but any WARN line (a dead link, a model rule) is an error
     python main.py --strict check-crm   SHACL check: every class reaches the CIDOC CRM (after the default run)
     python main.py csv-fmt              bring the tables in data/csv/ into canonical form (--check: only report)
+    python main.py import-osm --offline OSM element histories (data/raw/osm/history/) -> data/csv/ (writes source files)
     python main.py --list               print the steps and exit
 
-Everything is done by the installed package ``wikibase-static`` (0.19.0 or later); this file only points it at this
+Everything is done by the installed package ``wikibase-static`` (0.20.0 or later); this file only points it at this
 repository (WBS_ROOT) and starts the steps. Any further arguments are passed to the step.
 
-The verb ``import-osm`` (OpenStreetMap elements and their version history into data/csv/) is added here when the package
-has it (wikibase-static 0.20.0, PRIMER.md, step S3). It will be the only step that uses the network.
+The verb ``import-osm`` turns the OSM element histories in data/raw/osm/history/ into rows of data/csv/ (wikibase-static 0.20.0,
+PRIMER.md, step S3). It is offline in 0.20.0; the network part (Overpass, history requests) comes with step S5. It is a verb:
+it never runs in the default run, because it writes source files.
 
 ``--strict`` is what the GitHub workflow runs (.github/workflows/site.yml): the steps write ``WARN: ...``
 lines for problems and this wrapper turns them into exit code 1, as the package's own main.py does.
@@ -26,9 +28,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 
-# (name, module, in the default run). csv-fmt and check-crm are verbs: they never run by themselves.
+# (name, module, in the default run). csv-fmt, import-osm and check-crm are verbs: they never run by themselves.
 STEPS = [
     ("csv-fmt", "step_csv_fmt", False),
+    ("import-osm", "step_import_osm", False),
     ("from-csv", "step_from_csv", True),
     ("load", "step_load", True),
     ("build", "step_build", True),
@@ -64,7 +67,7 @@ def main(argv: list[str]) -> int:
         argv = argv[1:]
     if argv[:1] == ["--list"]:
         for name, _module, default in STEPS:
-            print(f"{name:9} {'default' if default else 'verb'}")
+            print(f"{name:10} {'default' if default else 'verb'}")
         return 0
     names = [name for name, _m, _d in STEPS]
     if argv and argv[0] in names:

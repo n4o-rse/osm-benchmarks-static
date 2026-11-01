@@ -1,0 +1,449 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-01T18:33:21Z",
+    "timestamp_areas_base": "2026-11-01T12:51:03Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 6666122939,
+  "lat": 53.3909850,
+  "lon": -6.0906714,
+  "timestamp": "2024-02-26T13:33:57Z",
+  "version": 3,
+  "changeset": 147932304,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "direction": "185",
+    "distance": "8",
+    "highway": "milestone",
+    "historic": "milestone",
+    "inscription": "P.O Dublin 8 Howth 1",
+    "man_made": "survey_point",
+    "mapillary": "805418053850230",
+    "material": "stone;cast_iron",
+    "milestone:destination": "post_office",
+    "wikimedia_commons": "File:MilestoneDublin8Howth1.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 6721748182,
+  "lat": 53.3877490,
+  "lon": -6.0681842,
+  "timestamp": "2024-02-26T18:41:14Z",
+  "version": 3,
+  "changeset": 147944514,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "distance": "9 miles",
+    "highway": "milestone",
+    "historic": "milestone",
+    "inscription": "P.O Dublin 9 Howth",
+    "man_made": "survey_point",
+    "milestone:destination": "post_office",
+    "wikimedia_commons": "File:MilestoneDublin9Howth.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 6967103228,
+  "lat": 52.6468593,
+  "lon": -7.2121484,
+  "timestamp": "2024-04-04T21:41:21Z",
+  "version": 5,
+  "changeset": 149588608,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "historic": "milestone",
+    "inscription": "CARLOW 17 [...] ROYAL OAK 9",
+    "man_made": "survey_point",
+    "source": "survey",
+    "survey:date": "2024-04-02",
+    "wikimedia_commons": "File:Milestone Old Dublin Road.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 7709937682,
+  "lat": 52.5861876,
+  "lon": -7.5413562,
+  "timestamp": "2026-07-30T23:53:53Z",
+  "version": 5,
+  "changeset": 186676467,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "check_date": "2026-07-30",
+    "ele:1913": "675.9",
+    "man_made": "survey_point",
+    "note": "On the window sill.",
+    "source": "survey;OS 25'' map",
+    "survey:date": "2020-07-12",
+    "survey_point:structure": "cut",
+    "wikimedia_commons": "File:Ballingarry benchmark.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 7873204616,
+  "lat": 52.3531682,
+  "lon": -7.6966593,
+  "timestamp": "2023-08-21T09:35:57Z",
+  "version": 3,
+  "changeset": 140171492,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "description": "horizontal type with dot",
+    "historic": "yes",
+    "man_made": "survey_point",
+    "source": "survey;OS 6'' Cassini map",
+    "wikimedia_commons": "File:Benchmark at Scots Church.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 12600848879,
+  "lat": 53.2725397,
+  "lon": -9.0538691,
+  "timestamp": "2026-03-23T15:33:55Z",
+  "version": 5,
+  "changeset": 180311366,
+  "user": "IainTurpie",
+  "uid": 15334346,
+  "tags": {
+    "benchmark": "yes",
+    "description": "Second mark on the principal levelling line from Galway to Tuam. Has a copper bolt and inscription.",
+    "inscription": "LM 2",
+    "man_made": "survey_point",
+    "source": "survey;25inch map",
+    "survey:date": "2025-02-19",
+    "survey_point:purpose": "vertical",
+    "survey_point:structure": "cut",
+    "wikimedia_commons": "File:Benchmark at St. Nicholas' Collegiate Church.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 12888689968,
+  "lat": 52.9774432,
+  "lon": -6.9790004,
+  "timestamp": "2025-06-05T20:53:32Z",
+  "version": 2,
+  "changeset": 167241460,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "man_made": "survey_point",
+    "survey:date": "2025-06-05",
+    "wikimedia_commons": "File:Benchmark at Ardreigh Lock.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 12919476068,
+  "lat": 55.8642448,
+  "lon": -4.2607260,
+  "timestamp": "2026-04-10T11:33:35Z",
+  "version": 6,
+  "changeset": 181141238,
+  "user": "fthierygeo",
+  "uid": 8813335,
+  "tags": {
+    "benchmark": "yes",
+    "man_made": "survey_point",
+    "name:en": "NO145 BATH ST SE FACE E ANG 1989 37,995m",
+    "survey:date": "2025-06-16",
+    "survey_point:purpose": "vertical",
+    "survey_point:structure": "cut",
+    "survey_point:type": "benchmark",
+    "wikimedia_commons": "File:Benchmark at the corner of West Campbell Street and Bath Street.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 12919738910,
+  "lat": 55.8620198,
+  "lon": -4.2537467,
+  "timestamp": "2025-06-18T15:55:49Z",
+  "version": 3,
+  "changeset": 167788856,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "man_made": "survey_point",
+    "survey:date": "2025-06-16",
+    "survey_point:structure": "cut",
+    "wikimedia_commons": "File:Benchmark at St George's Tron Parish Church.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 12922675575,
+  "lat": 55.8685438,
+  "lon": -4.2924895,
+  "timestamp": "2025-06-19T22:35:27Z",
+  "version": 2,
+  "changeset": 167847134,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "man_made": "survey_point",
+    "survey:date": "2025-06-18",
+    "survey_point:structure": "cut",
+    "wikimedia_commons": "File:Benchmark at corner of Blantyre St and Argyle St.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 12923698705,
+  "lat": 55.8526441,
+  "lon": -4.2497576,
+  "timestamp": "2025-06-18T18:24:32Z",
+  "version": 2,
+  "changeset": 167794637,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "man_made": "survey_point",
+    "survey:date": "2025-06-18",
+    "survey_point:structure": "cut",
+    "wikimedia_commons": "File:Benchmark on City Union Railway Bridge.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 12923704831,
+  "lat": 55.8527993,
+  "lon": -4.2472940,
+  "timestamp": "2025-06-18T18:25:43Z",
+  "version": 2,
+  "changeset": 167794702,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "man_made": "survey_point",
+    "survey:date": "2025-06-18",
+    "survey_point:structure": "cut",
+    "wikimedia_commons": "File:Benchmark on Albert Bridge.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 12923752174,
+  "lat": 55.8568563,
+  "lon": -4.2453643,
+  "timestamp": "2025-08-06T20:45:09Z",
+  "version": 3,
+  "changeset": 170078132,
+  "user": "tagishsimon",
+  "uid": 9198745,
+  "tags": {
+    "benchmark": "yes",
+    "man_made": "survey_point",
+    "survey:date": "2025-06-18",
+    "survey_point:structure": "cut",
+    "wikimedia_commons": "File:Benchmark at the corner of Trongate- Chrisholm Street.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 12923754806,
+  "lat": 55.8547441,
+  "lon": -4.2454407,
+  "timestamp": "2025-06-18T18:26:51Z",
+  "version": 2,
+  "changeset": 167794747,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "man_made": "survey_point",
+    "survey:date": "2025-06-18",
+    "survey_point:structure": "cut",
+    "wikimedia_commons": "File:Benchmark at Blackstock's Close (Saltmarket).jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 12924781327,
+  "lat": 55.8607840,
+  "lon": -4.2477111,
+  "timestamp": "2025-06-18T22:02:48Z",
+  "version": 2,
+  "changeset": 167801537,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "man_made": "survey_point",
+    "survey:date": "2025-06-18",
+    "survey_point:structure": "cut",
+    "wikimedia_commons": "File:Benchmark in the East side of the City Chambers.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 12924782280,
+  "lat": 55.8611989,
+  "lon": -4.2478655,
+  "timestamp": "2025-06-18T22:04:00Z",
+  "version": 2,
+  "changeset": 167801563,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "man_made": "survey_point",
+    "survey:date": "2025-06-18",
+    "survey_point:structure": "cut",
+    "wikimedia_commons": "File:Benchmark on the North side of the City Chambers.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 12924784584,
+  "lat": 55.8606261,
+  "lon": -4.2485537,
+  "timestamp": "2025-06-18T22:01:10Z",
+  "version": 2,
+  "changeset": 167801496,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "man_made": "survey_point",
+    "survey:date": "2025-06-18",
+    "survey_point:structure": "cut",
+    "wikimedia_commons": "File:Benchmark on the South side of the City Chambers.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 12925489820,
+  "lat": 55.8623444,
+  "lon": -4.2353755,
+  "timestamp": "2025-06-19T22:31:29Z",
+  "version": 3,
+  "changeset": 167847070,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "man_made": "survey_point",
+    "survey:date": "2025-06-19",
+    "survey_point:structure": "cut",
+    "wikimedia_commons": "File:Benchmark on the Cathedral gate lodge.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 12925655350,
+  "lat": 55.8620442,
+  "lon": -4.2368032,
+  "timestamp": "2025-06-19T22:06:14Z",
+  "version": 2,
+  "changeset": 167846603,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "man_made": "survey_point",
+    "survey:date": "2025-06-19",
+    "survey_point:structure": "cut",
+    "wikimedia_commons": "File:Barony Halls benchmark.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 12925919541,
+  "lat": 55.8636907,
+  "lon": -4.3147383,
+  "timestamp": "2025-06-19T14:50:09Z",
+  "version": 2,
+  "changeset": 167830422,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "man_made": "survey_point",
+    "survey:date": "2025-06-19",
+    "survey_point:structure": "cut",
+    "wikimedia_commons": "File:Govan Road benchmark.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 12936028929,
+  "lat": 55.5989376,
+  "lon": -2.7178857,
+  "timestamp": "2025-06-22T16:38:56Z",
+  "version": 3,
+  "changeset": 167966881,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "man_made": "survey_point",
+    "survey:date": "2025-06-20",
+    "survey_point:structure": "cut",
+    "wikimedia_commons": "File:Benchmark at Melrose Abbey.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 13331549275,
+  "lat": 54.2726815,
+  "lon": -8.4683873,
+  "timestamp": "2025-11-25T23:12:10Z",
+  "version": 2,
+  "changeset": 175131816,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "man_made": "survey_point",
+    "survey:date": "2025-11-25",
+    "survey_point:structure": "cut",
+    "wikimedia_commons": "File:OS benchmark.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 14257817434,
+  "lat": 54.1287860,
+  "lon": -6.9063675,
+  "timestamp": "2026-10-07T09:50:45Z",
+  "version": 1,
+  "changeset": 190136070,
+  "user": "b-unicycling",
+  "uid": 1713634,
+  "tags": {
+    "benchmark": "yes",
+    "man_made": "survey_point",
+    "source": "wikimedia",
+    "survey_point:structure": "cut",
+    "wikimedia_commons": "File:Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138.jpg"
+  }
+}
+
+  ]
+}

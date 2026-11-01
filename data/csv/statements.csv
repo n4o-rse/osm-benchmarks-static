@@ -299,6 +299,37 @@ Q121-P113-2,Q121,P113,description=horizontal type with dot,,osm
 Q121-P113-3,Q121,P113,historic=yes,,osm
 Q121-P113-4,Q121,P113,man_made=survey_point,,osm
 Q121-P113-5,Q121,P113,source=survey;OS 6'' Cassini map,,osm
+,Q122,P2,Q100,,osm
+Q122-P100-1,Q122,P100,https://www.openstreetmap.org/node/14257817434,,osm
+Q122-P101-1,Q122,P101,https://www.openstreetmap.org/node/14257817434/history/1,preferred,osm
+Q122-P107-1,Q122,P107,https://www.openstreetmap.org/node/14257817434/history/1,,osm
+Q122-P110-1,Q122,P110,"54.128786,-6.9063675",,osm
+Q122-P111-1,Q122,P111,POINT(-6.9063675 54.128786),,osm
+Q122-P112-1,Q122,P112,"Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138.jpg",,osm
+Q122-P113-1,Q122,P113,benchmark=yes,,osm
+Q122-P113-2,Q122,P113,man_made=survey_point,,osm
+Q122-P113-3,Q122,P113,source=wikimedia,,osm
+Q122-P113-4,Q122,P113,survey_point:structure=cut,,osm
+,Q123,P2,Q100,,osm
+Q123-P100-1,Q123,P100,https://www.openstreetmap.org/node/7709937682,,osm
+Q123-P101-1,Q123,P101,https://www.openstreetmap.org/node/7709937682/history/1,,osm
+Q123-P101-2,Q123,P101,https://www.openstreetmap.org/node/7709937682/history/2,,osm
+Q123-P101-3,Q123,P101,https://www.openstreetmap.org/node/7709937682/history/3,,osm
+Q123-P101-4,Q123,P101,https://www.openstreetmap.org/node/7709937682/history/4,,osm
+Q123-P101-5,Q123,P101,https://www.openstreetmap.org/node/7709937682/history/5,preferred,osm
+Q123-P107-5,Q123,P107,https://www.openstreetmap.org/node/7709937682/history/5,,osm
+Q123-P110-1,Q123,P110,"52.5861876,-7.5413562",,osm
+Q123-P111-1,Q123,P111,POINT(-7.541375 52.5861786),,osm
+Q123-P111-4,Q123,P111,POINT(-7.5413562 52.5861876),,osm
+Q123-P112-1,Q123,P112,Ballingarry benchmark.jpg,,osm
+Q123-P113-1,Q123,P113,benchmark=yes,,osm
+Q123-P113-2,Q123,P113,check_date=2026-07-30,,osm
+Q123-P113-3,Q123,P113,ele:1913=675.9,,osm
+Q123-P113-4,Q123,P113,man_made=survey_point,,osm
+Q123-P113-5,Q123,P113,note=On the window sill.,,osm
+Q123-P113-6,Q123,P113,source=survey;OS 25'' map,,osm
+Q123-P113-7,Q123,P113,survey:date=2020-07-12,,osm
+Q123-P113-8,Q123,P113,survey_point:structure=cut,,osm
 ,P100,P9,Q100,,
 ,P101,P9,Q100,,
 ,P104,P5,https://www.openstreetmap.org/changeset/$1,,

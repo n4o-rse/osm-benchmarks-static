@@ -21,6 +21,8 @@ Q118,item,,osm,MilestoneDublin8Howth1,,OpenStreetMap node 6666122939,
 Q119,item,,osm,MilestoneDublin9Howth,,OpenStreetMap node 6721748182,
 Q120,item,,osm,Milestone Old Dublin Road,,OpenStreetMap node 6967103228,
 Q121,item,,osm,Benchmark at Scots Church,,OpenStreetMap node 7873204616,
+Q122,item,,osm,"Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138",,OpenStreetMap node 14257817434,
+Q123,item,,osm,Ballingarry benchmark,,OpenStreetMap node 7709937682,
 P100,property,url,,OSM element,OSM-Element,"The OpenStreetMap element (node, way or relation) this item describes; the URL names its type and ID.","Das OpenStreetMap-Element (Node, Way oder Relation), das dieses Item beschreibt; die URL nennt Typ und ID."
 P101,property,url,,OSM version,OSM-Version,"One version of the OSM element, as the URL of that version; one statement per version.",Eine Version des OSM-Elements als URL dieser Version; ein Statement je Version.
 P102,property,quantity,,OSM version number,OSM-Versionsnummer,Number of an OSM version (qualifier).,Nummer einer OSM-Version (Qualifier).

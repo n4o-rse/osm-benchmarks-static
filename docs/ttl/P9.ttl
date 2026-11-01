@@ -1,0 +1,156 @@
+# P9: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.19.0; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix obs: <https://n4o-rse.github.io/osm-benchmarks-static/entity/> .
+@prefix obscat: <https://n4o-rse.github.io/osm-benchmarks-static/catalog/> .
+@prefix obsdata: <https://n4o-rse.github.io/osm-benchmarks-static/ttl/> .
+@prefix obsdist: <https://n4o-rse.github.io/osm-benchmarks-static/distribution/> .
+@prefix obsno: <https://n4o-rse.github.io/osm-benchmarks-static/prop/novalue/> .
+@prefix obsp: <https://n4o-rse.github.io/osm-benchmarks-static/prop/> .
+@prefix obspq: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/> .
+@prefix obspqv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/value/> .
+@prefix obspr: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/> .
+@prefix obsprv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/value/> .
+@prefix obsps: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/> .
+@prefix obspsv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/value/> .
+@prefix obsref: <https://n4o-rse.github.io/osm-benchmarks-static/reference/> .
+@prefix obss: <https://n4o-rse.github.io/osm-benchmarks-static/entity/statement/> .
+@prefix obst: <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/> .
+@prefix obsv: <https://n4o-rse.github.io/osm-benchmarks-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-benchmarks-static/ttl/P9.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Class the subject of a property's statements should belong to."@en,
+        "Klasse, zu der das Subjekt der Aussagen einer Eigenschaft gehören soll."@de ;
+    dcterms:identifier "P9" ;
+    dcterms:isPartOf obscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject obs:P9 ;
+    dcterms:title "Definitionsbereich"@de,
+        "domain"@en ;
+    schema:about obs:P9 ;
+    dcat:distribution obsdist:P9-html,
+        obsdist:P9-json,
+        obsdist:P9-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-benchmarks-static/P9.html> .
+
+obsdist:P9-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P9, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-benchmarks-static/P9.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+obsdist:P9-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P9, as archived from the Wikibase API"@en ;
+    dcat:byteSize "2006"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/P9.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+obsdist:P9-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P9, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL obsdata:P9.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+obs:P9
+    a wikibase:Property ;
+    schema:description "Class the subject of a property's statements should belong to."@en,
+        "Klasse, zu der das Subjekt der Aussagen einer Eigenschaft gehören soll."@de ;
+    schema:name "Definitionsbereich"@de,
+        "domain"@en ;
+    wikibase:claim obsp:P9 ;
+    wikibase:directClaim obst:P9 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue obsno:P9 ;
+    wikibase:propertyType wikibase:WikibaseItem ;
+    wikibase:qualifier obspq:P9 ;
+    wikibase:qualifierValue obspqv:P9 ;
+    wikibase:reference obspr:P9 ;
+    wikibase:referenceValue obsprv:P9 ;
+    wikibase:statementProperty obsps:P9 ;
+    wikibase:statementValue obspsv:P9 ;
+    wikibase:statements "3"^^xsd:integer ;
+    rdfs:label "Definitionsbereich"@de,
+        "domain"@en ;
+    skos:prefLabel "Definitionsbereich"@de,
+        "domain"@en ;
+    obsp:P2 obss:P9-34DB929C-2EA5-5480-A0B6-B4161F6FB2E4 ;
+    obsp:P9 obss:P9-008F1E36-EA34-51F1-BEE0-819AC0139C48 ;
+    obsp:P10 obss:P9-D88CD03F-C43C-563B-8004-9809D908B44C ;
+    obst:P2 obs:Q2 ;
+    obst:P9 obs:Q2 ;
+    obst:P10 obs:Q1 .
+
+obss:P9-008F1E36-EA34-51F1-BEE0-819AC0139C48
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P9 obs:Q2 .
+
+obss:P9-34DB929C-2EA5-5480-A0B6-B4161F6FB2E4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P2 obs:Q2 .
+
+obss:P9-D88CD03F-C43C-563B-8004-9809D908B44C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P10 obs:Q1 .
+
+obsp:P9
+    a owl:ObjectProperty .
+
+obst:P9
+    a owl:ObjectProperty .
+
+obspq:P9
+    a owl:ObjectProperty .
+
+obspqv:P9
+    a owl:ObjectProperty .
+
+obspr:P9
+    a owl:ObjectProperty .
+
+obsprv:P9
+    a owl:ObjectProperty .
+
+obsps:P9
+    a owl:ObjectProperty .
+
+obspsv:P9
+    a owl:ObjectProperty .
+
+obsno:P9
+    a owl:Class ;
+    owl:complementOf _:ac6edeec42c4ba850cf33dd213171f81 .
+
+_:ac6edeec42c4ba850cf33dd213171f81
+    a owl:Restriction ;
+    owl:onProperty obst:P9 ;
+    owl:someValuesFrom owl:Thing .

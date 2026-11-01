@@ -1,6 +1,6 @@
 # PRIMER — osm-benchmarks-static
 
-Arbeitsplan für `n4o-rse/osm-benchmarks-static` (Repo-Name: Vorschlag 2026-11-01). Wird zu Beginn jedes Chats hochgeladen (Bundle, siehe A5) und am Ende zurückgeschrieben. Stand: 2026-11-01 (S0: Festlegungen; History-Probe an den 21 Benchmark-Nodes, Befunde 1 bis 13; S1: Skeleton, Befund 14).
+Arbeitsplan für `n4o-rse/osm-benchmarks-static` (Repo-Name: Vorschlag 2026-11-01). Wird zu Beginn jedes Chats hochgeladen (Bundle, siehe A5) und am Ende zurückgeschrieben. Stand: 2026-11-01 (S0: Festlegungen; History-Probe an den 21 Benchmark-Nodes, Befunde 1 bis 13; S1: Skeleton, Befund 14; S2: Modell, Befund 15).
 
 Sprache: dieses Dokument ist deutsch, alles andere im Repo (Code, Kommentare, README) ist britisches Englisch.
 
@@ -48,9 +48,10 @@ Nicht neu zu bauen: die Overpass-Abfrage und die Auswahl der Elemente (kommen au
 9. **Labels.** Kein `name` bei den 21 Elementen (aktuelle Version), `name:en` bei einem. Der Commons-Dateititel ist bei allen da (die Abfrage verlangt ihn), z. B. `File:Benchmark at Ardreigh Lock.jpg`.
 10. **API-Antwort.** Der Kopf trägt Lizenz (ODbL 1.0) und Copyright; Elemente haben `type`, `id`, `version`, `timestamp`, `changeset`, `user`, `uid`, `lat`, `lon`, `tags`. `visible` fehlt bei sichtbaren Versionen; gelöschte Versionen wurden nicht beobachtet (keine vorhanden).
 11. **Netz.** Die Sandbox der Chats erreicht `api.openstreetmap.org` nicht (HTTP 403 vom Proxy, 2026-11-01); Overpass wurde nicht geprüft. Der Harvest läuft bei Flo; `--from-dir` und `--offline` sind Pflicht, und die Tests laufen gegen die 21 gesicherten JSON-Dateien (100 KB) als Fixtures.
-12. **Paket, CRM.** `crm.py` kennt `crm:E25_Human-Made_Feature` nicht und erlaubt je Klasse nur eine direkte Oberklasse (E25 hat zwei: E24 und E26). Erlaubte Familien: `crm`, `crmarchaeo`, `crmdig`, `crmgeo`, `crmsci`. Eine Ergänzung im Paket ist nötig (S3).
+12. **Paket, CRM.** `crm:E25_Human-Made_Feature` ist als Anker zulässig (S2 geprüft: `data/crm.csv` mit `Q100,crm:E25` lädt, `check-crm` meldet 0 Verstöße). Es fehlt nur die Oberklassenkette im Paket: E25 hat zwei direkte Oberklassen (E24 Physical Human-Made Thing und E26 Physical Feature), `crm.py` kennt je Klasse nur eine. Erlaubte Familien: `crm`, `crmarchaeo`, `crmdig`, `crmgeo`, `crmsci`. Die Ergänzung der Kette ist Sache von S3.
 13. **Paket, Modell.** Der Kern ist Q1 bis Q3 und P1 bis P10; Klassen ab Q100 und Properties ab P100 kommen aus der CSV des Site-Repos (Muster `chublets-wikibase-demo`). Verben mit Netz holen und wandeln in einem Zug (`import-wikidata`), mit `--offline`, `--from-dir` und `--dry-run`.
 14. **Paket ohne Daten (S1, geprüft 2026-11-01 mit `wikibase-static` 0.19.0).** `python main.py --strict` in einem Repo ohne `data/csv/` und ohne `data/raw/entities/` meldet bei jedem Schritt „nothing to do“, endet mit Exit-Code 0 und erzeugt keine Datei; `docs/` und `dist/` entstehen erst mit den ersten Daten (S4).
+15. **Paket, Zeitwerte (S2, geprüft 2026-11-01 mit `wikibase-static` 0.19.0).** Der Wert-Codec für `time` kennt nur Datum (Genauigkeit 9 bis 11: Jahr, Monat, Tag); eine Uhrzeit wie `+2019-07-31T15:26:39Z/14` wird von `from-csv` mit `WARN` abgewiesen. Der OSM-Zeitstempel (sekundengenau) steht deshalb vorerst als Zeichenkette (ISO 8601, UTC). Ein Zeitwert mit Uhrzeit im Paket wäre Sache von S15b; die Property bekommt dann den Datentyp `time`.
 
 ### A2 Zielbild
 
@@ -125,7 +126,10 @@ Die Ergebnisse müssen diese Eigenschaften haben, jede ist prüfbar:
 | Geometrie, aktuell | Eine Koordinate je Element für Karte und Suche (bei Ways und Relations der Mittelpunkt der Geometrie) | Vorschlag 2026-11-01 |
 | Geometrie, Verlauf | Eigene Property „Geometrie-Verlauf“ mit der Geometrie als **WKT** (Point, LineString, Polygon aus node, way, relation), verknüpft mit der Version; Qualifier „Version“ und „gültig am“, weil die Geometrie eines Ways an einem Zeitpunkt hängt und sich ändern kann, ohne dass der Way eine neue Version bekommt. Im RDF `geo:hasGeometry` und `geo:asWKT` (EPSG:4326) | 2026-11-01 |
 | Geometrie, Eintragsfolge | Ein Eintrag je Geometrie-Änderung, nicht je Version (Erstbestand: 33 Einträge statt 59) | Vorschlag 2026-11-01 |
-| Tags | Nur der aktuelle Stand; ältere Werte sind über die Versions-Links bei OSM erreichbar | 2026-11-01 |
+| Tags | Nur der aktuelle Stand; ältere Werte sind über die Versions-Links bei OSM erreichbar. Form: **eine** Property `OSM-Tag` (P113), je Tag ein Statement `key=value` | 2026-11-01 (S2) |
+| Datentypen | Element und Version: `url` (Version = Versions-URL); Changeset: `external-id` mit Link `https://www.openstreetmap.org/changeset/$1` (P5); Benutzername: `string`; uid: `external-id` ohne Link; Zeitstempel: `string`, ISO 8601 in UTC (Befund 15); Koordinate `globe-coordinate`; Geometrie-Verlauf `string` (WKT); Bild `commonsMedia` | 2026-11-01 (S2) |
+| Modell, IDs | Klasse „Benchmark“ = Q100; Properties P100 OSM-Element, P101 OSM-Version, P102 Versionsnummer, P103 Zeitstempel, P104 Changeset, P105 Benutzername, P106 uid, P107 in der Auswahl seit, P108 in der Auswahl bis, P109 Auswahl, P110 Koordinate, P111 Geometrie-Verlauf, P112 Bild, P113 OSM-Tag; der Konverter liest die Zuordnung Rolle → ID aus `data/csv/mapping/osm-properties.csv`. „Kriterium erfüllt seit“ heißt im Modell „in der Auswahl seit“ (en: in selection since), Qualifier „bis“ (P108) und „Auswahl“ (P109, Export-Typ) | 2026-11-01 (S2) |
+| Beispiel-Item | `Q1000` = `node/6666122939`, von Hand gebaut, zeigt das Modell und hält die Seiten (Karte, Abfragen) im Standardlauf nicht leer; der Importer ersetzt es in S3/S4 (Nummern vergibt dann `idmap.csv`) | Vorschlag 2026-11-01 (S2) |
 | Benutzername und uid | Beide als Qualifier der Versions-Statements | 2026-11-01 |
 | Lizenz | ODbL 1.0 mit „© OpenStreetMap contributors“ in `site.yaml` (`license`), nicht der CC0-Standard des Pakets; der Code des Repos steht unter MIT | Vorschlag 2026-11-01 |
 | URIs | Eigener Namensraum im github.io-Raum des Repos (`rdf_base`), eigene Präfixfamilie (`rdf_prefix`); kein `owl:sameAs` und kein `skos:exactMatch` auf OSM, weil die OSM-URI den Datensatz bezeichnet und nicht das Ding | Vorschlag 2026-11-01 |
@@ -164,8 +168,8 @@ Alles `geplant`, bis S1 die Basis festlegt. Vorschlag: `rdf_base` = `https://n4o
 | ID | Schritt | Repo | hängt ab von | Status |
 |---|---|---|---|---|
 | S0 | Festlegungen und History-Probe an den 21 Nodes | osm-benchmarks-static | – | erledigt 2026-11-01 |
-| S1 | Skeleton: Layout, `main.py`, `site.yaml`, `requirements.txt`, Lizenz, Citation, Workflow-Aufrufer, `update.cmd` | osm-benchmarks-static | S0 | erledigt 2026-11-01 (Patch-ZIP; Einspielen, Pages-Einstellung und erster Lauf der CI auf GitHub offen) |
-| S2 | Modell: Klasse „Benchmark“, Properties (OSM-Element, OSM-Version, Kriterium erfüllt seit, Geometrie-Verlauf, …), `data/crm.csv`, Mapping-Datei der Rollen | osm-benchmarks-static | S1 | offen |
+| S1 | Skeleton: Layout, `main.py`, `site.yaml`, `requirements.txt`, Lizenz, Citation, Workflow-Aufrufer, `update.cmd` | osm-benchmarks-static | S0 | erledigt 2026-11-01 (eingespielt als 028fb2a, CI grün, Python 3.10 geprüft; Pages-Einstellung erst mit S8 nötig) |
+| S2 | Modell: Klasse „Benchmark“, Properties (OSM-Element, OSM-Version, Kriterium erfüllt seit, Geometrie-Verlauf, …), `data/crm.csv`, Mapping-Datei der Rollen | osm-benchmarks-static | S1 | erledigt 2026-11-01 (Patch-ZIP; Einspielen offen) |
 | S3 | Konverter `import-osm --offline`: History-JSON und Overpass-Antwort → CSV; Ergänzung von `crm:E25` im Paket (Paket-S15a) | wikibase-static | S2 | offen |
 | S4 | Erstbestand: die 21 Nodes aus den gesicherten JSON-Dateien → Seiten, RDF, SPARQL, `check-crm` | osm-benchmarks-static | S3 | offen |
 | S5 | Harvest mit Netz: Overpass, Versionsvergleich, `/history` nur bei Änderung, Eintritt und Austritt | wikibase-static, osm-benchmarks-static | S3 | offen |
@@ -208,15 +212,19 @@ Inhalt: `data/csv/entities.csv` mit der Klasse „Benchmark“ (ab Q100) und den
 
 **Abnahme:** `from-csv` und `load` laufen ohne `WARN`; Validator und `check-crm` melden keinen Verstoß, wenn man die Mapping-Datei und `crm.csv` mit einem Probe-Item aus Hand füllt.
 
+### Erledigt 2026-11-01 (S2)
+
+Gebaut: `data/csv/entities.csv` (Klasse Q100, Properties P100 bis P113, Beispiel-Item Q1000), `statements.csv` (Q100 ⊂ Q3, Formatter-URL für P104, Definitionsbereich Q100, Wikidata-Entsprechungen P625 und P18), `qualifiers.csv`, `data/crm.csv`, `data/csv/mapping/osm-properties.csv` (A4 „Modell, IDs“). Abnahme in einer frischen Kopie von `028fb2a`: `--strict` zweimal mit Exit-Code 0 und ohne `WARN`, `check-crm` 0 Verstöße, nach Einchecken der erzeugten Dateien (`data/derived/`, `dist/`, `docs/`) und einem weiteren Lauf ist `git status` leer; die Ausgabe nennt 29 Entitäten (4 Klassen: Q1 bis Q3 und Q100; 1 Item: Q1000; 24 Properties), 80 Statements. Die Formularentscheidungen (Tags, Datentypen) stehen in A4. Nicht geprüft: der Lauf der CI auf GitHub; die Karte und die Abfragen mit dem Beispiel-Item wurden nur als Zeilenzahlen gesehen (`coordinates` 1 Zeile, `qualifiers` 5 Zeilen), nicht im Browser.
+
 ### S3 — Konverter `import-osm --offline`
 
 **Ziel:** Das Paket macht aus den gesicherten JSON-Dateien die vier CSV-Tabellen des Modells (im Paket-PRIMER ist das S15a).
 
 **Uploads:** Bundle von `wikibase-static`, `data/raw/osm/history/` und `data/csv/mapping/osm-properties.csv`; Claude klont das Paket sonst selbst.
 
-Inhalt: `step_import_osm.py` (Eingabe `data/raw/osm/history/<type>_<id>.json` und optional `data/raw/osm/overpass/<seed>.json`; Ausgabe in `data/csv/`; kanonische Schreibweise wie bei den anderen Importern; Bericht mit Zahlen), Eintrittsregel je Version (A4), Etikett nach A4 „Label“, Wert-Codec für Zeit und Koordinate des Pakets, Ergänzung von `crm:E25_Human-Made_Feature` in `crm.py` (mit der zweiten Oberklasse E26 oder einem begründeten Verzicht), Tests mit den 21 JSON-Dateien als Fixtures.
+Inhalt: `step_import_osm.py` (Eingabe `data/raw/osm/history/<type>_<id>.json` und optional `data/raw/osm/overpass/<seed>.json`; Ausgabe in `data/csv/`; kanonische Schreibweise wie bei den anderen Importern; Bericht mit Zahlen), Eintrittsregel je Version (A4), Etikett nach A4 „Label“, Wert-Codec für Zeit und Koordinate des Pakets, Ergänzung der Oberklassenkette von `crm:E25_Human-Made_Feature` in `crm.py` (E24 und E26; E25 selbst wird schon akzeptiert, Befund 12), Tests mit den 21 JSON-Dateien als Fixtures.
 
-**Auftrag für den PRIMER von `wikibase-static`** (im Chat von S3 dort einzutragen, nicht jetzt, damit kein neuer Stand überschrieben wird): in Teil B die Zeile S15 in S15a (Konverter OSM → CSV, Verb `import-osm`, Version 0.20.0) und S15b (WKT-Geometrie im Renderer und im RDF) aufteilen; in A4 die Zeilen „OSM, Identität“, „OSM, Versionen“, „OSM, Historie“, „OSM, Geometrie“ aus diesem Dokument übernehmen; in A3 die Regel „Netzwerk nur in `harvest` und `import-wikidata`“ um `import-osm` ergänzen; in Teil D den Punkt „E25 hat zwei Oberklassen“ eintragen.
+**Auftrag für den PRIMER von `wikibase-static`** (im Chat von S3 dort einzutragen, nicht jetzt, damit kein neuer Stand überschrieben wird): in Teil B die Zeile S15 in S15a (Konverter OSM → CSV, Verb `import-osm`, Version 0.20.0) und S15b (WKT-Geometrie im Renderer und im RDF) aufteilen; in A4 die Zeilen „OSM, Identität“, „OSM, Versionen“, „OSM, Historie“, „OSM, Geometrie“ aus diesem Dokument übernehmen; in A3 die Regel „Netzwerk nur in `harvest` und `import-wikidata`“ um `import-osm` ergänzen; in Teil D den Punkt „E25 hat zwei Oberklassen“ und den Punkt „Zeitwert mit Uhrzeit“ (Befund 15) eintragen.
 
 **Abnahme:** `import-osm --offline --from-dir data/raw/osm/history` erzeugt aus den 21 Dateien **21 Items, 59 Versions-Statements, 21 Eintrittsmarker (Versionen v2: 13, v3: 6, v4: 1, v5: 1) und 33 Geometrie-Einträge**; ein zweiter Lauf ändert nichts; jede Fehlerzeile nennt `datei:zeile`; ein absichtlich beschädigtes JSON ergibt genau eine Meldung; die bestehenden Tests des Pakets bleiben grün.
 
@@ -273,7 +281,7 @@ Inhalt: Entscheidung, ob je Typ ein Repo oder ein Seed in diesem Repo; CRM-Klass
 ## Teil D — Offene Punkte
 
 - **Repo-Name und Organisation:** `osm-benchmarks-static` unter `n4o-rse` ist ein Vorschlag (Muster `fuzzy-sl-static`, `chublets-wikibase-demo`). Alternativen: `benchmarks-static`, `osm-static`; als Ort käme auch `Research-Squirrel-Engineers` in Frage, wo `osm2lod` liegt.
-- **Tags:** eine Property `OSM-Tag` („key=value“) oder je Schlüssel eine Property (wie die `osmtag__*` in osm2lod)? Entscheidung in S2. Für die Abfragen ist die allgemeine Form bequemer, für die Seite die benannte Property.
+- **Tags, Kehrseite (S2):** Mit einer Property `OSM-Tag` zeigt die Seite die Tags als Liste `key=value`; eine benannte Property je wichtigem Schlüssel (`inscription`, `material`, `direction`) wäre für die Seite schöner und kann später zusätzlich kommen, ohne das Modell zu ändern.
 - **Eintrittsregel und Gebiet:** Das Gebiet wird nur beim Harvest geprüft; ein Element, das früher in der Menge war und später die Grenze überschreitet (unwahrscheinlich bei Benchmarks), würde nicht als Austritt erkannt. Für S5 abwägen, ob das genügt.
 - **Gelöschte Elemente:** In den 21 Dateien kommt keine gelöschte Version vor; Verhalten (Item behalten, Statement „in OSM gelöscht am …“) ist beschlossen als Idee, nicht erprobt (S5).
 - **Way-Geometrie zu einem Zeitpunkt:** Overpass mit `[date:…]` ist hier ein Wissensstand, nicht geprüft; in S6 an einem echten Way zu messen, ebenso die Zahl der Requests.
@@ -284,3 +292,4 @@ Inhalt: Entscheidung, ob je Typ ein Repo oder ein Seed in diesem Repo; CRM-Klass
 - **Logo (S1):** `site.yaml` hat kein `logo`; falls eines gewünscht ist, die Datei nach `assets/` und die Zeile `logo: assets/<datei>` ergänzen.
 - **`rdf_prefix` und `data_as_of` (S1):** `obs` ist ein Vorschlag; `data_as_of` fehlt in `site.yaml` und wird mit den ersten Daten (S4) gesetzt, weil die CSV keine eigene Änderungszeit trägt (so macht es `chublets-wikibase-demo`).
 - **Probe-Skript:** `osm_history_probe.py` (lokal in `C:\tmp\pytemp`) wird mit S5 durch `import-osm` ersetzt; bis dahin nicht ins Repo, weil es nach `data/raw/osm_history` schreibt und nicht nach `data/raw/osm/history`.
+- **P103 als Zeichenkette (S2):** Sortieren und Filtern nach Zeit geht in SPARQL nur über den Text (ISO 8601 ist lexikalisch sortierbar). Sobald das Paket Zeitwerte mit Uhrzeit kann (Befund 15), Datentyp auf `time` stellen.

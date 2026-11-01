@@ -1,0 +1,140 @@
+# P102: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.19.0; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix obs: <https://n4o-rse.github.io/osm-benchmarks-static/entity/> .
+@prefix obscat: <https://n4o-rse.github.io/osm-benchmarks-static/catalog/> .
+@prefix obsdata: <https://n4o-rse.github.io/osm-benchmarks-static/ttl/> .
+@prefix obsdist: <https://n4o-rse.github.io/osm-benchmarks-static/distribution/> .
+@prefix obsno: <https://n4o-rse.github.io/osm-benchmarks-static/prop/novalue/> .
+@prefix obsp: <https://n4o-rse.github.io/osm-benchmarks-static/prop/> .
+@prefix obspq: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/> .
+@prefix obspqv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/value/> .
+@prefix obspr: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/> .
+@prefix obsprv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/value/> .
+@prefix obsps: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/> .
+@prefix obspsv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/value/> .
+@prefix obsref: <https://n4o-rse.github.io/osm-benchmarks-static/reference/> .
+@prefix obss: <https://n4o-rse.github.io/osm-benchmarks-static/entity/statement/> .
+@prefix obst: <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/> .
+@prefix obsv: <https://n4o-rse.github.io/osm-benchmarks-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-benchmarks-static/ttl/P102.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Number of an OSM version (qualifier)."@en,
+        "Nummer einer OSM-Version (Qualifier)."@de ;
+    dcterms:identifier "P102" ;
+    dcterms:isPartOf obscat:properties ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject obs:P102 ;
+    dcterms:title "OSM version number"@en,
+        "OSM-Versionsnummer"@de ;
+    schema:about obs:P102 ;
+    dcat:distribution obsdist:P102-html,
+        obsdist:P102-json,
+        obsdist:P102-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-benchmarks-static/P102.html> .
+
+obsdist:P102-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P102, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-benchmarks-static/P102.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+obsdist:P102-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P102, as archived from the Wikibase API"@en ;
+    dcat:byteSize "985"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/P102.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+obsdist:P102-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "P102, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL obsdata:P102.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+obs:P102
+    a wikibase:Property ;
+    schema:description "Number of an OSM version (qualifier)."@en,
+        "Nummer einer OSM-Version (Qualifier)."@de ;
+    schema:name "OSM version number"@en,
+        "OSM-Versionsnummer"@de ;
+    wikibase:claim obsp:P102 ;
+    wikibase:directClaim obst:P102 ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:novalue obsno:P102 ;
+    wikibase:propertyType wikibase:Quantity ;
+    wikibase:qualifier obspq:P102 ;
+    wikibase:qualifierValue obspqv:P102 ;
+    wikibase:reference obspr:P102 ;
+    wikibase:referenceValue obsprv:P102 ;
+    wikibase:statementProperty obsps:P102 ;
+    wikibase:statementValue obspsv:P102 ;
+    wikibase:statements "1"^^xsd:integer ;
+    rdfs:label "OSM version number"@en,
+        "OSM-Versionsnummer"@de ;
+    skos:prefLabel "OSM version number"@en,
+        "OSM-Versionsnummer"@de ;
+    obsp:P2 obss:P102-B1AEEB7E-2A32-57CE-AF1E-BDCED96B2C79 ;
+    obst:P2 obs:Q2 .
+
+obss:P102-B1AEEB7E-2A32-57CE-AF1E-BDCED96B2C79
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P2 obs:Q2 .
+
+obsp:P102
+    a owl:ObjectProperty .
+
+obst:P102
+    a owl:DatatypeProperty .
+
+obspq:P102
+    a owl:DatatypeProperty .
+
+obspqv:P102
+    a owl:ObjectProperty .
+
+obspr:P102
+    a owl:DatatypeProperty .
+
+obsprv:P102
+    a owl:ObjectProperty .
+
+obsps:P102
+    a owl:DatatypeProperty .
+
+obspsv:P102
+    a owl:ObjectProperty .
+
+obsno:P102
+    a owl:Class ;
+    owl:complementOf _:8547c5ea738a15a0ab5f567ec3608e04 .
+
+_:8547c5ea738a15a0ab5f567ec3608e04
+    a owl:Restriction ;
+    owl:onProperty obst:P102 ;
+    owl:someValuesFrom owl:Thing .

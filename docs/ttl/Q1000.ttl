@@ -1,0 +1,293 @@
+# Q1000: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.19.0; data as of unknown
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix obs: <https://n4o-rse.github.io/osm-benchmarks-static/entity/> .
+@prefix obscat: <https://n4o-rse.github.io/osm-benchmarks-static/catalog/> .
+@prefix obsdata: <https://n4o-rse.github.io/osm-benchmarks-static/ttl/> .
+@prefix obsdist: <https://n4o-rse.github.io/osm-benchmarks-static/distribution/> .
+@prefix obsno: <https://n4o-rse.github.io/osm-benchmarks-static/prop/novalue/> .
+@prefix obsp: <https://n4o-rse.github.io/osm-benchmarks-static/prop/> .
+@prefix obspq: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/> .
+@prefix obspqv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/value/> .
+@prefix obspr: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/> .
+@prefix obsprv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/value/> .
+@prefix obsps: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/> .
+@prefix obspsv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/value/> .
+@prefix obsref: <https://n4o-rse.github.io/osm-benchmarks-static/reference/> .
+@prefix obss: <https://n4o-rse.github.io/osm-benchmarks-static/entity/statement/> .
+@prefix obst: <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/> .
+@prefix obsv: <https://n4o-rse.github.io/osm-benchmarks-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q1000.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "Hand-made example of the model (step S2); replaced by the importer in step S3."@en,
+        "Von Hand gebautes Beispiel des Modells (Schritt S2); wird mit Schritt S3 vom Importer ersetzt."@de ;
+    dcterms:identifier "Q1000" ;
+    dcterms:isPartOf obscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject obs:Q1000 ;
+    dcterms:title "Meilenstein Dublin 8 Howth 1 (Node 6666122939)"@de,
+        "Milestone Dublin 8 Howth 1 (node 6666122939)"@en ;
+    schema:about obs:Q1000 ;
+    dcat:distribution obsdist:Q1000-html,
+        obsdist:Q1000-json,
+        obsdist:Q1000-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-benchmarks-static/Q1000.html> .
+
+obsdist:Q1000-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q1000, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-benchmarks-static/Q1000.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+obsdist:Q1000-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q1000, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15566"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q1000.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+obsdist:Q1000-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q1000, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL obsdata:Q1000.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+obs:Q1000
+    a wikibase:Item ;
+    schema:description "Hand-made example of the model (step S2); replaced by the importer in step S3."@en,
+        "Von Hand gebautes Beispiel des Modells (Schritt S2); wird mit Schritt S3 vom Importer ersetzt."@de ;
+    schema:name "Meilenstein Dublin 8 Howth 1 (Node 6666122939)"@de,
+        "Milestone Dublin 8 Howth 1 (node 6666122939)"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "20"^^xsd:integer ;
+    rdfs:label "Meilenstein Dublin 8 Howth 1 (Node 6666122939)"@de,
+        "Milestone Dublin 8 Howth 1 (node 6666122939)"@en ;
+    skos:prefLabel "Meilenstein Dublin 8 Howth 1 (Node 6666122939)"@de,
+        "Milestone Dublin 8 Howth 1 (node 6666122939)"@en ;
+    obsp:P2 obss:Q1000-8413020A-6980-5499-BEEB-551242E3B942 ;
+    obsp:P100 obss:Q1000-F26B5FD6-C22A-5940-A38F-6A7767FFC1DE ;
+    obsp:P101 obss:Q1000-25608674-FE01-511C-AFB6-BF1016F00B80,
+        obss:Q1000-A2702AA4-A02C-5454-B47E-80E3D3078110,
+        obss:Q1000-BDCA1A97-27C9-5BEB-9AF7-42BB2F6D5295 ;
+    obsp:P107 obss:Q1000-C797E159-5882-5323-AD96-FDA55CAC2FF8 ;
+    obsp:P110 obss:Q1000-B9E0C01A-2943-5599-87C5-261557AAE9F0 ;
+    obsp:P111 obss:Q1000-715FF3C6-019A-5E8B-BE8D-1FC8A9B86B03,
+        obss:Q1000-F2EF2D06-BA0A-58A5-8D79-9AEBD2C7B0CA ;
+    obsp:P112 obss:Q1000-413A10B0-326A-53E3-A1E5-82D6E4EC3769 ;
+    obsp:P113 obss:Q1000-3A7DAB60-20B2-5BBC-8EAC-A9C16D7234F4,
+        obss:Q1000-8E7BD026-218D-5B03-AB17-1CE5451C6D46,
+        obss:Q1000-860CB8CC-B5F6-550A-B5D3-26689D685F70,
+        obss:Q1000-893AA91F-0B0B-50F1-BE3C-3DCC2FAB5B0D,
+        obss:Q1000-AA563EC8-C720-59F6-A126-92BCEAA6FFFB,
+        obss:Q1000-ACDE84FF-F8B4-5D2E-8FCF-194409465E1A,
+        obss:Q1000-BC7B03EC-147A-5A07-9159-91F0E850FACF,
+        obss:Q1000-C6D2B0EF-B562-5E99-BACA-FD8EE99438C4,
+        obss:Q1000-C42519BA-FE89-5E68-928E-70D481E96A3B,
+        obss:Q1000-F37A044A-2C2A-5919-BF53-7DA996993EF4 ;
+    obst:P2 obs:Q100 ;
+    obst:P100 <https://www.openstreetmap.org/node/6666122939> ;
+    obst:P101 <https://www.openstreetmap.org/node/6666122939/history/3> ;
+    obst:P107 <https://www.openstreetmap.org/node/6666122939/history/3> ;
+    obst:P110 "Point(-6.0906714 53.390985)"^^geo:wktLiteral ;
+    obst:P111 "POINT(-6.0906714 53.390985)",
+        "POINT(-6.0906724 53.3909747)" ;
+    obst:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/MilestoneDublin8Howth1.jpg> ;
+    obst:P113 "benchmark=yes",
+        "direction=185",
+        "distance=8",
+        "highway=milestone",
+        "historic=milestone",
+        "inscription=P.O Dublin 8 Howth 1",
+        "man_made=survey_point",
+        "mapillary=805418053850230",
+        "material=stone;cast_iron",
+        "milestone:destination=post_office" .
+
+obss:Q1000-3A7DAB60-20B2-5BBC-8EAC-A9C16D7234F4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P113 "direction=185" .
+
+obss:Q1000-8E7BD026-218D-5B03-AB17-1CE5451C6D46
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P113 "milestone:destination=post_office" .
+
+obss:Q1000-413A10B0-326A-53E3-A1E5-82D6E4EC3769
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/MilestoneDublin8Howth1.jpg> .
+
+obss:Q1000-715FF3C6-019A-5E8B-BE8D-1FC8A9B86B03
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2019-07-31T15:26:39Z" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P111 "POINT(-6.0906724 53.3909747)" .
+
+obss:Q1000-860CB8CC-B5F6-550A-B5D3-26689D685F70
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P113 "mapillary=805418053850230" .
+
+obss:Q1000-893AA91F-0B0B-50F1-BE3C-3DCC2FAB5B0D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P113 "inscription=P.O Dublin 8 Howth 1" .
+
+obss:Q1000-8413020A-6980-5499-BEEB-551242E3B942
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P2 obs:Q100 .
+
+obss:Q1000-25608674-FE01-511C-AFB6-BF1016F00B80
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    obspq:P102 "+3"^^xsd:decimal ;
+    obspq:P103 "2024-02-26T13:33:57Z" ;
+    obspq:P104 "147932304" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    obsps:P101 <https://www.openstreetmap.org/node/6666122939/history/3> .
+
+obss:Q1000-A2702AA4-A02C-5454-B47E-80E3D3078110
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+2"^^xsd:decimal ;
+    obspq:P103 "2019-08-18T21:03:36Z" ;
+    obspq:P104 "73473669" ;
+    obspq:P105 "VictorIE" ;
+    obspq:P106 "2008037" ;
+    obspqv:P102 obsv:c295f8f927aa4b01b5401a2788a068ea ;
+    obsps:P101 <https://www.openstreetmap.org/node/6666122939/history/2> .
+
+obss:Q1000-AA563EC8-C720-59F6-A126-92BCEAA6FFFB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P113 "man_made=survey_point" .
+
+obss:Q1000-ACDE84FF-F8B4-5D2E-8FCF-194409465E1A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P113 "benchmark=yes" .
+
+obss:Q1000-B9E0C01A-2943-5599-87C5-261557AAE9F0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P110 "Point(-6.0906714 53.390985)"^^geo:wktLiteral ;
+    obspsv:P110 obsv:4b01e0925d08c41e018142c09f0827b6 .
+
+obss:Q1000-BC7B03EC-147A-5A07-9159-91F0E850FACF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P113 "historic=milestone" .
+
+obss:Q1000-BDCA1A97-27C9-5BEB-9AF7-42BB2F6D5295
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2019-07-31T15:26:39Z" ;
+    obspq:P104 "72862285" ;
+    obspq:P105 "VictorIE" ;
+    obspq:P106 "2008037" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P101 <https://www.openstreetmap.org/node/6666122939/history/1> .
+
+obss:Q1000-C6D2B0EF-B562-5E99-BACA-FD8EE99438C4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P113 "highway=milestone" .
+
+obss:Q1000-C797E159-5882-5323-AD96-FDA55CAC2FF8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P109 "benchmarks" ;
+    obsps:P107 <https://www.openstreetmap.org/node/6666122939/history/3> .
+
+obss:Q1000-C42519BA-FE89-5E68-928E-70D481E96A3B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P113 "distance=8" .
+
+obss:Q1000-F2EF2D06-BA0A-58A5-8D79-9AEBD2C7B0CA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+3"^^xsd:decimal ;
+    obspq:P103 "2024-02-26T13:33:57Z" ;
+    obspqv:P102 obsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    obsps:P111 "POINT(-6.0906714 53.390985)" .
+
+obss:Q1000-F26B5FD6-C22A-5940-A38F-6A7767FFC1DE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P100 <https://www.openstreetmap.org/node/6666122939> .
+
+obss:Q1000-F37A044A-2C2A-5919-BF53-7DA996993EF4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P113 "material=stone;cast_iron" .
+
+obsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:4b01e0925d08c41e018142c09f0827b6
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "53.390985"^^xsd:double ;
+    wikibase:geoLongitude "-6.0906714"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+obsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

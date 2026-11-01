@@ -1,0 +1,32 @@
+sid,subject,property,value,rank,origin
+,Q100,P1,Q3,,
+,P104,P5,https://www.openstreetmap.org/changeset/$1,,
+,P100,P9,Q100,,
+,P101,P9,Q100,,
+,P107,P9,Q100,,
+,P110,P9,Q100,,
+,P111,P9,Q100,,
+,P112,P9,Q100,,
+,P113,P9,Q100,,
+,P110,P4,P625,,
+,P112,P4,P18,,
+,Q1000,P2,Q100,,model-example
+,Q1000,P100,https://www.openstreetmap.org/node/6666122939,,model-example
+Q1000-P101-1,Q1000,P101,https://www.openstreetmap.org/node/6666122939/history/1,,model-example
+Q1000-P101-2,Q1000,P101,https://www.openstreetmap.org/node/6666122939/history/2,,model-example
+Q1000-P101-3,Q1000,P101,https://www.openstreetmap.org/node/6666122939/history/3,preferred,model-example
+Q1000-P107-1,Q1000,P107,https://www.openstreetmap.org/node/6666122939/history/3,,model-example
+,Q1000,P110,"53.390985,-6.0906714",,model-example
+Q1000-P111-1,Q1000,P111,POINT(-6.0906724 53.3909747),,model-example
+Q1000-P111-3,Q1000,P111,POINT(-6.0906714 53.390985),,model-example
+,Q1000,P112,MilestoneDublin8Howth1.jpg,,model-example
+,Q1000,P113,benchmark=yes,,model-example
+,Q1000,P113,direction=185,,model-example
+,Q1000,P113,distance=8,,model-example
+,Q1000,P113,highway=milestone,,model-example
+,Q1000,P113,historic=milestone,,model-example
+,Q1000,P113,inscription=P.O Dublin 8 Howth 1,,model-example
+,Q1000,P113,man_made=survey_point,,model-example
+,Q1000,P113,mapillary=805418053850230,,model-example
+,Q1000,P113,material=stone;cast_iron,,model-example
+,Q1000,P113,milestone:destination=post_office,,model-example

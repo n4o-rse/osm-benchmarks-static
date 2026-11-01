@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Overview – OSM benchmarks (static Wikibase)</title>
+<link rel="canonical" href="https://n4o-rse.github.io/osm-benchmarks-static/overview.html">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+<style>
+:root { --accent: #336699; }
+html[data-lang="en"] .l:not([lang="en"]) { display: none; }
+html[data-lang="de"] .l:not([lang="de"]) { display: none; }
+</style>
+</head>
+<body>
+<div class="page">
+  <aside class="sidebar">
+    <a class="logo" href="index.html"><span class="logo-text">OSM benchmarks (static Wikibase)</span></a>
+    <nav class="nav" aria-label="Home">
+      <a href="index.html"><span class="l" lang="en">Home</span><span class="l" lang="de">Startseite</span></a>
+<a href="items.html">Items</a><a href="overview.html" aria-current="page"><span class="l" lang="en">Overview</span><span class="l" lang="de">Übersicht</span></a><a href="properties.html">Properties</a><a href="sparql.html">SPARQL</a><a href="query.html"><span class="l" lang="en">Query</span><span class="l" lang="de">Abfrage</span></a>    </nav>
+  </aside>
+  <div class="content">
+    <div class="tabs">
+      <ul class="tabs-left"><li class="active"><span><span class="l" lang="en">Overview</span><span class="l" lang="de">Übersicht</span></span></li></ul>
+      <div class="tabs-right">
+        <ul class="tabs-view"></ul>
+        <form class="search" role="search" action="#" hidden data-index="assets/search-index.js" data-default="en" data-text="{&#34;de&#34;:{&#34;error&#34;:&#34;Der Suchindex konnte nicht geladen werden.&#34;,&#34;none&#34;:&#34;Keine Treffer&#34;,&#34;placeholder&#34;:&#34;Suche&#34;},&#34;en&#34;:{&#34;error&#34;:&#34;The search index could not be loaded.&#34;,&#34;none&#34;:&#34;No results&#34;,&#34;placeholder&#34;:&#34;Search&#34;}}">
+          <input type="search" name="q" autocomplete="off" spellcheck="false" placeholder="Search" aria-label="Search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="wbs-search-list">
+          <ul class="search-results" id="wbs-search-list" role="listbox" aria-label="Search" hidden></ul>
+        </form>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-set-lang="en">EN</button><button type="button" data-set-lang="de">DE</button>
+        </div>
+      </div>
+    </div>
+    <main>
+<article class="index overview">
+  <h1><span class="l" lang="en">Overview</span><span class="l" lang="de">Übersicht</span></h1>
+  <p class="description"><span class="l" lang="en">The items of this site, grouped by the class they are an instance of. An item with several classes appears under each of them.</span><span class="l" lang="de">Die Items dieser Seite, gruppiert nach der Klasse, deren Instanz sie sind. Ein Item mit mehreren Klassen erscheint unter jeder von ihnen.</span></p>
+  <ul class="page-links class-links">
+    <li><a href="#class-Q100"><span class="l" lang="en">Benchmark</span><span class="l" lang="de">Höhenmarke</span></a> <span class="muted"><span class="l" lang="en">1 instance</span><span class="l" lang="de">1 Instanz</span></span></li>
+  </ul>
+  <section id="class-Q100">
+    <h2><a href="Q100.html"><span class="l" lang="en">Benchmark</span><span class="l" lang="de">Höhenmarke</span></a> <span class="muted count"><span class="l" lang="en">1 instance</span><span class="l" lang="de">1 Instanz</span></span></h2>
+<p class="description"><span class="l" lang="en">A fixed survey marker (benchmark, survey point, milestone) that is mapped as one element in OpenStreetMap.</span><span class="l" lang="de">Eine fest verbaute Vermessungsmarke (Höhenmarke, Vermessungspunkt, Meilenstein), die in OpenStreetMap als ein Element kartiert ist.</span></p>    <div class="wbs-map" data-points="[{&#34;lat&#34;:53.390985,&#34;lon&#34;:-6.0906714,&#34;text&#34;:&#34;Milestone Dublin 8 Howth 1 (node 6666122939)&#34;,&#34;href&#34;:&#34;Q1000.html&#34;}]" role="img" aria-label="Map of the instances of Benchmark"></div>
+    <table class="list">
+      <thead><tr><th>ID</th><th><span class="l" lang="en">Label</span><span class="l" lang="de">Bezeichnung</span></th><th><span class="l" lang="en">Description</span><span class="l" lang="de">Beschreibung</span></th></tr></thead>
+      <tbody>
+        <tr><td class="id">Q1000</td><td><a href="Q1000.html"><span class="l" lang="en">Milestone Dublin 8 Howth 1 (node 6666122939)</span><span class="l" lang="de">Meilenstein Dublin 8 Howth 1 (Node 6666122939)</span></a></td><td><span class="l" lang="en">Hand-made example of the model (step S2); replaced by the importer in step S3.</span><span class="l" lang="de">Von Hand gebautes Beispiel des Modells (Schritt S2); wird mit Schritt S3 vom Importer ersetzt.</span></td></tr>
+      </tbody>
+    </table>
+  </section>
+</article>
+    </main>
+    <footer class="site-footer">
+      <p>
+        <span class="item"><span class="l" lang="en">Licence</span><span class="l" lang="de">Lizenz</span>: <a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank" rel="noopener">ODbL 1.0, © OpenStreetMap contributors</a></span>
+      </p>
+      <p class="generated"><span class="l" lang="en">Static read-only copy, generated with</span><span class="l" lang="de">Statische Nur-Lese-Kopie, erzeugt mit</span> <a href="https://github.com/n4o-rse/wikibase-static" target="_blank" rel="noopener">wikibase-static</a> 0.19.0</p>
+    </footer>
+  </div>
+</div>
+<script src="assets/app.js"></script>
+<script src="assets/search.js"></script>
+<script src="assets/vendor/leaflet/leaflet.js"></script>
+<script src="assets/map.js"></script>
+</body>
+</html>

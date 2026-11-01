@@ -1,0 +1,337 @@
+# Q103: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.20.0; data as of 2026-11-01T00:00:00Z
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix obs: <https://n4o-rse.github.io/osm-benchmarks-static/entity/> .
+@prefix obscat: <https://n4o-rse.github.io/osm-benchmarks-static/catalog/> .
+@prefix obsdata: <https://n4o-rse.github.io/osm-benchmarks-static/ttl/> .
+@prefix obsdist: <https://n4o-rse.github.io/osm-benchmarks-static/distribution/> .
+@prefix obsno: <https://n4o-rse.github.io/osm-benchmarks-static/prop/novalue/> .
+@prefix obsp: <https://n4o-rse.github.io/osm-benchmarks-static/prop/> .
+@prefix obspq: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/> .
+@prefix obspqv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/value/> .
+@prefix obspr: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/> .
+@prefix obsprv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/value/> .
+@prefix obsps: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/> .
+@prefix obspsv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/value/> .
+@prefix obsref: <https://n4o-rse.github.io/osm-benchmarks-static/reference/> .
+@prefix obss: <https://n4o-rse.github.io/osm-benchmarks-static/entity/statement/> .
+@prefix obst: <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/> .
+@prefix obsv: <https://n4o-rse.github.io/osm-benchmarks-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q103.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "OpenStreetMap node 12919476068"@en ;
+    dcterms:identifier "Q103" ;
+    dcterms:isPartOf obscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject obs:Q103 ;
+    dcterms:title "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
+    schema:about obs:Q103 ;
+    dcat:distribution obsdist:Q103-html,
+        obsdist:Q103-json,
+        obsdist:Q103-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-benchmarks-static/Q103.html> .
+
+obsdist:Q103-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q103, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-benchmarks-static/Q103.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+obsdist:Q103-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q103, as archived from the Wikibase API"@en ;
+    dcat:byteSize "26202"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q103.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+obsdist:Q103-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q103, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL obsdata:Q103.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+obs:Q103
+    a wikibase:Item ;
+    schema:description "OpenStreetMap node 12919476068"@en ;
+    schema:name "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "20"^^xsd:integer ;
+    rdfs:label "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
+    skos:prefLabel "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
+    obsp:P2 obss:Q103-54055322-9D86-5B37-A1AE-D6BEFA56FDEC ;
+    obsp:P100 obss:Q103-C8133615-A16D-5C74-9FA4-F14CEE5A4573 ;
+    obsp:P101 obss:Q103-45893AB4-3F6E-5163-AF51-CFAF22EA3228,
+        obss:Q103-97244BF5-30A9-5358-AD4C-0FCC131443B0,
+        obss:Q103-AB81FD03-CA32-5872-9D6E-FD9B7CEC6425,
+        obss:Q103-BACD43B3-0C9C-5148-9F72-2E5BAB318EE1,
+        obss:Q103-F7AC56E1-44B3-5669-AE64-4A99DEDDF52D,
+        obss:Q103-FE053C91-0078-58B1-B961-B801990BB9E4 ;
+    obsp:P107 obss:Q103-0FE6720D-98F6-5717-9A29-AD636A0D3AFB ;
+    obsp:P110 obss:Q103-FBCC8BA9-4D8F-59ED-8496-7C5EA24A929C ;
+    obsp:P111 obss:Q103-7FDD4E6B-FF40-5625-8B5B-DAD5E020C44C,
+        obss:Q103-85672352-62D4-5E88-8286-F81E3A8D4C8C ;
+    obsp:P112 obss:Q103-C79A1F04-6D0C-5B98-B075-7BF6545CFC1E ;
+    obsp:P113 obss:Q103-3F6C9C04-DB9F-5E74-8FED-CB5A4EB90C6B,
+        obss:Q103-4B7F6488-F853-576A-990E-5BE597C81ACD,
+        obss:Q103-059D56EE-137B-593F-AC81-07D728E928C0,
+        obss:Q103-C58A89FD-00A1-5A78-AB79-A2674D14928B,
+        obss:Q103-C71FD3CA-EC12-5B3F-A458-2A9ABAF5F990,
+        obss:Q103-EEF5F80A-A127-5A86-BE1F-A4A578F0E0BC,
+        obss:Q103-EFB15A1B-1F0F-57C8-A3D8-1C06956A4B29 ;
+    obst:P2 obs:Q100 ;
+    obst:P100 <https://www.openstreetmap.org/node/12919476068> ;
+    obst:P101 <https://www.openstreetmap.org/node/12919476068/history/6> ;
+    obst:P107 <https://www.openstreetmap.org/node/12919476068/history/3> ;
+    obst:P110 "Point(-4.260726 55.8642448)"^^geo:wktLiteral ;
+    obst:P111 "POINT(-4.260726 55.8642448)",
+        "POINT(-4.2607179 55.8642366)" ;
+    obst:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20the%20corner%20of%20West%20Campbell%20Street%20and%20Bath%20Street.jpg> ;
+    obst:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "name:en=NO145 BATH ST SE FACE E ANG 1989 37,995m",
+        "survey:date=2025-06-16",
+        "survey_point:purpose=vertical",
+        "survey_point:structure=cut",
+        "survey_point:type=benchmark" .
+
+obss:Q103-0FE6720D-98F6-5717-9A29-AD636A0D3AFB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P109 "benchmarks" ;
+    obsps:P107 <https://www.openstreetmap.org/node/12919476068/history/3> .
+
+obss:Q103-3F6C9C04-DB9F-5E74-8FED-CB5A4EB90C6B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:dfcb9452ffd1426b10f61594b9a376edb18b9f69 ;
+    obsps:P113 "survey_point:type=benchmark" .
+
+obss:Q103-4B7F6488-F853-576A-990E-5BE597C81ACD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:dfcb9452ffd1426b10f61594b9a376edb18b9f69 ;
+    obsps:P113 "man_made=survey_point" .
+
+obss:Q103-7FDD4E6B-FF40-5625-8B5B-DAD5E020C44C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:35405d5e71a291f3c88cc90bf5b0ab09d50ca214 ;
+    obspq:P102 "+2"^^xsd:decimal ;
+    obspq:P103 "2025-06-16T20:35:12Z" ;
+    obspqv:P102 obsv:c295f8f927aa4b01b5401a2788a068ea ;
+    obsps:P111 "POINT(-4.260726 55.8642448)" .
+
+obss:Q103-059D56EE-137B-593F-AC81-07D728E928C0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:dfcb9452ffd1426b10f61594b9a376edb18b9f69 ;
+    obsps:P113 "survey_point:structure=cut" .
+
+obss:Q103-45893AB4-3F6E-5163-AF51-CFAF22EA3228
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2025-06-16T14:32:42Z" ;
+    obspq:P104 "167697647" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P101 <https://www.openstreetmap.org/node/12919476068/history/1> .
+
+obss:Q103-97244BF5-30A9-5358-AD4C-0FCC131443B0
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+4"^^xsd:decimal ;
+    obspq:P103 "2025-06-24T22:07:27Z" ;
+    obspq:P104 "168069083" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    obsps:P101 <https://www.openstreetmap.org/node/12919476068/history/4> .
+
+obss:Q103-54055322-9D86-5B37-A1AE-D6BEFA56FDEC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P2 obs:Q100 .
+
+obss:Q103-85672352-62D4-5E88-8286-F81E3A8D4C8C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:528fe18566d9d5bbbf54fdf0749d045766864776 ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2025-06-16T14:32:42Z" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P111 "POINT(-4.2607179 55.8642366)" .
+
+obss:Q103-AB81FD03-CA32-5872-9D6E-FD9B7CEC6425
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+3"^^xsd:decimal ;
+    obspq:P103 "2025-06-17T21:34:31Z" ;
+    obspq:P104 "167757456" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    obsps:P101 <https://www.openstreetmap.org/node/12919476068/history/3> .
+
+obss:Q103-BACD43B3-0C9C-5148-9F72-2E5BAB318EE1
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+5"^^xsd:decimal ;
+    obspq:P103 "2026-04-10T11:27:20Z" ;
+    obspq:P104 "181140940" ;
+    obspq:P105 "fthierygeo" ;
+    obspq:P106 "8813335" ;
+    obspqv:P102 obsv:30e603cac620241526fa9f81268ba25c ;
+    obsps:P101 <https://www.openstreetmap.org/node/12919476068/history/5> .
+
+obss:Q103-C58A89FD-00A1-5A78-AB79-A2674D14928B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:dfcb9452ffd1426b10f61594b9a376edb18b9f69 ;
+    obsps:P113 "survey:date=2025-06-16" .
+
+obss:Q103-C71FD3CA-EC12-5B3F-A458-2A9ABAF5F990
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:dfcb9452ffd1426b10f61594b9a376edb18b9f69 ;
+    obsps:P113 "name:en=NO145 BATH ST SE FACE E ANG 1989 37,995m" .
+
+obss:Q103-C79A1F04-6D0C-5B98-B075-7BF6545CFC1E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:dfcb9452ffd1426b10f61594b9a376edb18b9f69 ;
+    obsps:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20the%20corner%20of%20West%20Campbell%20Street%20and%20Bath%20Street.jpg> .
+
+obss:Q103-C8133615-A16D-5C74-9FA4-F14CEE5A4573
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P100 <https://www.openstreetmap.org/node/12919476068> .
+
+obss:Q103-EEF5F80A-A127-5A86-BE1F-A4A578F0E0BC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:dfcb9452ffd1426b10f61594b9a376edb18b9f69 ;
+    obsps:P113 "survey_point:purpose=vertical" .
+
+obss:Q103-EFB15A1B-1F0F-57C8-A3D8-1C06956A4B29
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:dfcb9452ffd1426b10f61594b9a376edb18b9f69 ;
+    obsps:P113 "benchmark=yes" .
+
+obss:Q103-F7AC56E1-44B3-5669-AE64-4A99DEDDF52D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    obspq:P102 "+6"^^xsd:decimal ;
+    obspq:P103 "2026-04-10T11:33:35Z" ;
+    obspq:P104 "181141238" ;
+    obspq:P105 "fthierygeo" ;
+    obspq:P106 "8813335" ;
+    obspqv:P102 obsv:4a452dffd06b2507ab2eb1eddf5c4e2f ;
+    obsps:P101 <https://www.openstreetmap.org/node/12919476068/history/6> .
+
+obss:Q103-FBCC8BA9-4D8F-59ED-8496-7C5EA24A929C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:dfcb9452ffd1426b10f61594b9a376edb18b9f69 ;
+    obsps:P110 "Point(-4.260726 55.8642448)"^^geo:wktLiteral ;
+    obspsv:P110 obsv:708bb0b498f8ea5ddbfcbaa48ca550a8 .
+
+obss:Q103-FE053C91-0078-58B1-B961-B801990BB9E4
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+2"^^xsd:decimal ;
+    obspq:P103 "2025-06-16T20:35:12Z" ;
+    obspq:P104 "167712339" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:c295f8f927aa4b01b5401a2788a068ea ;
+    obsps:P101 <https://www.openstreetmap.org/node/12919476068/history/2> .
+
+obsref:528fe18566d9d5bbbf54fdf0749d045766864776
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12919476068/history/1> .
+
+obsref:35405d5e71a291f3c88cc90bf5b0ab09d50ca214
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12919476068/history/2> .
+
+obsref:dfcb9452ffd1426b10f61594b9a376edb18b9f69
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12919476068/history/6> .
+
+obsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:4a452dffd06b2507ab2eb1eddf5c4e2f
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+6"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:9eb0a11f783b50f51f04a9fc2aca89fb
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+4"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:30e603cac620241526fa9f81268ba25c
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+5"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:708bb0b498f8ea5ddbfcbaa48ca550a8
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "55.8642448"^^xsd:double ;
+    wikibase:geoLongitude "-4.260726"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+obsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

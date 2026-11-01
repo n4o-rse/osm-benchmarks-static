@@ -1,0 +1,1044 @@
+{
+  "aliases": {},
+  "claims": {
+    "P100": [
+      {
+        "id": "Q101$30FD1A3B-B847-5CA3-8732-9A4AD322AE19",
+        "mainsnak": {
+          "datatype": "url",
+          "datavalue": {
+            "type": "string",
+            "value": "https://www.openstreetmap.org/node/12600848879"
+          },
+          "property": "P100",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P101": [
+      {
+        "id": "Q101$CCA69730-8160-5873-B8CB-1A4C9DBAA51C",
+        "mainsnak": {
+          "datatype": "url",
+          "datavalue": {
+            "type": "string",
+            "value": "https://www.openstreetmap.org/node/12600848879/history/1"
+          },
+          "property": "P101",
+          "snaktype": "value"
+        },
+        "qualifiers": {
+          "P102": [
+            {
+              "datatype": "quantity",
+              "datavalue": {
+                "type": "quantity",
+                "value": {
+                  "amount": "+1",
+                  "unit": "1"
+                }
+              },
+              "property": "P102",
+              "snaktype": "value"
+            }
+          ],
+          "P103": [
+            {
+              "datatype": "string",
+              "datavalue": {
+                "type": "string",
+                "value": "2025-02-19T14:49:47Z"
+              },
+              "property": "P103",
+              "snaktype": "value"
+            }
+          ],
+          "P104": [
+            {
+              "datatype": "external-id",
+              "datavalue": {
+                "type": "string",
+                "value": "162704528"
+              },
+              "property": "P104",
+              "snaktype": "value"
+            }
+          ],
+          "P105": [
+            {
+              "datatype": "string",
+              "datavalue": {
+                "type": "string",
+                "value": "b-unicycling"
+              },
+              "property": "P105",
+              "snaktype": "value"
+            }
+          ],
+          "P106": [
+            {
+              "datatype": "external-id",
+              "datavalue": {
+                "type": "string",
+                "value": "1713634"
+              },
+              "property": "P106",
+              "snaktype": "value"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P102",
+          "P103",
+          "P104",
+          "P105",
+          "P106"
+        ],
+        "rank": "normal",
+        "type": "statement"
+      },
+      {
+        "id": "Q101$1998BFAA-F056-5D65-894C-4C36503EF4C6",
+        "mainsnak": {
+          "datatype": "url",
+          "datavalue": {
+            "type": "string",
+            "value": "https://www.openstreetmap.org/node/12600848879/history/2"
+          },
+          "property": "P101",
+          "snaktype": "value"
+        },
+        "qualifiers": {
+          "P102": [
+            {
+              "datatype": "quantity",
+              "datavalue": {
+                "type": "quantity",
+                "value": {
+                  "amount": "+2",
+                  "unit": "1"
+                }
+              },
+              "property": "P102",
+              "snaktype": "value"
+            }
+          ],
+          "P103": [
+            {
+              "datatype": "string",
+              "datavalue": {
+                "type": "string",
+                "value": "2025-02-19T17:41:16Z"
+              },
+              "property": "P103",
+              "snaktype": "value"
+            }
+          ],
+          "P104": [
+            {
+              "datatype": "external-id",
+              "datavalue": {
+                "type": "string",
+                "value": "162711062"
+              },
+              "property": "P104",
+              "snaktype": "value"
+            }
+          ],
+          "P105": [
+            {
+              "datatype": "string",
+              "datavalue": {
+                "type": "string",
+                "value": "b-unicycling"
+              },
+              "property": "P105",
+              "snaktype": "value"
+            }
+          ],
+          "P106": [
+            {
+              "datatype": "external-id",
+              "datavalue": {
+                "type": "string",
+                "value": "1713634"
+              },
+              "property": "P106",
+              "snaktype": "value"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P102",
+          "P103",
+          "P104",
+          "P105",
+          "P106"
+        ],
+        "rank": "normal",
+        "type": "statement"
+      },
+      {
+        "id": "Q101$19118209-8B8D-52B5-AD53-D546983A9DCB",
+        "mainsnak": {
+          "datatype": "url",
+          "datavalue": {
+            "type": "string",
+            "value": "https://www.openstreetmap.org/node/12600848879/history/3"
+          },
+          "property": "P101",
+          "snaktype": "value"
+        },
+        "qualifiers": {
+          "P102": [
+            {
+              "datatype": "quantity",
+              "datavalue": {
+                "type": "quantity",
+                "value": {
+                  "amount": "+3",
+                  "unit": "1"
+                }
+              },
+              "property": "P102",
+              "snaktype": "value"
+            }
+          ],
+          "P103": [
+            {
+              "datatype": "string",
+              "datavalue": {
+                "type": "string",
+                "value": "2025-02-20T23:17:01Z"
+              },
+              "property": "P103",
+              "snaktype": "value"
+            }
+          ],
+          "P104": [
+            {
+              "datatype": "external-id",
+              "datavalue": {
+                "type": "string",
+                "value": "162760053"
+              },
+              "property": "P104",
+              "snaktype": "value"
+            }
+          ],
+          "P105": [
+            {
+              "datatype": "string",
+              "datavalue": {
+                "type": "string",
+                "value": "b-unicycling"
+              },
+              "property": "P105",
+              "snaktype": "value"
+            }
+          ],
+          "P106": [
+            {
+              "datatype": "external-id",
+              "datavalue": {
+                "type": "string",
+                "value": "1713634"
+              },
+              "property": "P106",
+              "snaktype": "value"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P102",
+          "P103",
+          "P104",
+          "P105",
+          "P106"
+        ],
+        "rank": "normal",
+        "type": "statement"
+      },
+      {
+        "id": "Q101$07AEBB9C-EF3D-5408-A81F-D68524DDE55B",
+        "mainsnak": {
+          "datatype": "url",
+          "datavalue": {
+            "type": "string",
+            "value": "https://www.openstreetmap.org/node/12600848879/history/4"
+          },
+          "property": "P101",
+          "snaktype": "value"
+        },
+        "qualifiers": {
+          "P102": [
+            {
+              "datatype": "quantity",
+              "datavalue": {
+                "type": "quantity",
+                "value": {
+                  "amount": "+4",
+                  "unit": "1"
+                }
+              },
+              "property": "P102",
+              "snaktype": "value"
+            }
+          ],
+          "P103": [
+            {
+              "datatype": "string",
+              "datavalue": {
+                "type": "string",
+                "value": "2025-02-21T11:53:01Z"
+              },
+              "property": "P103",
+              "snaktype": "value"
+            }
+          ],
+          "P104": [
+            {
+              "datatype": "external-id",
+              "datavalue": {
+                "type": "string",
+                "value": "162776933"
+              },
+              "property": "P104",
+              "snaktype": "value"
+            }
+          ],
+          "P105": [
+            {
+              "datatype": "string",
+              "datavalue": {
+                "type": "string",
+                "value": "b-unicycling"
+              },
+              "property": "P105",
+              "snaktype": "value"
+            }
+          ],
+          "P106": [
+            {
+              "datatype": "external-id",
+              "datavalue": {
+                "type": "string",
+                "value": "1713634"
+              },
+              "property": "P106",
+              "snaktype": "value"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P102",
+          "P103",
+          "P104",
+          "P105",
+          "P106"
+        ],
+        "rank": "normal",
+        "type": "statement"
+      },
+      {
+        "id": "Q101$7F6DB629-E7FC-5A3A-9BDA-21BCF59501E1",
+        "mainsnak": {
+          "datatype": "url",
+          "datavalue": {
+            "type": "string",
+            "value": "https://www.openstreetmap.org/node/12600848879/history/5"
+          },
+          "property": "P101",
+          "snaktype": "value"
+        },
+        "qualifiers": {
+          "P102": [
+            {
+              "datatype": "quantity",
+              "datavalue": {
+                "type": "quantity",
+                "value": {
+                  "amount": "+5",
+                  "unit": "1"
+                }
+              },
+              "property": "P102",
+              "snaktype": "value"
+            }
+          ],
+          "P103": [
+            {
+              "datatype": "string",
+              "datavalue": {
+                "type": "string",
+                "value": "2026-03-23T15:33:55Z"
+              },
+              "property": "P103",
+              "snaktype": "value"
+            }
+          ],
+          "P104": [
+            {
+              "datatype": "external-id",
+              "datavalue": {
+                "type": "string",
+                "value": "180311366"
+              },
+              "property": "P104",
+              "snaktype": "value"
+            }
+          ],
+          "P105": [
+            {
+              "datatype": "string",
+              "datavalue": {
+                "type": "string",
+                "value": "IainTurpie"
+              },
+              "property": "P105",
+              "snaktype": "value"
+            }
+          ],
+          "P106": [
+            {
+              "datatype": "external-id",
+              "datavalue": {
+                "type": "string",
+                "value": "15334346"
+              },
+              "property": "P106",
+              "snaktype": "value"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P102",
+          "P103",
+          "P104",
+          "P105",
+          "P106"
+        ],
+        "rank": "preferred",
+        "type": "statement"
+      }
+    ],
+    "P107": [
+      {
+        "id": "Q101$E8693306-DB42-5D56-A818-EBE2A75C4B0C",
+        "mainsnak": {
+          "datatype": "url",
+          "datavalue": {
+            "type": "string",
+            "value": "https://www.openstreetmap.org/node/12600848879/history/4"
+          },
+          "property": "P107",
+          "snaktype": "value"
+        },
+        "qualifiers": {
+          "P109": [
+            {
+              "datatype": "string",
+              "datavalue": {
+                "type": "string",
+                "value": "benchmarks"
+              },
+              "property": "P109",
+              "snaktype": "value"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P109"
+        ],
+        "rank": "normal",
+        "type": "statement"
+      }
+    ],
+    "P110": [
+      {
+        "id": "Q101$89242E25-6BA6-5361-8494-66F42B959F68",
+        "mainsnak": {
+          "datatype": "globe-coordinate",
+          "datavalue": {
+            "type": "globecoordinate",
+            "value": {
+              "altitude": null,
+              "globe": "http://www.wikidata.org/entity/Q2",
+              "latitude": 53.2725397,
+              "longitude": -9.0538691,
+              "precision": 1e-06
+            }
+          },
+          "property": "P110",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.openstreetmap.org/node/12600848879/history/5"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ],
+    "P111": [
+      {
+        "id": "Q101$8EB6BF1E-A7DB-5444-A5E7-D3A9AC73B3F7",
+        "mainsnak": {
+          "datatype": "string",
+          "datavalue": {
+            "type": "string",
+            "value": "POINT(-9.0539459 53.2725582)"
+          },
+          "property": "P111",
+          "snaktype": "value"
+        },
+        "qualifiers": {
+          "P102": [
+            {
+              "datatype": "quantity",
+              "datavalue": {
+                "type": "quantity",
+                "value": {
+                  "amount": "+1",
+                  "unit": "1"
+                }
+              },
+              "property": "P102",
+              "snaktype": "value"
+            }
+          ],
+          "P103": [
+            {
+              "datatype": "string",
+              "datavalue": {
+                "type": "string",
+                "value": "2025-02-19T14:49:47Z"
+              },
+              "property": "P103",
+              "snaktype": "value"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P102",
+          "P103"
+        ],
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.openstreetmap.org/node/12600848879/history/1"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      },
+      {
+        "id": "Q101$833B2BE0-11FA-5A3D-9F13-DDAFF5ACF799",
+        "mainsnak": {
+          "datatype": "string",
+          "datavalue": {
+            "type": "string",
+            "value": "POINT(-9.0538687 53.2725388)"
+          },
+          "property": "P111",
+          "snaktype": "value"
+        },
+        "qualifiers": {
+          "P102": [
+            {
+              "datatype": "quantity",
+              "datavalue": {
+                "type": "quantity",
+                "value": {
+                  "amount": "+2",
+                  "unit": "1"
+                }
+              },
+              "property": "P102",
+              "snaktype": "value"
+            }
+          ],
+          "P103": [
+            {
+              "datatype": "string",
+              "datavalue": {
+                "type": "string",
+                "value": "2025-02-19T17:41:16Z"
+              },
+              "property": "P103",
+              "snaktype": "value"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P102",
+          "P103"
+        ],
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.openstreetmap.org/node/12600848879/history/2"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      },
+      {
+        "id": "Q101$4D902827-C11A-5277-B493-BE586D77FF29",
+        "mainsnak": {
+          "datatype": "string",
+          "datavalue": {
+            "type": "string",
+            "value": "POINT(-9.0538691 53.2725397)"
+          },
+          "property": "P111",
+          "snaktype": "value"
+        },
+        "qualifiers": {
+          "P102": [
+            {
+              "datatype": "quantity",
+              "datavalue": {
+                "type": "quantity",
+                "value": {
+                  "amount": "+3",
+                  "unit": "1"
+                }
+              },
+              "property": "P102",
+              "snaktype": "value"
+            }
+          ],
+          "P103": [
+            {
+              "datatype": "string",
+              "datavalue": {
+                "type": "string",
+                "value": "2025-02-20T23:17:01Z"
+              },
+              "property": "P103",
+              "snaktype": "value"
+            }
+          ]
+        },
+        "qualifiers-order": [
+          "P102",
+          "P103"
+        ],
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.openstreetmap.org/node/12600848879/history/3"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ],
+    "P112": [
+      {
+        "id": "Q101$14047CBC-2072-5CD8-AC12-2CD5ED086A17",
+        "mainsnak": {
+          "datatype": "commonsMedia",
+          "datavalue": {
+            "type": "string",
+            "value": "Benchmark at St. Nicholas' Collegiate Church.jpg"
+          },
+          "property": "P112",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.openstreetmap.org/node/12600848879/history/5"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ],
+    "P113": [
+      {
+        "id": "Q101$1CC6E499-BEAF-5270-ACC5-83AB1C535DA4",
+        "mainsnak": {
+          "datatype": "string",
+          "datavalue": {
+            "type": "string",
+            "value": "benchmark=yes"
+          },
+          "property": "P113",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.openstreetmap.org/node/12600848879/history/5"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      },
+      {
+        "id": "Q101$E693ADA5-54E3-5D47-A198-4D505077F00F",
+        "mainsnak": {
+          "datatype": "string",
+          "datavalue": {
+            "type": "string",
+            "value": "description=Second mark on the principal levelling line from Galway to Tuam. Has a copper bolt and inscription."
+          },
+          "property": "P113",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.openstreetmap.org/node/12600848879/history/5"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      },
+      {
+        "id": "Q101$65D7475A-4EFF-547C-8DDE-326A21FBC8AD",
+        "mainsnak": {
+          "datatype": "string",
+          "datavalue": {
+            "type": "string",
+            "value": "inscription=LM 2"
+          },
+          "property": "P113",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.openstreetmap.org/node/12600848879/history/5"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      },
+      {
+        "id": "Q101$6380BDFE-7924-59BD-8D91-655A4EBC317F",
+        "mainsnak": {
+          "datatype": "string",
+          "datavalue": {
+            "type": "string",
+            "value": "man_made=survey_point"
+          },
+          "property": "P113",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.openstreetmap.org/node/12600848879/history/5"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      },
+      {
+        "id": "Q101$E9096426-9969-58B7-AD2F-0BFA4E5E1466",
+        "mainsnak": {
+          "datatype": "string",
+          "datavalue": {
+            "type": "string",
+            "value": "source=survey;25inch map"
+          },
+          "property": "P113",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.openstreetmap.org/node/12600848879/history/5"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      },
+      {
+        "id": "Q101$50023088-73B9-57E6-BA7E-6FD718ED9A6C",
+        "mainsnak": {
+          "datatype": "string",
+          "datavalue": {
+            "type": "string",
+            "value": "survey:date=2025-02-19"
+          },
+          "property": "P113",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.openstreetmap.org/node/12600848879/history/5"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      },
+      {
+        "id": "Q101$12BBDA1D-3D94-572B-9DE5-8965DA193595",
+        "mainsnak": {
+          "datatype": "string",
+          "datavalue": {
+            "type": "string",
+            "value": "survey_point:purpose=vertical"
+          },
+          "property": "P113",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.openstreetmap.org/node/12600848879/history/5"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      },
+      {
+        "id": "Q101$4F5F017D-C406-5787-A58F-1805B6D31AB3",
+        "mainsnak": {
+          "datatype": "string",
+          "datavalue": {
+            "type": "string",
+            "value": "survey_point:structure=cut"
+          },
+          "property": "P113",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "references": [
+          {
+            "snaks": {
+              "P6": [
+                {
+                  "datatype": "url",
+                  "datavalue": {
+                    "type": "string",
+                    "value": "https://www.openstreetmap.org/node/12600848879/history/5"
+                  },
+                  "property": "P6",
+                  "snaktype": "value"
+                }
+              ]
+            },
+            "snaks-order": [
+              "P6"
+            ]
+          }
+        ],
+        "type": "statement"
+      }
+    ],
+    "P2": [
+      {
+        "id": "Q101$07A372F5-2E9F-5447-A90A-37F4B9B3C28F",
+        "mainsnak": {
+          "datatype": "wikibase-item",
+          "datavalue": {
+            "type": "wikibase-entityid",
+            "value": {
+              "entity-type": "item",
+              "id": "Q100",
+              "numeric-id": 100
+            }
+          },
+          "property": "P2",
+          "snaktype": "value"
+        },
+        "rank": "normal",
+        "type": "statement"
+      }
+    ]
+  },
+  "descriptions": {
+    "en": {
+      "language": "en",
+      "value": "OpenStreetMap node 12600848879"
+    }
+  },
+  "id": "Q101",
+  "labels": {
+    "en": {
+      "language": "en",
+      "value": "Benchmark at St. Nicholas' Collegiate Church"
+    }
+  },
+  "sitelinks": {},
+  "type": "item"
+}

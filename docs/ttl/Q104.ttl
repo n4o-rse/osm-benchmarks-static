@@ -1,0 +1,259 @@
+# Q104: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.20.0; data as of 2026-11-01T00:00:00Z
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix obs: <https://n4o-rse.github.io/osm-benchmarks-static/entity/> .
+@prefix obscat: <https://n4o-rse.github.io/osm-benchmarks-static/catalog/> .
+@prefix obsdata: <https://n4o-rse.github.io/osm-benchmarks-static/ttl/> .
+@prefix obsdist: <https://n4o-rse.github.io/osm-benchmarks-static/distribution/> .
+@prefix obsno: <https://n4o-rse.github.io/osm-benchmarks-static/prop/novalue/> .
+@prefix obsp: <https://n4o-rse.github.io/osm-benchmarks-static/prop/> .
+@prefix obspq: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/> .
+@prefix obspqv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/value/> .
+@prefix obspr: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/> .
+@prefix obsprv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/value/> .
+@prefix obsps: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/> .
+@prefix obspsv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/value/> .
+@prefix obsref: <https://n4o-rse.github.io/osm-benchmarks-static/reference/> .
+@prefix obss: <https://n4o-rse.github.io/osm-benchmarks-static/entity/statement/> .
+@prefix obst: <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/> .
+@prefix obsv: <https://n4o-rse.github.io/osm-benchmarks-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q104.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "OpenStreetMap node 12919738910"@en ;
+    dcterms:identifier "Q104" ;
+    dcterms:isPartOf obscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject obs:Q104 ;
+    dcterms:title "Benchmark at St George's Tron Parish Church"@en ;
+    schema:about obs:Q104 ;
+    dcat:distribution obsdist:Q104-html,
+        obsdist:Q104-json,
+        obsdist:Q104-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-benchmarks-static/Q104.html> .
+
+obsdist:Q104-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q104, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-benchmarks-static/Q104.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+obsdist:Q104-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q104, as archived from the Wikibase API"@en ;
+    dcat:byteSize "17258"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q104.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+obsdist:Q104-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q104, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL obsdata:Q104.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+obs:Q104
+    a wikibase:Item ;
+    schema:description "OpenStreetMap node 12919738910"@en ;
+    schema:name "Benchmark at St George's Tron Parish Church"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "Benchmark at St George's Tron Parish Church"@en ;
+    skos:prefLabel "Benchmark at St George's Tron Parish Church"@en ;
+    obsp:P2 obss:Q104-C16F1D9D-E2AF-5272-9A42-A1DA8078FCE4 ;
+    obsp:P100 obss:Q104-84851980-FBA2-562F-9F5B-ABBC099028FC ;
+    obsp:P101 obss:Q104-360F9666-E21F-5DBC-87E6-D21050040B70,
+        obss:Q104-B446CBBA-938C-5149-9F37-EB916ABCA14D,
+        obss:Q104-F8D84D64-4047-58CD-B617-708FC2415670 ;
+    obsp:P107 obss:Q104-9BBE2376-3FA6-5AAB-93CA-1F9F15AEF70E ;
+    obsp:P110 obss:Q104-D3764DF0-4B90-5EE6-B580-A3353508FABB ;
+    obsp:P111 obss:Q104-54487646-ABAD-51AD-8829-B031256E4CE1,
+        obss:Q104-B671F23B-72A1-5EB7-A777-94CE0E1661CC ;
+    obsp:P112 obss:Q104-5A67CF50-F6BA-5C9A-BB87-A02B61C19BB2 ;
+    obsp:P113 obss:Q104-79D9CA7E-55A9-591C-BB20-145959FDB16E,
+        obss:Q104-467A3962-A2C9-5728-A15B-46865C0404F6,
+        obss:Q104-85060DFC-B93C-59E3-BC26-1A3AAC5FBC71,
+        obss:Q104-F1189D62-D0FB-5E1F-921E-7ED80AADCCA1 ;
+    obst:P2 obs:Q100 ;
+    obst:P100 <https://www.openstreetmap.org/node/12919738910> ;
+    obst:P101 <https://www.openstreetmap.org/node/12919738910/history/3> ;
+    obst:P107 <https://www.openstreetmap.org/node/12919738910/history/3> ;
+    obst:P110 "Point(-4.2537467 55.8620198)"^^geo:wktLiteral ;
+    obst:P111 "POINT(-4.2537443 55.8620197)",
+        "POINT(-4.2537467 55.8620198)" ;
+    obst:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20St%20George%27s%20Tron%20Parish%20Church.jpg> ;
+    obst:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-16",
+        "survey_point:structure=cut" .
+
+obss:Q104-5A67CF50-F6BA-5C9A-BB87-A02B61C19BB2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:26fc987cf8ca9e6fae58ef897a360710bf5410c5 ;
+    obsps:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20St%20George%27s%20Tron%20Parish%20Church.jpg> .
+
+obss:Q104-9BBE2376-3FA6-5AAB-93CA-1F9F15AEF70E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P109 "benchmarks" ;
+    obsps:P107 <https://www.openstreetmap.org/node/12919738910/history/3> .
+
+obss:Q104-79D9CA7E-55A9-591C-BB20-145959FDB16E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:26fc987cf8ca9e6fae58ef897a360710bf5410c5 ;
+    obsps:P113 "man_made=survey_point" .
+
+obss:Q104-360F9666-E21F-5DBC-87E6-D21050040B70
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2025-06-16T17:12:22Z" ;
+    obspq:P104 "167704528" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P101 <https://www.openstreetmap.org/node/12919738910/history/1> .
+
+obss:Q104-467A3962-A2C9-5728-A15B-46865C0404F6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:26fc987cf8ca9e6fae58ef897a360710bf5410c5 ;
+    obsps:P113 "survey:date=2025-06-16" .
+
+obss:Q104-85060DFC-B93C-59E3-BC26-1A3AAC5FBC71
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:26fc987cf8ca9e6fae58ef897a360710bf5410c5 ;
+    obsps:P113 "survey_point:structure=cut" .
+
+obss:Q104-54487646-ABAD-51AD-8829-B031256E4CE1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:5c3eb8c8849899fb5a7ee69682e9415e8a1f9bd7 ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2025-06-16T17:12:22Z" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P111 "POINT(-4.2537443 55.8620197)" .
+
+obss:Q104-84851980-FBA2-562F-9F5B-ABBC099028FC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P100 <https://www.openstreetmap.org/node/12919738910> .
+
+obss:Q104-B446CBBA-938C-5149-9F37-EB916ABCA14D
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+2"^^xsd:decimal ;
+    obspq:P103 "2025-06-16T21:04:21Z" ;
+    obspq:P104 "167713180" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:c295f8f927aa4b01b5401a2788a068ea ;
+    obsps:P101 <https://www.openstreetmap.org/node/12919738910/history/2> .
+
+obss:Q104-B671F23B-72A1-5EB7-A777-94CE0E1661CC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:71c26182731b3eed1cc2af94e8585b3905d3b9d7 ;
+    obspq:P102 "+2"^^xsd:decimal ;
+    obspq:P103 "2025-06-16T21:04:21Z" ;
+    obspqv:P102 obsv:c295f8f927aa4b01b5401a2788a068ea ;
+    obsps:P111 "POINT(-4.2537467 55.8620198)" .
+
+obss:Q104-C16F1D9D-E2AF-5272-9A42-A1DA8078FCE4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P2 obs:Q100 .
+
+obss:Q104-D3764DF0-4B90-5EE6-B580-A3353508FABB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:26fc987cf8ca9e6fae58ef897a360710bf5410c5 ;
+    obsps:P110 "Point(-4.2537467 55.8620198)"^^geo:wktLiteral ;
+    obspsv:P110 obsv:b99c70c857819cf395fef6befef8ade0 .
+
+obss:Q104-F8D84D64-4047-58CD-B617-708FC2415670
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    obspq:P102 "+3"^^xsd:decimal ;
+    obspq:P103 "2025-06-18T15:55:49Z" ;
+    obspq:P104 "167788856" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    obsps:P101 <https://www.openstreetmap.org/node/12919738910/history/3> .
+
+obss:Q104-F1189D62-D0FB-5E1F-921E-7ED80AADCCA1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:26fc987cf8ca9e6fae58ef897a360710bf5410c5 ;
+    obsps:P113 "benchmark=yes" .
+
+obsref:5c3eb8c8849899fb5a7ee69682e9415e8a1f9bd7
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12919738910/history/1> .
+
+obsref:26fc987cf8ca9e6fae58ef897a360710bf5410c5
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12919738910/history/3> .
+
+obsref:71c26182731b3eed1cc2af94e8585b3905d3b9d7
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12919738910/history/2> .
+
+obsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:b99c70c857819cf395fef6befef8ade0
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "55.8620198"^^xsd:double ;
+    wikibase:geoLongitude "-4.2537467"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+obsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

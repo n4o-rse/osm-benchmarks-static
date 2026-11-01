@@ -1,0 +1,226 @@
+# Q111: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.20.0; data as of 2026-11-01T00:00:00Z
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix obs: <https://n4o-rse.github.io/osm-benchmarks-static/entity/> .
+@prefix obscat: <https://n4o-rse.github.io/osm-benchmarks-static/catalog/> .
+@prefix obsdata: <https://n4o-rse.github.io/osm-benchmarks-static/ttl/> .
+@prefix obsdist: <https://n4o-rse.github.io/osm-benchmarks-static/distribution/> .
+@prefix obsno: <https://n4o-rse.github.io/osm-benchmarks-static/prop/novalue/> .
+@prefix obsp: <https://n4o-rse.github.io/osm-benchmarks-static/prop/> .
+@prefix obspq: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/> .
+@prefix obspqv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/value/> .
+@prefix obspr: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/> .
+@prefix obsprv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/value/> .
+@prefix obsps: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/> .
+@prefix obspsv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/value/> .
+@prefix obsref: <https://n4o-rse.github.io/osm-benchmarks-static/reference/> .
+@prefix obss: <https://n4o-rse.github.io/osm-benchmarks-static/entity/statement/> .
+@prefix obst: <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/> .
+@prefix obsv: <https://n4o-rse.github.io/osm-benchmarks-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q111.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "OpenStreetMap node 12924782280"@en ;
+    dcterms:identifier "Q111" ;
+    dcterms:isPartOf obscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject obs:Q111 ;
+    dcterms:title "Benchmark on the North side of the City Chambers"@en ;
+    schema:about obs:Q111 ;
+    dcat:distribution obsdist:Q111-html,
+        obsdist:Q111-json,
+        obsdist:Q111-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-benchmarks-static/Q111.html> .
+
+obsdist:Q111-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q111, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-benchmarks-static/Q111.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+obsdist:Q111-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q111, as archived from the Wikibase API"@en ;
+    dcat:byteSize "13536"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q111.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+obsdist:Q111-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q111, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL obsdata:Q111.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+obs:Q111
+    a wikibase:Item ;
+    schema:description "OpenStreetMap node 12924782280"@en ;
+    schema:name "Benchmark on the North side of the City Chambers"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "12"^^xsd:integer ;
+    rdfs:label "Benchmark on the North side of the City Chambers"@en ;
+    skos:prefLabel "Benchmark on the North side of the City Chambers"@en ;
+    obsp:P2 obss:Q111-1F1CACB3-6C58-55CC-A42D-533684E0401E ;
+    obsp:P100 obss:Q111-ED1A0331-E16F-5858-B685-2B2A178A227E ;
+    obsp:P101 obss:Q111-14AB38DA-E264-5C9E-9AB3-37484E10EA31,
+        obss:Q111-C06819E0-EB50-5D2E-9D4C-0936FFAA6084 ;
+    obsp:P107 obss:Q111-7D7D2D83-3C55-50E2-A2FB-9277222D9779 ;
+    obsp:P110 obss:Q111-F95F00CC-E807-5042-99B1-F2ABB65A685D ;
+    obsp:P111 obss:Q111-EB631E0F-743A-5185-AE1A-33F542B95209 ;
+    obsp:P112 obss:Q111-A104419E-72FD-59C0-8325-AB99915A1CEE ;
+    obsp:P113 obss:Q111-D515F725-337A-50CF-A284-B1BC796193DE,
+        obss:Q111-E016281B-79B9-5B87-BA01-52D6DFFD4F9D,
+        obss:Q111-FDCFDB79-C8CC-58B1-AB26-C9B9E352E16C,
+        obss:Q111-FF386A22-E5F6-5B95-9956-5CD4D0EF18B9 ;
+    obst:P2 obs:Q100 ;
+    obst:P100 <https://www.openstreetmap.org/node/12924782280> ;
+    obst:P101 <https://www.openstreetmap.org/node/12924782280/history/2> ;
+    obst:P107 <https://www.openstreetmap.org/node/12924782280/history/2> ;
+    obst:P110 "Point(-4.2478655 55.8611989)"^^geo:wktLiteral ;
+    obst:P111 "POINT(-4.2478655 55.8611989)" ;
+    obst:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20on%20the%20North%20side%20of%20the%20City%20Chambers.jpg> ;
+    obst:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-18",
+        "survey_point:structure=cut" .
+
+obss:Q111-1F1CACB3-6C58-55CC-A42D-533684E0401E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P2 obs:Q100 .
+
+obss:Q111-7D7D2D83-3C55-50E2-A2FB-9277222D9779
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P109 "benchmarks" ;
+    obsps:P107 <https://www.openstreetmap.org/node/12924782280/history/2> .
+
+obss:Q111-14AB38DA-E264-5C9E-9AB3-37484E10EA31
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    obspq:P102 "+2"^^xsd:decimal ;
+    obspq:P103 "2025-06-18T22:04:00Z" ;
+    obspq:P104 "167801563" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:c295f8f927aa4b01b5401a2788a068ea ;
+    obsps:P101 <https://www.openstreetmap.org/node/12924782280/history/2> .
+
+obss:Q111-A104419E-72FD-59C0-8325-AB99915A1CEE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:529f908e2a64b6a94a34365dca72d6ff76c56ead ;
+    obsps:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20on%20the%20North%20side%20of%20the%20City%20Chambers.jpg> .
+
+obss:Q111-C06819E0-EB50-5D2E-9D4C-0936FFAA6084
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2025-06-18T21:22:03Z" ;
+    obspq:P104 "167800605" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P101 <https://www.openstreetmap.org/node/12924782280/history/1> .
+
+obss:Q111-D515F725-337A-50CF-A284-B1BC796193DE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:529f908e2a64b6a94a34365dca72d6ff76c56ead ;
+    obsps:P113 "benchmark=yes" .
+
+obss:Q111-E016281B-79B9-5B87-BA01-52D6DFFD4F9D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:529f908e2a64b6a94a34365dca72d6ff76c56ead ;
+    obsps:P113 "survey:date=2025-06-18" .
+
+obss:Q111-EB631E0F-743A-5185-AE1A-33F542B95209
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:4a73e1bcbb22b0b08e537c95f14de43823a423ac ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2025-06-18T21:22:03Z" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P111 "POINT(-4.2478655 55.8611989)" .
+
+obss:Q111-ED1A0331-E16F-5858-B685-2B2A178A227E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P100 <https://www.openstreetmap.org/node/12924782280> .
+
+obss:Q111-F95F00CC-E807-5042-99B1-F2ABB65A685D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:529f908e2a64b6a94a34365dca72d6ff76c56ead ;
+    obsps:P110 "Point(-4.2478655 55.8611989)"^^geo:wktLiteral ;
+    obspsv:P110 obsv:037d5cd8e9294d562e4612f79a3c678c .
+
+obss:Q111-FDCFDB79-C8CC-58B1-AB26-C9B9E352E16C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:529f908e2a64b6a94a34365dca72d6ff76c56ead ;
+    obsps:P113 "survey_point:structure=cut" .
+
+obss:Q111-FF386A22-E5F6-5B95-9956-5CD4D0EF18B9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:529f908e2a64b6a94a34365dca72d6ff76c56ead ;
+    obsps:P113 "man_made=survey_point" .
+
+obsref:4a73e1bcbb22b0b08e537c95f14de43823a423ac
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12924782280/history/1> .
+
+obsref:529f908e2a64b6a94a34365dca72d6ff76c56ead
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12924782280/history/2> .
+
+obsv:037d5cd8e9294d562e4612f79a3c678c
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "55.8611989"^^xsd:double ;
+    wikibase:geoLongitude "-4.2478655"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+obsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

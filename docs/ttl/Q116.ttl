@@ -1,0 +1,271 @@
+# Q116: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.20.0; data as of 2026-11-01T00:00:00Z
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix obs: <https://n4o-rse.github.io/osm-benchmarks-static/entity/> .
+@prefix obscat: <https://n4o-rse.github.io/osm-benchmarks-static/catalog/> .
+@prefix obsdata: <https://n4o-rse.github.io/osm-benchmarks-static/ttl/> .
+@prefix obsdist: <https://n4o-rse.github.io/osm-benchmarks-static/distribution/> .
+@prefix obsno: <https://n4o-rse.github.io/osm-benchmarks-static/prop/novalue/> .
+@prefix obsp: <https://n4o-rse.github.io/osm-benchmarks-static/prop/> .
+@prefix obspq: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/> .
+@prefix obspqv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/value/> .
+@prefix obspr: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/> .
+@prefix obsprv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/value/> .
+@prefix obsps: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/> .
+@prefix obspsv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/value/> .
+@prefix obsref: <https://n4o-rse.github.io/osm-benchmarks-static/reference/> .
+@prefix obss: <https://n4o-rse.github.io/osm-benchmarks-static/entity/statement/> .
+@prefix obst: <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/> .
+@prefix obsv: <https://n4o-rse.github.io/osm-benchmarks-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q116.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "OpenStreetMap node 12936028929"@en ;
+    dcterms:identifier "Q116" ;
+    dcterms:isPartOf obscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject obs:Q116 ;
+    dcterms:title "Benchmark at Melrose Abbey"@en ;
+    schema:about obs:Q116 ;
+    dcat:distribution obsdist:Q116-html,
+        obsdist:Q116-json,
+        obsdist:Q116-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-benchmarks-static/Q116.html> .
+
+obsdist:Q116-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q116, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-benchmarks-static/Q116.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+obsdist:Q116-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q116, as archived from the Wikibase API"@en ;
+    dcat:byteSize "18884"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q116.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+obsdist:Q116-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q116, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL obsdata:Q116.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+obs:Q116
+    a wikibase:Item ;
+    schema:description "OpenStreetMap node 12936028929"@en ;
+    schema:name "Benchmark at Melrose Abbey"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "15"^^xsd:integer ;
+    rdfs:label "Benchmark at Melrose Abbey"@en ;
+    skos:prefLabel "Benchmark at Melrose Abbey"@en ;
+    obsp:P2 obss:Q116-8824B569-26C1-5DE6-A840-EF42D21FC062 ;
+    obsp:P100 obss:Q116-AECD2629-9F28-5067-AE1B-6104EE569DC9 ;
+    obsp:P101 obss:Q116-0A42E7FA-B632-5A95-A59A-9BB861217166,
+        obss:Q116-355B5D28-2DBB-5B97-8937-7670A4605617,
+        obss:Q116-D123C9E1-BA31-5DE9-B4AD-09275509F314 ;
+    obsp:P107 obss:Q116-926B7496-F0D1-5DD2-A431-8BBA0345BBB6 ;
+    obsp:P110 obss:Q116-1F73302A-515E-5F8E-8860-3474A7CEB70E ;
+    obsp:P111 obss:Q116-BF46AA1D-963C-5826-B8C5-077E17421848,
+        obss:Q116-C407EF84-4B22-5B55-B3BC-AB3ABFB7F76C,
+        obss:Q116-DB387D44-D700-5E25-8299-3D9D9A3360EC ;
+    obsp:P112 obss:Q116-D1177641-7CDE-5D32-8AAF-495C6BFFD7A9 ;
+    obsp:P113 obss:Q116-2ABFF5E0-A4A8-57D6-AF28-48ACD7778401,
+        obss:Q116-6A7B7E8A-DBD6-528F-9DF4-F617EDDEE748,
+        obss:Q116-8D9F4712-2198-5310-9E66-B458EA5D0E95,
+        obss:Q116-88F8E5FF-9C2E-5B04-A78A-57A6662392F1 ;
+    obst:P2 obs:Q100 ;
+    obst:P100 <https://www.openstreetmap.org/node/12936028929> ;
+    obst:P101 <https://www.openstreetmap.org/node/12936028929/history/3> ;
+    obst:P107 <https://www.openstreetmap.org/node/12936028929/history/2> ;
+    obst:P110 "Point(-2.7178857 55.5989376)"^^geo:wktLiteral ;
+    obst:P111 "POINT(-2.7178856 55.5989365)",
+        "POINT(-2.7178857 55.5989376)",
+        "POINT(-2.7180546 55.5989369)" ;
+    obst:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20Melrose%20Abbey.jpg> ;
+    obst:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-20",
+        "survey_point:structure=cut" .
+
+obss:Q116-0A42E7FA-B632-5A95-A59A-9BB861217166
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2025-06-20T16:13:36Z" ;
+    obspq:P104 "167877868" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P101 <https://www.openstreetmap.org/node/12936028929/history/1> .
+
+obss:Q116-1F73302A-515E-5F8E-8860-3474A7CEB70E
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:fc6ae032523c42bc0e1b9f9966e1f8787f6f6185 ;
+    obsps:P110 "Point(-2.7178857 55.5989376)"^^geo:wktLiteral ;
+    obspsv:P110 obsv:2b3680b365161e16e9237ad3f2b9b8a4 .
+
+obss:Q116-2ABFF5E0-A4A8-57D6-AF28-48ACD7778401
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:fc6ae032523c42bc0e1b9f9966e1f8787f6f6185 ;
+    obsps:P113 "man_made=survey_point" .
+
+obss:Q116-6A7B7E8A-DBD6-528F-9DF4-F617EDDEE748
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:fc6ae032523c42bc0e1b9f9966e1f8787f6f6185 ;
+    obsps:P113 "survey:date=2025-06-20" .
+
+obss:Q116-8D9F4712-2198-5310-9E66-B458EA5D0E95
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:fc6ae032523c42bc0e1b9f9966e1f8787f6f6185 ;
+    obsps:P113 "benchmark=yes" .
+
+obss:Q116-88F8E5FF-9C2E-5B04-A78A-57A6662392F1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:fc6ae032523c42bc0e1b9f9966e1f8787f6f6185 ;
+    obsps:P113 "survey_point:structure=cut" .
+
+obss:Q116-355B5D28-2DBB-5B97-8937-7670A4605617
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+2"^^xsd:decimal ;
+    obspq:P103 "2025-06-22T15:24:26Z" ;
+    obspq:P104 "167963636" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:c295f8f927aa4b01b5401a2788a068ea ;
+    obsps:P101 <https://www.openstreetmap.org/node/12936028929/history/2> .
+
+obss:Q116-926B7496-F0D1-5DD2-A431-8BBA0345BBB6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P109 "benchmarks" ;
+    obsps:P107 <https://www.openstreetmap.org/node/12936028929/history/2> .
+
+obss:Q116-8824B569-26C1-5DE6-A840-EF42D21FC062
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P2 obs:Q100 .
+
+obss:Q116-AECD2629-9F28-5067-AE1B-6104EE569DC9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P100 <https://www.openstreetmap.org/node/12936028929> .
+
+obss:Q116-BF46AA1D-963C-5826-B8C5-077E17421848
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:a17c54e7182bd5a91fa52aba3162a7bca5403b89 ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2025-06-20T16:13:36Z" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P111 "POINT(-2.7180546 55.5989369)" .
+
+obss:Q116-C407EF84-4B22-5B55-B3BC-AB3ABFB7F76C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:ab4ddcc63e7b6b937a9d6f1ce93ecc98addb9893 ;
+    obspq:P102 "+2"^^xsd:decimal ;
+    obspq:P103 "2025-06-22T15:24:26Z" ;
+    obspqv:P102 obsv:c295f8f927aa4b01b5401a2788a068ea ;
+    obsps:P111 "POINT(-2.7178856 55.5989365)" .
+
+obss:Q116-D123C9E1-BA31-5DE9-B4AD-09275509F314
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    obspq:P102 "+3"^^xsd:decimal ;
+    obspq:P103 "2025-06-22T16:38:56Z" ;
+    obspq:P104 "167966881" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    obsps:P101 <https://www.openstreetmap.org/node/12936028929/history/3> .
+
+obss:Q116-D1177641-7CDE-5D32-8AAF-495C6BFFD7A9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:fc6ae032523c42bc0e1b9f9966e1f8787f6f6185 ;
+    obsps:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20Melrose%20Abbey.jpg> .
+
+obss:Q116-DB387D44-D700-5E25-8299-3D9D9A3360EC
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:fc6ae032523c42bc0e1b9f9966e1f8787f6f6185 ;
+    obspq:P102 "+3"^^xsd:decimal ;
+    obspq:P103 "2025-06-22T16:38:56Z" ;
+    obspqv:P102 obsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    obsps:P111 "POINT(-2.7178857 55.5989376)" .
+
+obsref:a17c54e7182bd5a91fa52aba3162a7bca5403b89
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12936028929/history/1> .
+
+obsref:ab4ddcc63e7b6b937a9d6f1ce93ecc98addb9893
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12936028929/history/2> .
+
+obsref:fc6ae032523c42bc0e1b9f9966e1f8787f6f6185
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12936028929/history/3> .
+
+obsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:2b3680b365161e16e9237ad3f2b9b8a4
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "55.5989376"^^xsd:double ;
+    wikibase:geoLongitude "-2.7178857"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+obsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

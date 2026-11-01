@@ -1,0 +1,259 @@
+# Q113: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.20.0; data as of 2026-11-01T00:00:00Z
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix obs: <https://n4o-rse.github.io/osm-benchmarks-static/entity/> .
+@prefix obscat: <https://n4o-rse.github.io/osm-benchmarks-static/catalog/> .
+@prefix obsdata: <https://n4o-rse.github.io/osm-benchmarks-static/ttl/> .
+@prefix obsdist: <https://n4o-rse.github.io/osm-benchmarks-static/distribution/> .
+@prefix obsno: <https://n4o-rse.github.io/osm-benchmarks-static/prop/novalue/> .
+@prefix obsp: <https://n4o-rse.github.io/osm-benchmarks-static/prop/> .
+@prefix obspq: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/> .
+@prefix obspqv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/value/> .
+@prefix obspr: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/> .
+@prefix obsprv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/value/> .
+@prefix obsps: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/> .
+@prefix obspsv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/value/> .
+@prefix obsref: <https://n4o-rse.github.io/osm-benchmarks-static/reference/> .
+@prefix obss: <https://n4o-rse.github.io/osm-benchmarks-static/entity/statement/> .
+@prefix obst: <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/> .
+@prefix obsv: <https://n4o-rse.github.io/osm-benchmarks-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q113.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "OpenStreetMap node 12925489820"@en ;
+    dcterms:identifier "Q113" ;
+    dcterms:isPartOf obscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject obs:Q113 ;
+    dcterms:title "Benchmark on the Cathedral gate lodge"@en ;
+    schema:about obs:Q113 ;
+    dcat:distribution obsdist:Q113-html,
+        obsdist:Q113-json,
+        obsdist:Q113-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-benchmarks-static/Q113.html> .
+
+obsdist:Q113-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q113, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-benchmarks-static/Q113.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+obsdist:Q113-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q113, as archived from the Wikibase API"@en ;
+    dcat:byteSize "17246"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q113.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+obsdist:Q113-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q113, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL obsdata:Q113.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+obs:Q113
+    a wikibase:Item ;
+    schema:description "OpenStreetMap node 12925489820"@en ;
+    schema:name "Benchmark on the Cathedral gate lodge"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "Benchmark on the Cathedral gate lodge"@en ;
+    skos:prefLabel "Benchmark on the Cathedral gate lodge"@en ;
+    obsp:P2 obss:Q113-E5504893-DC29-57CE-831F-AD05B393D176 ;
+    obsp:P100 obss:Q113-7C0D45FD-C113-57DF-9543-DC74AF233AC2 ;
+    obsp:P101 obss:Q113-7B33C902-F53C-5B1D-A1D5-88CB014AC8BB,
+        obss:Q113-227187F8-432E-5AFE-8CC1-C98439F08D28,
+        obss:Q113-E68C9924-4493-5A83-A9CC-C37F0C5FBABB ;
+    obsp:P107 obss:Q113-B8622D6E-2F31-5AB1-9ACC-748AD037442A ;
+    obsp:P110 obss:Q113-C430B454-6F06-5DC1-BF91-00BEB61931B3 ;
+    obsp:P111 obss:Q113-294A42B3-907B-596F-9B32-82614F8378AD,
+        obss:Q113-BC8E4BFE-F783-5101-8D3B-E7F1BCE3EB6A ;
+    obsp:P112 obss:Q113-21074845-5DAB-53AA-B2C0-B7D33A355577 ;
+    obsp:P113 obss:Q113-2E670C87-AB46-5517-BFEF-D758FAFD52B1,
+        obss:Q113-20B992AE-E215-5ACD-AD46-89D080C69A1B,
+        obss:Q113-4425A13D-EFCE-531A-91AF-10B7063E4897,
+        obss:Q113-521115D9-E66E-5DD5-847A-9553D5BD8168 ;
+    obst:P2 obs:Q100 ;
+    obst:P100 <https://www.openstreetmap.org/node/12925489820> ;
+    obst:P101 <https://www.openstreetmap.org/node/12925489820/history/3> ;
+    obst:P107 <https://www.openstreetmap.org/node/12925489820/history/3> ;
+    obst:P110 "Point(-4.2353755 55.8623444)"^^geo:wktLiteral ;
+    obst:P111 "POINT(-4.2353755 55.8623444)",
+        "POINT(-4.2353803 55.8623446)" ;
+    obst:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20on%20the%20Cathedral%20gate%20lodge.jpg> ;
+    obst:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-19",
+        "survey_point:structure=cut" .
+
+obss:Q113-2E670C87-AB46-5517-BFEF-D758FAFD52B1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:09e67d0ddbd73cce0f6a9bcd78b4efacb27e717d ;
+    obsps:P113 "survey:date=2025-06-19" .
+
+obss:Q113-7B33C902-F53C-5B1D-A1D5-88CB014AC8BB
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+2"^^xsd:decimal ;
+    obspq:P103 "2025-06-19T22:06:14Z" ;
+    obspq:P104 "167846603" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:c295f8f927aa4b01b5401a2788a068ea ;
+    obsps:P101 <https://www.openstreetmap.org/node/12925489820/history/2> .
+
+obss:Q113-7C0D45FD-C113-57DF-9543-DC74AF233AC2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P100 <https://www.openstreetmap.org/node/12925489820> .
+
+obss:Q113-20B992AE-E215-5ACD-AD46-89D080C69A1B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:09e67d0ddbd73cce0f6a9bcd78b4efacb27e717d ;
+    obsps:P113 "survey_point:structure=cut" .
+
+obss:Q113-294A42B3-907B-596F-9B32-82614F8378AD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:843bf0bdd4e44832896fa41298da7364f3870400 ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2025-06-19T08:55:39Z" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P111 "POINT(-4.2353803 55.8623446)" .
+
+obss:Q113-4425A13D-EFCE-531A-91AF-10B7063E4897
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:09e67d0ddbd73cce0f6a9bcd78b4efacb27e717d ;
+    obsps:P113 "man_made=survey_point" .
+
+obss:Q113-227187F8-432E-5AFE-8CC1-C98439F08D28
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    obspq:P102 "+3"^^xsd:decimal ;
+    obspq:P103 "2025-06-19T22:31:29Z" ;
+    obspq:P104 "167847070" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    obsps:P101 <https://www.openstreetmap.org/node/12925489820/history/3> .
+
+obss:Q113-521115D9-E66E-5DD5-847A-9553D5BD8168
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:09e67d0ddbd73cce0f6a9bcd78b4efacb27e717d ;
+    obsps:P113 "benchmark=yes" .
+
+obss:Q113-21074845-5DAB-53AA-B2C0-B7D33A355577
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:09e67d0ddbd73cce0f6a9bcd78b4efacb27e717d ;
+    obsps:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20on%20the%20Cathedral%20gate%20lodge.jpg> .
+
+obss:Q113-B8622D6E-2F31-5AB1-9ACC-748AD037442A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P109 "benchmarks" ;
+    obsps:P107 <https://www.openstreetmap.org/node/12925489820/history/3> .
+
+obss:Q113-BC8E4BFE-F783-5101-8D3B-E7F1BCE3EB6A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:973eaef1ef8c1ad263454c72c0ca579e4df74c93 ;
+    obspq:P102 "+2"^^xsd:decimal ;
+    obspq:P103 "2025-06-19T22:06:14Z" ;
+    obspqv:P102 obsv:c295f8f927aa4b01b5401a2788a068ea ;
+    obsps:P111 "POINT(-4.2353755 55.8623444)" .
+
+obss:Q113-C430B454-6F06-5DC1-BF91-00BEB61931B3
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:09e67d0ddbd73cce0f6a9bcd78b4efacb27e717d ;
+    obsps:P110 "Point(-4.2353755 55.8623444)"^^geo:wktLiteral ;
+    obspsv:P110 obsv:ce0855b76328d0af8bf07b1f8e5a289f .
+
+obss:Q113-E68C9924-4493-5A83-A9CC-C37F0C5FBABB
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2025-06-19T08:55:39Z" ;
+    obspq:P104 "167815129" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P101 <https://www.openstreetmap.org/node/12925489820/history/1> .
+
+obss:Q113-E5504893-DC29-57CE-831F-AD05B393D176
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P2 obs:Q100 .
+
+obsref:09e67d0ddbd73cce0f6a9bcd78b4efacb27e717d
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12925489820/history/3> .
+
+obsref:843bf0bdd4e44832896fa41298da7364f3870400
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12925489820/history/1> .
+
+obsref:973eaef1ef8c1ad263454c72c0ca579e4df74c93
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12925489820/history/2> .
+
+obsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:ce0855b76328d0af8bf07b1f8e5a289f
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "55.8623444"^^xsd:double ;
+    wikibase:geoLongitude "-4.2353755"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .

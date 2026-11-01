@@ -1,0 +1,295 @@
+# Q120: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.20.0; data as of 2026-11-01T00:00:00Z
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix obs: <https://n4o-rse.github.io/osm-benchmarks-static/entity/> .
+@prefix obscat: <https://n4o-rse.github.io/osm-benchmarks-static/catalog/> .
+@prefix obsdata: <https://n4o-rse.github.io/osm-benchmarks-static/ttl/> .
+@prefix obsdist: <https://n4o-rse.github.io/osm-benchmarks-static/distribution/> .
+@prefix obsno: <https://n4o-rse.github.io/osm-benchmarks-static/prop/novalue/> .
+@prefix obsp: <https://n4o-rse.github.io/osm-benchmarks-static/prop/> .
+@prefix obspq: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/> .
+@prefix obspqv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/value/> .
+@prefix obspr: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/> .
+@prefix obsprv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/value/> .
+@prefix obsps: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/> .
+@prefix obspsv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/value/> .
+@prefix obsref: <https://n4o-rse.github.io/osm-benchmarks-static/reference/> .
+@prefix obss: <https://n4o-rse.github.io/osm-benchmarks-static/entity/statement/> .
+@prefix obst: <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/> .
+@prefix obsv: <https://n4o-rse.github.io/osm-benchmarks-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q120.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "OpenStreetMap node 6967103228"@en ;
+    dcterms:identifier "Q120" ;
+    dcterms:isPartOf obscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject obs:Q120 ;
+    dcterms:title "Milestone Old Dublin Road"@en ;
+    schema:about obs:Q120 ;
+    dcat:distribution obsdist:Q120-html,
+        obsdist:Q120-json,
+        obsdist:Q120-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-benchmarks-static/Q120.html> .
+
+obsdist:Q120-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q120, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-benchmarks-static/Q120.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+obsdist:Q120-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q120, as archived from the Wikibase API"@en ;
+    dcat:byteSize "21474"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q120.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+obsdist:Q120-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q120, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL obsdata:Q120.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+obs:Q120
+    a wikibase:Item ;
+    schema:description "OpenStreetMap node 6967103228"@en ;
+    schema:name "Milestone Old Dublin Road"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "17"^^xsd:integer ;
+    rdfs:label "Milestone Old Dublin Road"@en ;
+    skos:prefLabel "Milestone Old Dublin Road"@en ;
+    obsp:P2 obss:Q120-BEBDB9BE-A54E-56C3-A1F1-7F116E1C828A ;
+    obsp:P100 obss:Q120-65E992E3-5B91-56BF-8BA3-F635BE885ED9 ;
+    obsp:P101 obss:Q120-0F3A3101-2F27-5149-ABDC-0D1FC479CA12,
+        obss:Q120-5D7AACE2-351F-5180-9A82-4F35EC103998,
+        obss:Q120-2325BDD3-63A3-5C81-9CA9-DD55AF3265C0,
+        obss:Q120-AB78E7EA-EBCC-5684-B76E-BE7255A20D7F,
+        obss:Q120-F0D2240C-5A5A-5D81-B467-E35F57D6AF77 ;
+    obsp:P107 obss:Q120-5AA30132-8805-5ACE-80EB-6B772EBDD2A0 ;
+    obsp:P110 obss:Q120-5B20A695-0CBF-5EA4-8314-E4DB2EF9DEFE ;
+    obsp:P111 obss:Q120-F64D14DE-EA13-5462-B1B4-FFC059A96E5B ;
+    obsp:P112 obss:Q120-A45413F7-3712-5D6F-A014-16083B1F5D3F ;
+    obsp:P113 obss:Q120-6BA0E47A-A59E-5381-A3E2-FEA7102E6CFD,
+        obss:Q120-41FF2460-0E87-580E-A367-73E6D4429D51,
+        obss:Q120-95BC2B57-9AA3-52C2-B0FF-91E2066AD028,
+        obss:Q120-891788B2-0603-540F-B12D-CE1DCE8DEDA4,
+        obss:Q120-AA371785-D8A4-55C1-9A6A-FC2464DE907B,
+        obss:Q120-B9A4A986-7914-5F59-A71D-2039771443F5 ;
+    obst:P2 obs:Q100 ;
+    obst:P100 <https://www.openstreetmap.org/node/6967103228> ;
+    obst:P101 <https://www.openstreetmap.org/node/6967103228/history/5> ;
+    obst:P107 <https://www.openstreetmap.org/node/6967103228/history/5> ;
+    obst:P110 "Point(-7.2121484 52.6468593)"^^geo:wktLiteral ;
+    obst:P111 "POINT(-7.2121484 52.6468593)" ;
+    obst:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Milestone%20Old%20Dublin%20Road.jpg> ;
+    obst:P113 "benchmark=yes",
+        "historic=milestone",
+        "inscription=CARLOW 17 [...] ROYAL OAK 9",
+        "man_made=survey_point",
+        "source=survey",
+        "survey:date=2024-04-02" .
+
+obss:Q120-0F3A3101-2F27-5149-ABDC-0D1FC479CA12
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+4"^^xsd:decimal ;
+    obspq:P103 "2023-02-15T16:33:21Z" ;
+    obspq:P104 "132590533" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    obsps:P101 <https://www.openstreetmap.org/node/6967103228/history/4> .
+
+obss:Q120-5AA30132-8805-5ACE-80EB-6B772EBDD2A0
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P109 "benchmarks" ;
+    obsps:P107 <https://www.openstreetmap.org/node/6967103228/history/5> .
+
+obss:Q120-5B20A695-0CBF-5EA4-8314-E4DB2EF9DEFE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:25b0842f87a279828d6ca0c1ec16a982a89b5092 ;
+    obsps:P110 "Point(-7.2121484 52.6468593)"^^geo:wktLiteral ;
+    obspsv:P110 obsv:64471aef902f5db6ebbd41ff929c2678 .
+
+obss:Q120-5D7AACE2-351F-5180-9A82-4F35EC103998
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2019-11-11T17:35:05Z" ;
+    obspq:P104 "76923018" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P101 <https://www.openstreetmap.org/node/6967103228/history/1> .
+
+obss:Q120-6BA0E47A-A59E-5381-A3E2-FEA7102E6CFD
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:25b0842f87a279828d6ca0c1ec16a982a89b5092 ;
+    obsps:P113 "survey:date=2024-04-02" .
+
+obss:Q120-41FF2460-0E87-580E-A367-73E6D4429D51
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:25b0842f87a279828d6ca0c1ec16a982a89b5092 ;
+    obsps:P113 "source=survey" .
+
+obss:Q120-65E992E3-5B91-56BF-8BA3-F635BE885ED9
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P100 <https://www.openstreetmap.org/node/6967103228> .
+
+obss:Q120-95BC2B57-9AA3-52C2-B0FF-91E2066AD028
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:25b0842f87a279828d6ca0c1ec16a982a89b5092 ;
+    obsps:P113 "historic=milestone" .
+
+obss:Q120-2325BDD3-63A3-5C81-9CA9-DD55AF3265C0
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+3"^^xsd:decimal ;
+    obspq:P103 "2023-01-02T17:04:20Z" ;
+    obspq:P104 "130795879" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    obsps:P101 <https://www.openstreetmap.org/node/6967103228/history/3> .
+
+obss:Q120-891788B2-0603-540F-B12D-CE1DCE8DEDA4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:25b0842f87a279828d6ca0c1ec16a982a89b5092 ;
+    obsps:P113 "inscription=CARLOW 17 [...] ROYAL OAK 9" .
+
+obss:Q120-A45413F7-3712-5D6F-A014-16083B1F5D3F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:25b0842f87a279828d6ca0c1ec16a982a89b5092 ;
+    obsps:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Milestone%20Old%20Dublin%20Road.jpg> .
+
+obss:Q120-AA371785-D8A4-55C1-9A6A-FC2464DE907B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:25b0842f87a279828d6ca0c1ec16a982a89b5092 ;
+    obsps:P113 "benchmark=yes" .
+
+obss:Q120-AB78E7EA-EBCC-5684-B76E-BE7255A20D7F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    obspq:P102 "+5"^^xsd:decimal ;
+    obspq:P103 "2024-04-04T21:41:21Z" ;
+    obspq:P104 "149588608" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:30e603cac620241526fa9f81268ba25c ;
+    obsps:P101 <https://www.openstreetmap.org/node/6967103228/history/5> .
+
+obss:Q120-B9A4A986-7914-5F59-A71D-2039771443F5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:25b0842f87a279828d6ca0c1ec16a982a89b5092 ;
+    obsps:P113 "man_made=survey_point" .
+
+obss:Q120-BEBDB9BE-A54E-56C3-A1F1-7F116E1C828A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P2 obs:Q100 .
+
+obss:Q120-F0D2240C-5A5A-5D81-B467-E35F57D6AF77
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+2"^^xsd:decimal ;
+    obspq:P103 "2021-06-13T12:45:56Z" ;
+    obspq:P104 "106282681" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:c295f8f927aa4b01b5401a2788a068ea ;
+    obsps:P101 <https://www.openstreetmap.org/node/6967103228/history/2> .
+
+obss:Q120-F64D14DE-EA13-5462-B1B4-FFC059A96E5B
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:ab3513ce4c581a6f5f3307aa17c2ed78da8e811b ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2019-11-11T17:35:05Z" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P111 "POINT(-7.2121484 52.6468593)" .
+
+obsref:25b0842f87a279828d6ca0c1ec16a982a89b5092
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/6967103228/history/5> .
+
+obsref:ab3513ce4c581a6f5f3307aa17c2ed78da8e811b
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/6967103228/history/1> .
+
+obsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:9eb0a11f783b50f51f04a9fc2aca89fb
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+4"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:30e603cac620241526fa9f81268ba25c
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+5"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:64471aef902f5db6ebbd41ff929c2678
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.6468593"^^xsd:double ;
+    wikibase:geoLongitude "-7.2121484"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+obsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

@@ -1,0 +1,255 @@
+# Q108: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.20.0; data as of 2026-11-01T00:00:00Z
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix obs: <https://n4o-rse.github.io/osm-benchmarks-static/entity/> .
+@prefix obscat: <https://n4o-rse.github.io/osm-benchmarks-static/catalog/> .
+@prefix obsdata: <https://n4o-rse.github.io/osm-benchmarks-static/ttl/> .
+@prefix obsdist: <https://n4o-rse.github.io/osm-benchmarks-static/distribution/> .
+@prefix obsno: <https://n4o-rse.github.io/osm-benchmarks-static/prop/novalue/> .
+@prefix obsp: <https://n4o-rse.github.io/osm-benchmarks-static/prop/> .
+@prefix obspq: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/> .
+@prefix obspqv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/value/> .
+@prefix obspr: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/> .
+@prefix obsprv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/value/> .
+@prefix obsps: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/> .
+@prefix obspsv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/value/> .
+@prefix obsref: <https://n4o-rse.github.io/osm-benchmarks-static/reference/> .
+@prefix obss: <https://n4o-rse.github.io/osm-benchmarks-static/entity/statement/> .
+@prefix obst: <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/> .
+@prefix obsv: <https://n4o-rse.github.io/osm-benchmarks-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q108.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "OpenStreetMap node 12923752174"@en ;
+    dcterms:identifier "Q108" ;
+    dcterms:isPartOf obscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject obs:Q108 ;
+    dcterms:title "Benchmark at the corner of Trongate- Chrisholm Street"@en ;
+    schema:about obs:Q108 ;
+    dcat:distribution obsdist:Q108-html,
+        obsdist:Q108-json,
+        obsdist:Q108-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-benchmarks-static/Q108.html> .
+
+obsdist:Q108-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q108, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-benchmarks-static/Q108.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+obsdist:Q108-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q108, as archived from the Wikibase API"@en ;
+    dcat:byteSize "17277"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q108.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+obsdist:Q108-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q108, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL obsdata:Q108.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+obs:Q108
+    a wikibase:Item ;
+    schema:description "OpenStreetMap node 12923752174"@en ;
+    schema:name "Benchmark at the corner of Trongate- Chrisholm Street"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "14"^^xsd:integer ;
+    rdfs:label "Benchmark at the corner of Trongate- Chrisholm Street"@en ;
+    skos:prefLabel "Benchmark at the corner of Trongate- Chrisholm Street"@en ;
+    obsp:P2 obss:Q108-2650679E-8FD2-5447-9458-B967CD435F9A ;
+    obsp:P100 obss:Q108-2801E878-1F61-57D7-9BAC-40FDBB993A52 ;
+    obsp:P101 obss:Q108-95F68E16-61FF-5294-8FB0-CDB912E7BB5A,
+        obss:Q108-289B34CE-BAF3-5DE6-9CDC-F0BBCE910ED6,
+        obss:Q108-916A6151-B0AB-503D-9041-C9820D62A97A ;
+    obsp:P107 obss:Q108-9E654ED0-C00B-5E26-95CD-3249F3A1D4C8 ;
+    obsp:P110 obss:Q108-A2BC49FD-5EDF-5753-8870-351E772E8754 ;
+    obsp:P111 obss:Q108-7C9918F4-1B94-54F9-9B28-82867E053E24,
+        obss:Q108-E406D523-1B98-5722-9B99-11E44A96B7BB ;
+    obsp:P112 obss:Q108-8D4A451B-8AB8-52FC-A122-046DDBC59CB7 ;
+    obsp:P113 obss:Q108-9CB0A507-C808-5E62-BA88-8CE7EC129E2C,
+        obss:Q108-76CD1067-6E1D-5F5E-8798-977A01BECCBA,
+        obss:Q108-5449A9B2-835F-5F2D-ADCF-BD6CE62FEEDB,
+        obss:Q108-EC93B4A3-8AA6-505C-A4B6-50CAFCD69D61 ;
+    obst:P2 obs:Q100 ;
+    obst:P100 <https://www.openstreetmap.org/node/12923752174> ;
+    obst:P101 <https://www.openstreetmap.org/node/12923752174/history/3> ;
+    obst:P107 <https://www.openstreetmap.org/node/12923752174/history/2> ;
+    obst:P110 "Point(-4.2453643 55.8568563)"^^geo:wktLiteral ;
+    obst:P111 "POINT(-4.2453563 55.8568545)",
+        "POINT(-4.2453643 55.8568563)" ;
+    obst:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20the%20corner%20of%20Trongate-%20Chrisholm%20Street.jpg> ;
+    obst:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-18",
+        "survey_point:structure=cut" .
+
+obss:Q108-7C9918F4-1B94-54F9-9B28-82867E053E24
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:059e43ac2839351ea1c4d254b7b0b72c60555b0c ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2025-06-18T17:52:38Z" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P111 "POINT(-4.2453563 55.8568545)" .
+
+obss:Q108-8D4A451B-8AB8-52FC-A122-046DDBC59CB7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:31302e034b8f8a3a5a1549039818db5c208a383f ;
+    obsps:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20the%20corner%20of%20Trongate-%20Chrisholm%20Street.jpg> .
+
+obss:Q108-9CB0A507-C808-5E62-BA88-8CE7EC129E2C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:31302e034b8f8a3a5a1549039818db5c208a383f ;
+    obsps:P113 "man_made=survey_point" .
+
+obss:Q108-9E654ED0-C00B-5E26-95CD-3249F3A1D4C8
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P109 "benchmarks" ;
+    obsps:P107 <https://www.openstreetmap.org/node/12923752174/history/2> .
+
+obss:Q108-76CD1067-6E1D-5F5E-8798-977A01BECCBA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:31302e034b8f8a3a5a1549039818db5c208a383f ;
+    obsps:P113 "survey:date=2025-06-18" .
+
+obss:Q108-95F68E16-61FF-5294-8FB0-CDB912E7BB5A
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+2"^^xsd:decimal ;
+    obspq:P103 "2025-06-18T18:27:47Z" ;
+    obspq:P104 "167794779" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:c295f8f927aa4b01b5401a2788a068ea ;
+    obsps:P101 <https://www.openstreetmap.org/node/12923752174/history/2> .
+
+obss:Q108-289B34CE-BAF3-5DE6-9CDC-F0BBCE910ED6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    obspq:P102 "+3"^^xsd:decimal ;
+    obspq:P103 "2025-08-06T20:45:09Z" ;
+    obspq:P104 "170078132" ;
+    obspq:P105 "tagishsimon" ;
+    obspq:P106 "9198745" ;
+    obspqv:P102 obsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    obsps:P101 <https://www.openstreetmap.org/node/12923752174/history/3> .
+
+obss:Q108-916A6151-B0AB-503D-9041-C9820D62A97A
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2025-06-18T17:52:38Z" ;
+    obspq:P104 "167793402" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P101 <https://www.openstreetmap.org/node/12923752174/history/1> .
+
+obss:Q108-2801E878-1F61-57D7-9BAC-40FDBB993A52
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P100 <https://www.openstreetmap.org/node/12923752174> .
+
+obss:Q108-5449A9B2-835F-5F2D-ADCF-BD6CE62FEEDB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:31302e034b8f8a3a5a1549039818db5c208a383f ;
+    obsps:P113 "survey_point:structure=cut" .
+
+obss:Q108-2650679E-8FD2-5447-9458-B967CD435F9A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P2 obs:Q100 .
+
+obss:Q108-A2BC49FD-5EDF-5753-8870-351E772E8754
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:31302e034b8f8a3a5a1549039818db5c208a383f ;
+    obsps:P110 "Point(-4.2453643 55.8568563)"^^geo:wktLiteral ;
+    obspsv:P110 obsv:8b5045531f1676dd68fe398d70128545 .
+
+obss:Q108-E406D523-1B98-5722-9B99-11E44A96B7BB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:31302e034b8f8a3a5a1549039818db5c208a383f ;
+    obspq:P102 "+3"^^xsd:decimal ;
+    obspq:P103 "2025-08-06T20:45:09Z" ;
+    obspqv:P102 obsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    obsps:P111 "POINT(-4.2453643 55.8568563)" .
+
+obss:Q108-EC93B4A3-8AA6-505C-A4B6-50CAFCD69D61
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:31302e034b8f8a3a5a1549039818db5c208a383f ;
+    obsps:P113 "benchmark=yes" .
+
+obsref:059e43ac2839351ea1c4d254b7b0b72c60555b0c
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12923752174/history/1> .
+
+obsref:31302e034b8f8a3a5a1549039818db5c208a383f
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12923752174/history/3> .
+
+obsv:0bbe1280560b495eac2a68b29e4b1c4e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+3"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:8b5045531f1676dd68fe398d70128545
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "55.8568563"^^xsd:double ;
+    wikibase:geoLongitude "-4.2453643"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+obsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

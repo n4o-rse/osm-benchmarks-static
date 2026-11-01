@@ -1,6 +1,6 @@
 # PRIMER — osm-benchmarks-static
 
-Arbeitsplan für `n4o-rse/osm-benchmarks-static` (Repo-Name: Vorschlag 2026-11-01). Wird zu Beginn jedes Chats hochgeladen (Bundle, siehe A5) und am Ende zurückgeschrieben. Stand: 2026-11-01 (S0: Festlegungen; History-Probe an den 21 Benchmark-Nodes, Befunde 1 bis 13; S1: Skeleton, Befund 14; S2: Modell, Befund 15; S3: `import-osm` im Paket 0.20.0, Befund 16).
+Arbeitsplan für `n4o-rse/osm-benchmarks-static` (Repo-Name: Vorschlag 2026-11-01). Wird zu Beginn jedes Chats hochgeladen (Bundle, siehe A5) und am Ende zurückgeschrieben. Stand: 2026-11-01 (S0: Festlegungen; History-Probe an den 21 Benchmark-Nodes, Befunde 1 bis 13; S1: Skeleton, Befund 14; S2: Modell, Befund 15; S3: `import-osm` im Paket 0.20.0, Befund 16; S4: Erstbestand, Befund 17).
 
 Sprache: dieses Dokument ist deutsch, alles andere im Repo (Code, Kommentare, README) ist britisches Englisch.
 
@@ -53,6 +53,7 @@ Nicht neu zu bauen: die Overpass-Abfrage und die Auswahl der Elemente (kommen au
 14. **Paket ohne Daten (S1, geprüft 2026-11-01 mit `wikibase-static` 0.19.0).** `python main.py --strict` in einem Repo ohne `data/csv/` und ohne `data/raw/entities/` meldet bei jedem Schritt „nothing to do“, endet mit Exit-Code 0 und erzeugt keine Datei; `docs/` und `dist/` entstehen erst mit den ersten Daten (S4).
 15. **Paket, Zeitwerte (S2, geprüft 2026-11-01 mit `wikibase-static` 0.19.0).** Der Wert-Codec für `time` kennt nur Datum (Genauigkeit 9 bis 11: Jahr, Monat, Tag); eine Uhrzeit wie `+2019-07-31T15:26:39Z/14` wird von `from-csv` mit `WARN` abgewiesen. Der OSM-Zeitstempel (sekundengenau) steht deshalb vorerst als Zeichenkette (ISO 8601, UTC). Ein Zeitwert mit Uhrzeit im Paket wäre Sache von S15b; die Property bekommt dann den Datentyp `time`.
 16. **Paket, `import-osm` (S3, geprüft 2026-11-01 mit `wikibase-static` 0.20.0).** Mit den 21 Dateien aus `data/raw/osm/history/`, dem Modell aus S2 (ohne das Beispiel-Item) und `data/seeds/benchmarks.csv` erzeugt `import-osm --offline` **21 Items, 59 Versions-Statements, 21 Eintrittsmarker (v2: 13, v3: 6, v4: 1, v5: 1), 33 Geometrie-Einträge, 21 Bilder und 102 Tag-Statements (der Tag `wikimedia_commons` ist das Bild und kein Tag-Statement)**; `--strict` zweimal ohne `WARN`, `check-crm` 0 Verstöße, ein zweiter Import schreibt nichts. Kein Austritt in den 21 Dateien (0 Qualifier „bis“). Alle 21 Etiketten kommen aus `name` oder dem Commons-Titel, keines aus dem Rückfall `OSM node <id>`. Nur Nodes werden importiert; Ways und Relations meldet der Importer und lässt sie aus (S6).
+17. **Erstbestand (S4, geprüft 2026-11-01).** Nach dem Entfernen von Q1000 und `import-osm --offline` bauen die 21 Items (Q101 bis Q121, 49 Entitäten, 359 Statements, 5 776 Tripel) mit `--strict` zweimal ohne `WARN` und ohne toten Link (2 445 Links der Seiten, 55 der SPARQL-Seite); die Karte zeigt 21 Koordinaten auf 21 Seiten, `check-crm` meldet 0 Verstöße, im RDF gibt es kein `owl:sameAs`, der zweite Import schreibt keine Datei. Jede Seite verlinkt alle ihre OSM-Versionen (21 von 21 Seiten, gegen die Zahl der Versionen in der Rohdatei geprüft). **Etiketten:** 20 von 21 stammen aus dem Titel der Commons-Datei, eines aus `name:en`, keines aus `name` und keines aus dem Rückfall; die Etiketten hängen damit an den Dateinamen auf Commons (z. B. `MilestoneDublin8Howth1`). **Anzeige:** Die Karte bekommt im Browser ohne Netz keine Kacheln (grauer Grund, Marker sichtbar); das Commons-Bild lädt nur mit Netz. Die Koordinate wird auf der Seite gerundet angezeigt (`53.390985° N, 6.090671° W`), der Wert in der CSV hat sieben Stellen.
 
 ### A2 Zielbild
 
@@ -130,7 +131,7 @@ Die Ergebnisse müssen diese Eigenschaften haben, jede ist prüfbar:
 | Tags | Nur der aktuelle Stand; ältere Werte sind über die Versions-Links bei OSM erreichbar. Form: **eine** Property `OSM-Tag` (P113), je Tag ein Statement `key=value` | 2026-11-01 (S2) |
 | Datentypen | Element und Version: `url` (Version = Versions-URL); Changeset: `external-id` mit Link `https://www.openstreetmap.org/changeset/$1` (P5); Benutzername: `string`; uid: `external-id` ohne Link; Zeitstempel: `string`, ISO 8601 in UTC (Befund 15); Koordinate `globe-coordinate`; Geometrie-Verlauf `string` (WKT); Bild `commonsMedia` | 2026-11-01 (S2) |
 | Modell, IDs | Klasse „Benchmark“ = Q100; Properties P100 OSM-Element, P101 OSM-Version, P102 Versionsnummer, P103 Zeitstempel, P104 Changeset, P105 Benutzername, P106 uid, P107 in der Auswahl seit, P108 in der Auswahl bis, P109 Auswahl, P110 Koordinate, P111 Geometrie-Verlauf, P112 Bild, P113 OSM-Tag; der Konverter liest die Zuordnung Rolle → ID aus `data/csv/mapping/osm-properties.csv`. „Kriterium erfüllt seit“ heißt im Modell „in der Auswahl seit“ (en: in selection since), Qualifier „bis“ (P108) und „Auswahl“ (P109, Export-Typ) | 2026-11-01 (S2) |
-| Beispiel-Item | `Q1000` = `node/6666122939`, von Hand gebaut, zeigt das Modell und hält die Seiten (Karte, Abfragen) im Standardlauf nicht leer; der Importer ersetzt es in S3/S4 (Nummern vergibt dann `idmap.csv`) | Vorschlag 2026-11-01 (S2) |
+| Beispiel-Item | `Q1000` (`node/6666122939`, von Hand) diente in S2 und S3 dazu, das Modell zu zeigen; in S4 entfernt, `node/6666122939` ist jetzt Q118 aus dem Import | 2026-11-01 (S4) |
 | Benutzername und uid | Beide als Qualifier der Versions-Statements | 2026-11-01 |
 | Lizenz | ODbL 1.0 mit „© OpenStreetMap contributors“ in `site.yaml` (`license`), nicht der CC0-Standard des Pakets; der Code des Repos steht unter MIT | Vorschlag 2026-11-01 |
 | URIs | Eigener Namensraum im github.io-Raum des Repos (`rdf_base`), eigene Präfixfamilie (`rdf_prefix`); kein `owl:sameAs` und kein `skos:exactMatch` auf OSM, weil die OSM-URI den Datensatz bezeichnet und nicht das Ding | Vorschlag 2026-11-01 |
@@ -173,7 +174,7 @@ Alles `geplant`, bis S1 die Basis festlegt. Vorschlag: `rdf_base` = `https://n4o
 | S1 | Skeleton: Layout, `main.py`, `site.yaml`, `requirements.txt`, Lizenz, Citation, Workflow-Aufrufer, `update.cmd` | osm-benchmarks-static | S0 | erledigt 2026-11-01 (eingespielt als 028fb2a, CI grün, Python 3.10 geprüft; Pages-Einstellung erst mit S8 nötig) |
 | S2 | Modell: Klasse „Benchmark“, Properties (OSM-Element, OSM-Version, Kriterium erfüllt seit, Geometrie-Verlauf, …), `data/crm.csv`, Mapping-Datei der Rollen | osm-benchmarks-static | S1 | erledigt 2026-11-01 (Patch-ZIP; Einspielen offen) |
 | S3 | Konverter `import-osm --offline`: History-JSON und Overpass-Antwort → CSV; Ergänzung von `crm:E25` im Paket (Paket-S15a) | wikibase-static | S2 | erledigt 2026-11-01 (Paket 0.20.0, Befund 16; Patch-ZIPs; Einspielen offen) |
-| S4 | Erstbestand: die 21 Nodes aus den gesicherten JSON-Dateien → Seiten, RDF, SPARQL, `check-crm` (vorher Q1000 entfernen, siehe Teil D) | osm-benchmarks-static | S3 | offen |
+| S4 | Erstbestand: die 21 Nodes aus den gesicherten JSON-Dateien → Seiten, RDF, SPARQL, `check-crm` | osm-benchmarks-static | S3 | erledigt 2026-11-01 (Befund 17; Einspielen offen) |
 | S5 | Harvest mit Netz: Overpass, Versionsvergleich, `/history` nur bei Änderung, Eintritt und Austritt | wikibase-static, osm-benchmarks-static | S3 | offen |
 | S6 | Geometrie als WKT: Verlauf auf der Seite (Karte) und im RDF (GeoSPARQL), Ways und Relations (Paket-S15b) | wikibase-static | S3 | offen |
 | S7 | Standardabfragen und Feinschliff (Versionsverlauf, Eintrittsversion, Commons-Bilder, Namensnennung) | osm-benchmarks-static | S4 | offen |
@@ -242,6 +243,10 @@ Inhalt: Lauf der Pipeline gegen `data/raw/osm/history/`, Sichtprobe von Karte, C
 
 **Abnahme:** 21 Entitäten; jede Seite listet alle ihre OSM-Versionen mit Link; `check-crm` ohne Verstöße; `python main.py --strict` zweimal hintereinander, `git status` leer; im RDF kein `owl:sameAs` auf OSM.
 
+### Erledigt 2026-11-01 (S4)
+
+Gebaut: Q1000 aus den drei Tabellen entfernt, `import-osm --offline` gelaufen (21 Items, 59 Versions-Statements, 33 Geometrie-Einträge, 21 Eintrittsmarker; `data/csv/idmap.csv` mit 21 Zeilen), `data_as_of: 2026-11-01` in `site.yaml` (das Datum, an dem die History-Dateien von der API gelesen wurden), neues `README.md`-Stück „State“. Abnahme erfüllt, Zahlen in Befund 17: 21 Entitäten mit Link auf jede ihrer Versionen, `check-crm` 0 Verstöße, `--strict` zweimal, nach dem Einchecken ist `git status` leer, kein `owl:sameAs`. Sichtprobe im Browser an Q118 (Meilenstein): Karte mit Marker, Versionsliste mit Rang `preferred`, Eintrittsmarker, Geometrie-Verlauf mit zwei WKT-Einträgen, 9 Tag-Statements, Statement-Graph. Nicht geprüft: das Commons-Bild und die Kacheln (kein Netz), die Seiten auf GitHub Pages (S8), Python 3.10.
+
 ### S5 — Harvest mit Netz
 
 **Ziel:** Neue Elemente und neue Versionen kommen nach, ohne alles neu zu ziehen.
@@ -296,7 +301,7 @@ Inhalt: Entscheidung, ob je Typ ein Repo oder ein Seed in diesem Repo; CRM-Klass
 - **Netz bei Flo:** `import-osm` ist bei Flo noch nicht gelaufen (S5); beim ersten Lauf `--contact` setzen und die Pause prüfen.
 - **Pages einschalten (S1):** Einmal in den Einstellungen des Repos: Settings → Pages → Source „GitHub Actions“. Der Aufrufer `site.yml` steht seit S1 auf `deploy: false` und prüft nur; die Einstellung wird mit S8 gebraucht, wenn das Veröffentlichen eingeschaltet wird.
 - **Logo (S1):** `site.yaml` hat kein `logo`; falls eines gewünscht ist, die Datei nach `assets/` und die Zeile `logo: assets/<datei>` ergänzen.
-- **`rdf_prefix` und `data_as_of` (S1):** `obs` ist ein Vorschlag; `data_as_of` fehlt in `site.yaml` und wird mit den ersten Daten (S4) gesetzt, weil die CSV keine eigene Änderungszeit trägt (so macht es `chublets-wikibase-demo`).
+- **`rdf_prefix` und `data_as_of` (S1, S4):** `obs` ist ein Vorschlag. `data_as_of: 2026-11-01` steht seit S4 in `site.yaml`; bei jedem Harvest (S5) neu zu setzen, weil die CSV keine eigene Änderungszeit trägt.
 - **Probe-Skript:** `osm_history_probe.py` (lokal in `C:\tmp\pytemp`) wird mit S5 durch `import-osm` ersetzt; bis dahin nicht ins Repo, weil es nach `data/raw/osm_history` schreibt und nicht nach `data/raw/osm/history`.
 - **P103 als Zeichenkette (S2):** Sortieren und Filtern nach Zeit geht in SPARQL nur über den Text (ISO 8601 ist lexikalisch sortierbar). Sobald das Paket Zeitwerte mit Uhrzeit kann (Befund 15), Datentyp auf `time` stellen.
-- **Q1000 beim ersten Import (S3):** Das Beispiel-Item hat `origin=model-example` und zählt für den Importer als Handarbeit. In S4 vor dem Import löschen (Zeilen mit `Q1000` in den drei Tabellen), sonst gibt es zwei Items für `node/6666122939` (der Importer warnt).
+- **Etiketten aus Commons-Dateinamen (S4):** 20 von 21 Etiketten sind Dateititel (`MilestoneDublin8Howth1`, ohne Leerzeichen und mit Sonderzeichen). Möglich: das Etikett ergänzen um die Inschrift (`inscription`) oder `ref`, oder die Camel-Case-Titel trennen. Entscheidung offen (A4 „Label“ ist ein Vorschlag).

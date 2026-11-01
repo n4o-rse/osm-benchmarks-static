@@ -1,5 +1,26 @@
 id,kind,datatype,origin,label_en,label_de,description_en,description_de
 Q100,class,,,Benchmark,Höhenmarke,"A fixed survey marker (benchmark, survey point, milestone) that is mapped as one element in OpenStreetMap.","Eine fest verbaute Vermessungsmarke (Höhenmarke, Vermessungspunkt, Meilenstein), die in OpenStreetMap als ein Element kartiert ist."
+Q101,item,,osm,Benchmark at St. Nicholas' Collegiate Church,,OpenStreetMap node 12600848879,
+Q102,item,,osm,Benchmark at Ardreigh Lock,,OpenStreetMap node 12888689968,
+Q103,item,,osm,"NO145 BATH ST SE FACE E ANG 1989 37,995m",,OpenStreetMap node 12919476068,
+Q104,item,,osm,Benchmark at St George's Tron Parish Church,,OpenStreetMap node 12919738910,
+Q105,item,,osm,Benchmark at corner of Blantyre St and Argyle St,,OpenStreetMap node 12922675575,
+Q106,item,,osm,Benchmark on City Union Railway Bridge,,OpenStreetMap node 12923698705,
+Q107,item,,osm,Benchmark on Albert Bridge,,OpenStreetMap node 12923704831,
+Q108,item,,osm,Benchmark at the corner of Trongate- Chrisholm Street,,OpenStreetMap node 12923752174,
+Q109,item,,osm,Benchmark at Blackstock's Close (Saltmarket),,OpenStreetMap node 12923754806,
+Q110,item,,osm,Benchmark in the East side of the City Chambers,,OpenStreetMap node 12924781327,
+Q111,item,,osm,Benchmark on the North side of the City Chambers,,OpenStreetMap node 12924782280,
+Q112,item,,osm,Benchmark on the South side of the City Chambers,,OpenStreetMap node 12924784584,
+Q113,item,,osm,Benchmark on the Cathedral gate lodge,,OpenStreetMap node 12925489820,
+Q114,item,,osm,Barony Halls benchmark,,OpenStreetMap node 12925655350,
+Q115,item,,osm,Govan Road benchmark,,OpenStreetMap node 12925919541,
+Q116,item,,osm,Benchmark at Melrose Abbey,,OpenStreetMap node 12936028929,
+Q117,item,,osm,OS benchmark,,OpenStreetMap node 13331549275,
+Q118,item,,osm,MilestoneDublin8Howth1,,OpenStreetMap node 6666122939,
+Q119,item,,osm,MilestoneDublin9Howth,,OpenStreetMap node 6721748182,
+Q120,item,,osm,Milestone Old Dublin Road,,OpenStreetMap node 6967103228,
+Q121,item,,osm,Benchmark at Scots Church,,OpenStreetMap node 7873204616,
 P100,property,url,,OSM element,OSM-Element,"The OpenStreetMap element (node, way or relation) this item describes; the URL names its type and ID.","Das OpenStreetMap-Element (Node, Way oder Relation), das dieses Item beschreibt; die URL nennt Typ und ID."
 P101,property,url,,OSM version,OSM-Version,"One version of the OSM element, as the URL of that version; one statement per version.",Eine Version des OSM-Elements als URL dieser Version; ein Statement je Version.
 P102,property,quantity,,OSM version number,OSM-Versionsnummer,Number of an OSM version (qualifier).,Nummer einer OSM-Version (Qualifier).
@@ -14,4 +35,3 @@ P110,property,globe-coordinate,,coordinate location,Koordinate,Current position 
 P111,property,string,,geometry history,Geometrie-Verlauf,"Geometry of the element as WKT (longitude latitude, WGS 84), one statement per change; qualifiers: OSM version and OSM timestamp.","Geometrie des Elements als WKT (Länge Breite, WGS 84), ein Statement je Änderung; Qualifier: OSM-Version und OSM-Zeitstempel."
 P112,property,commonsMedia,,image,Bild,Image of the element on Wikimedia Commons (from the OSM tag wikimedia_commons).,Bild des Elements auf Wikimedia Commons (aus dem OSM-Tag wikimedia_commons).
 P113,property,string,,OSM tag,OSM-Tag,"A tag of the current version of the OSM element, written key=value.","Ein Tag der aktuellen Version des OSM-Elements, geschrieben als key=value."
-Q1000,item,,model-example,Milestone Dublin 8 Howth 1 (node 6666122939),Meilenstein Dublin 8 Howth 1 (Node 6666122939),Hand-made example of the model (step S2); replaced by the importer in step S3.,Von Hand gebautes Beispiel des Modells (Schritt S2); wird mit Schritt S3 vom Importer ersetzt.

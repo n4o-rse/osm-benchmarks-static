@@ -1,0 +1,226 @@
+# Q109: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.20.0; data as of 2026-11-01T00:00:00Z
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix obs: <https://n4o-rse.github.io/osm-benchmarks-static/entity/> .
+@prefix obscat: <https://n4o-rse.github.io/osm-benchmarks-static/catalog/> .
+@prefix obsdata: <https://n4o-rse.github.io/osm-benchmarks-static/ttl/> .
+@prefix obsdist: <https://n4o-rse.github.io/osm-benchmarks-static/distribution/> .
+@prefix obsno: <https://n4o-rse.github.io/osm-benchmarks-static/prop/novalue/> .
+@prefix obsp: <https://n4o-rse.github.io/osm-benchmarks-static/prop/> .
+@prefix obspq: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/> .
+@prefix obspqv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/value/> .
+@prefix obspr: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/> .
+@prefix obsprv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/value/> .
+@prefix obsps: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/> .
+@prefix obspsv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/value/> .
+@prefix obsref: <https://n4o-rse.github.io/osm-benchmarks-static/reference/> .
+@prefix obss: <https://n4o-rse.github.io/osm-benchmarks-static/entity/statement/> .
+@prefix obst: <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/> .
+@prefix obsv: <https://n4o-rse.github.io/osm-benchmarks-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q109.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "OpenStreetMap node 12923754806"@en ;
+    dcterms:identifier "Q109" ;
+    dcterms:isPartOf obscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject obs:Q109 ;
+    dcterms:title "Benchmark at Blackstock's Close (Saltmarket)"@en ;
+    schema:about obs:Q109 ;
+    dcat:distribution obsdist:Q109-html,
+        obsdist:Q109-json,
+        obsdist:Q109-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-benchmarks-static/Q109.html> .
+
+obsdist:Q109-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q109, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-benchmarks-static/Q109.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+obsdist:Q109-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q109, as archived from the Wikibase API"@en ;
+    dcat:byteSize "13528"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q109.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+obsdist:Q109-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q109, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL obsdata:Q109.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+obs:Q109
+    a wikibase:Item ;
+    schema:description "OpenStreetMap node 12923754806"@en ;
+    schema:name "Benchmark at Blackstock's Close (Saltmarket)"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "12"^^xsd:integer ;
+    rdfs:label "Benchmark at Blackstock's Close (Saltmarket)"@en ;
+    skos:prefLabel "Benchmark at Blackstock's Close (Saltmarket)"@en ;
+    obsp:P2 obss:Q109-3E3BCC37-C080-5DBB-B05D-0691AA540692 ;
+    obsp:P100 obss:Q109-AF85F148-24BE-511F-8B1A-36C6B6A8DA58 ;
+    obsp:P101 obss:Q109-813BD162-2D2A-59E8-B615-3ACB556A4668,
+        obss:Q109-B865D77C-D875-5A03-A577-7D3CE90FF314 ;
+    obsp:P107 obss:Q109-7CA69AC4-4F30-56A9-825D-BF5DCF2B1B02 ;
+    obsp:P110 obss:Q109-AD5A6E96-B862-5273-8575-DDDEB80D8D4A ;
+    obsp:P111 obss:Q109-41302B4E-7A7B-5D0B-BDAE-0C93C2277E80 ;
+    obsp:P112 obss:Q109-8774E549-6689-5A75-94E0-E870C4B5808C ;
+    obsp:P113 obss:Q109-4EA0FA8C-C7E0-5C6D-B899-739B6D5524DB,
+        obss:Q109-61DC9E90-C908-5433-B187-F5A9E9F892D1,
+        obss:Q109-387C04EA-3CAD-5147-8522-4A4AC2A75A3D,
+        obss:Q109-DB261CFB-1D41-548D-B1C4-9C30877D61EE ;
+    obst:P2 obs:Q100 ;
+    obst:P100 <https://www.openstreetmap.org/node/12923754806> ;
+    obst:P101 <https://www.openstreetmap.org/node/12923754806/history/2> ;
+    obst:P107 <https://www.openstreetmap.org/node/12923754806/history/2> ;
+    obst:P110 "Point(-4.2454407 55.8547441)"^^geo:wktLiteral ;
+    obst:P111 "POINT(-4.2454407 55.8547441)" ;
+    obst:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20Blackstock%27s%20Close%20%28Saltmarket%29.jpg> ;
+    obst:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-18",
+        "survey_point:structure=cut" .
+
+obss:Q109-3E3BCC37-C080-5DBB-B05D-0691AA540692
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P2 obs:Q100 .
+
+obss:Q109-4EA0FA8C-C7E0-5C6D-B899-739B6D5524DB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:c8526078c5d466a9c14bc51940c7405c2ace0df3 ;
+    obsps:P113 "survey_point:structure=cut" .
+
+obss:Q109-7CA69AC4-4F30-56A9-825D-BF5DCF2B1B02
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P109 "benchmarks" ;
+    obsps:P107 <https://www.openstreetmap.org/node/12923754806/history/2> .
+
+obss:Q109-61DC9E90-C908-5433-B187-F5A9E9F892D1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:c8526078c5d466a9c14bc51940c7405c2ace0df3 ;
+    obsps:P113 "man_made=survey_point" .
+
+obss:Q109-387C04EA-3CAD-5147-8522-4A4AC2A75A3D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:c8526078c5d466a9c14bc51940c7405c2ace0df3 ;
+    obsps:P113 "survey:date=2025-06-18" .
+
+obss:Q109-813BD162-2D2A-59E8-B615-3ACB556A4668
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2025-06-18T17:45:07Z" ;
+    obspq:P104 "167793150" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P101 <https://www.openstreetmap.org/node/12923754806/history/1> .
+
+obss:Q109-8774E549-6689-5A75-94E0-E870C4B5808C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:c8526078c5d466a9c14bc51940c7405c2ace0df3 ;
+    obsps:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20Blackstock%27s%20Close%20%28Saltmarket%29.jpg> .
+
+obss:Q109-41302B4E-7A7B-5D0B-BDAE-0C93C2277E80
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:6d464730582b3281df917f80b06328190a605636 ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2025-06-18T17:45:07Z" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P111 "POINT(-4.2454407 55.8547441)" .
+
+obss:Q109-AD5A6E96-B862-5273-8575-DDDEB80D8D4A
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:c8526078c5d466a9c14bc51940c7405c2ace0df3 ;
+    obsps:P110 "Point(-4.2454407 55.8547441)"^^geo:wktLiteral ;
+    obspsv:P110 obsv:38ecc4b80d4140594cdea4387005a7a5 .
+
+obss:Q109-AF85F148-24BE-511F-8B1A-36C6B6A8DA58
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P100 <https://www.openstreetmap.org/node/12923754806> .
+
+obss:Q109-B865D77C-D875-5A03-A577-7D3CE90FF314
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    obspq:P102 "+2"^^xsd:decimal ;
+    obspq:P103 "2025-06-18T18:26:51Z" ;
+    obspq:P104 "167794747" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:c295f8f927aa4b01b5401a2788a068ea ;
+    obsps:P101 <https://www.openstreetmap.org/node/12923754806/history/2> .
+
+obss:Q109-DB261CFB-1D41-548D-B1C4-9C30877D61EE
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:c8526078c5d466a9c14bc51940c7405c2ace0df3 ;
+    obsps:P113 "benchmark=yes" .
+
+obsref:6d464730582b3281df917f80b06328190a605636
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12923754806/history/1> .
+
+obsref:c8526078c5d466a9c14bc51940c7405c2ace0df3
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12923754806/history/2> .
+
+obsv:38ecc4b80d4140594cdea4387005a7a5
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "55.8547441"^^xsd:double ;
+    wikibase:geoLongitude "-4.2454407"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+obsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

@@ -9,6 +9,8 @@ rdf_base: https://n4o-rse.github.io/osm-benchmarks-static
 # The prefix names of the export: obs:, obst:, obsp:, ... and not wd:, wdt:, p:, ..., which are those of Wikidata.
 # A proposal (PRIMER.md, A4 "URIs"); change it before the first publication if another name is wanted.
 rdf_prefix: obs
+# The date the history files were read from the OSM API (the files carry no date of their own).
+data_as_of: 2026-11-01
 edit_url: https://github.com/n4o-rse/osm-benchmarks-static/edit/main/data/csv
 languages:
   default: en

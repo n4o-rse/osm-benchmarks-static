@@ -9,8 +9,9 @@ element's version history is tracked as statements on that item, and every item 
 CIDOC CRM class (`crm:E25 Human-Made Feature`). The geometry of each version is kept as WKT, so
 the model also carries ways and relations.
 
-**State (S1):** the skeleton. There are no pages yet; the first data (the history of 21 benchmark nodes, in
-`data/raw/osm/history/`) is turned into items in the steps that follow. The work plan, the decisions made so far
+**State (S4):** the first stock. The history of 21 benchmark nodes (59 versions, in `data/raw/osm/history/`) is turned into
+21 items by `python main.py import-osm --offline`; the pages, the RDF and the SPARQL page are built from them. Harvest from the
+network, ways and relations, and publishing on GitHub Pages are the steps that follow. The work plan, the decisions made so far
 and the steps ahead are in [`PRIMER.md`](PRIMER.md) (German).
 
 ## Build
@@ -19,7 +20,7 @@ Needs Python 3.10 or later. In a Windows `cmd` window, in this folder:
 
     pip install -r requirements.txt && python main.py --strict
 
-`python main.py --list` shows the steps. Without data every step reports `nothing to do`.
+`python main.py --list` shows the steps. `python main.py import-osm --offline` turns the files in `data/raw/osm/history/` into rows of `data/csv/`; the default run builds the site from them.
 `update.cmd` installs the current `wikibase-static` again, builds with `--strict`, and commits and pushes
 only if something changed.
 

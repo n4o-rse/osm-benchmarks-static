@@ -1,0 +1,238 @@
+# Q105: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
+# Generated with wikibase-static 0.20.0; data as of 2026-11-01T00:00:00Z
+# Licence: ODbL 1.0, © OpenStreetMap contributors
+# The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
+
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix obs: <https://n4o-rse.github.io/osm-benchmarks-static/entity/> .
+@prefix obscat: <https://n4o-rse.github.io/osm-benchmarks-static/catalog/> .
+@prefix obsdata: <https://n4o-rse.github.io/osm-benchmarks-static/ttl/> .
+@prefix obsdist: <https://n4o-rse.github.io/osm-benchmarks-static/distribution/> .
+@prefix obsno: <https://n4o-rse.github.io/osm-benchmarks-static/prop/novalue/> .
+@prefix obsp: <https://n4o-rse.github.io/osm-benchmarks-static/prop/> .
+@prefix obspq: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/> .
+@prefix obspqv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/value/> .
+@prefix obspr: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/> .
+@prefix obsprv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/reference/value/> .
+@prefix obsps: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/> .
+@prefix obspsv: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/value/> .
+@prefix obsref: <https://n4o-rse.github.io/osm-benchmarks-static/reference/> .
+@prefix obss: <https://n4o-rse.github.io/osm-benchmarks-static/entity/statement/> .
+@prefix obst: <https://n4o-rse.github.io/osm-benchmarks-static/prop/direct/> .
+@prefix obsv: <https://n4o-rse.github.io/osm-benchmarks-static/value/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wikibase: <http://wikiba.se/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q105.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "OpenStreetMap node 12922675575"@en ;
+    dcterms:identifier "Q105" ;
+    dcterms:isPartOf obscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject obs:Q105 ;
+    dcterms:title "Benchmark at corner of Blantyre St and Argyle St"@en ;
+    schema:about obs:Q105 ;
+    dcat:distribution obsdist:Q105-html,
+        obsdist:Q105-json,
+        obsdist:Q105-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-benchmarks-static/Q105.html> .
+
+obsdist:Q105-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q105, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-benchmarks-static/Q105.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+obsdist:Q105-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q105, as archived from the Wikibase API"@en ;
+    dcat:byteSize "15196"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q105.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+obsdist:Q105-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q105, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL obsdata:Q105.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+obs:Q105
+    a wikibase:Item ;
+    schema:description "OpenStreetMap node 12922675575"@en ;
+    schema:name "Benchmark at corner of Blantyre St and Argyle St"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "13"^^xsd:integer ;
+    rdfs:label "Benchmark at corner of Blantyre St and Argyle St"@en ;
+    skos:prefLabel "Benchmark at corner of Blantyre St and Argyle St"@en ;
+    obsp:P2 obss:Q105-B3AC9E50-BE78-5951-BE8D-CE6D230AC6E1 ;
+    obsp:P100 obss:Q105-FFE1A2CB-8C0A-53ED-A178-B7D05AD512BF ;
+    obsp:P101 obss:Q105-574936DC-E283-5B5C-8C29-490078AE35C1,
+        obss:Q105-BD9DCB81-A8CE-5196-80A1-B6C5E9982B92 ;
+    obsp:P107 obss:Q105-7CD1B48A-8C00-5ED5-8F09-9458A812A540 ;
+    obsp:P110 obss:Q105-4F5C6325-1545-5656-8B4D-85F6464FD3D6 ;
+    obsp:P111 obss:Q105-59C745B5-3D80-5A49-B14A-2B5D728F58B2,
+        obss:Q105-D2535C6A-89F1-5BCB-9366-F5F6060E6223 ;
+    obsp:P112 obss:Q105-B37F0AFB-127B-5BE0-8349-7FEDAA172D58 ;
+    obsp:P113 obss:Q105-3D0D31AF-6017-53F3-89CA-4402DC663103,
+        obss:Q105-9D5ED65F-57BB-544B-A6C0-8872ECE245F7,
+        obss:Q105-3947B6CE-99CD-5B68-BF06-036DB4008A8D,
+        obss:Q105-AC0E3F29-3392-5378-9319-C61DF6818674 ;
+    obst:P2 obs:Q100 ;
+    obst:P100 <https://www.openstreetmap.org/node/12922675575> ;
+    obst:P101 <https://www.openstreetmap.org/node/12922675575/history/2> ;
+    obst:P107 <https://www.openstreetmap.org/node/12922675575/history/2> ;
+    obst:P110 "Point(-4.2924895 55.8685438)"^^geo:wktLiteral ;
+    obst:P111 "POINT(-4.2924895 55.8685438)",
+        "POINT(-4.2924923 55.8685441)" ;
+    obst:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20corner%20of%20Blantyre%20St%20and%20Argyle%20St.jpg> ;
+    obst:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "survey:date=2025-06-18",
+        "survey_point:structure=cut" .
+
+obss:Q105-3D0D31AF-6017-53F3-89CA-4402DC663103
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:e359ba5e50c76ce739c2d75d87ca48bcd019c601 ;
+    obsps:P113 "man_made=survey_point" .
+
+obss:Q105-4F5C6325-1545-5656-8B4D-85F6464FD3D6
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:e359ba5e50c76ce739c2d75d87ca48bcd019c601 ;
+    obsps:P110 "Point(-4.2924895 55.8685438)"^^geo:wktLiteral ;
+    obspsv:P110 obsv:777e806ed1a5cc317da7e30189c9becf .
+
+obss:Q105-7CD1B48A-8C00-5ED5-8F09-9458A812A540
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P109 "benchmarks" ;
+    obsps:P107 <https://www.openstreetmap.org/node/12922675575/history/2> .
+
+obss:Q105-9D5ED65F-57BB-544B-A6C0-8872ECE245F7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:e359ba5e50c76ce739c2d75d87ca48bcd019c601 ;
+    obsps:P113 "survey_point:structure=cut" .
+
+obss:Q105-59C745B5-3D80-5A49-B14A-2B5D728F58B2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:e359ba5e50c76ce739c2d75d87ca48bcd019c601 ;
+    obspq:P102 "+2"^^xsd:decimal ;
+    obspq:P103 "2025-06-19T22:35:27Z" ;
+    obspqv:P102 obsv:c295f8f927aa4b01b5401a2788a068ea ;
+    obsps:P111 "POINT(-4.2924895 55.8685438)" .
+
+obss:Q105-3947B6CE-99CD-5B68-BF06-036DB4008A8D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:e359ba5e50c76ce739c2d75d87ca48bcd019c601 ;
+    obsps:P113 "benchmark=yes" .
+
+obss:Q105-574936DC-E283-5B5C-8C29-490078AE35C1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    obspq:P102 "+2"^^xsd:decimal ;
+    obspq:P103 "2025-06-19T22:35:27Z" ;
+    obspq:P104 "167847134" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:c295f8f927aa4b01b5401a2788a068ea ;
+    obsps:P101 <https://www.openstreetmap.org/node/12922675575/history/2> .
+
+obss:Q105-AC0E3F29-3392-5378-9319-C61DF6818674
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:e359ba5e50c76ce739c2d75d87ca48bcd019c601 ;
+    obsps:P113 "survey:date=2025-06-18" .
+
+obss:Q105-B3AC9E50-BE78-5951-BE8D-CE6D230AC6E1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P2 obs:Q100 .
+
+obss:Q105-B37F0AFB-127B-5BE0-8349-7FEDAA172D58
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:e359ba5e50c76ce739c2d75d87ca48bcd019c601 ;
+    obsps:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Benchmark%20at%20corner%20of%20Blantyre%20St%20and%20Argyle%20St.jpg> .
+
+obss:Q105-BD9DCB81-A8CE-5196-80A1-B6C5E9982B92
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2025-06-18T07:12:34Z" ;
+    obspq:P104 "167767656" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P101 <https://www.openstreetmap.org/node/12922675575/history/1> .
+
+obss:Q105-D2535C6A-89F1-5BCB-9366-F5F6060E6223
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:0fad46cc7cdbdb3eaf317410451e87d8ee6e38dd ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2025-06-18T07:12:34Z" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P111 "POINT(-4.2924923 55.8685441)" .
+
+obss:Q105-FFE1A2CB-8C0A-53ED-A178-B7D05AD512BF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P100 <https://www.openstreetmap.org/node/12922675575> .
+
+obsref:0fad46cc7cdbdb3eaf317410451e87d8ee6e38dd
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12922675575/history/1> .
+
+obsref:e359ba5e50c76ce739c2d75d87ca48bcd019c601
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/12922675575/history/2> .
+
+obsv:777e806ed1a5cc317da7e30189c9becf
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "55.8685438"^^xsd:double ;
+    wikibase:geoLongitude "-4.2924895"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+obsv:aa2e7afcc4dbda508bf34d1e83609f7e
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+1"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .
+
+obsv:c295f8f927aa4b01b5401a2788a068ea
+    a wikibase:QuantityValue ;
+    wikibase:quantityAmount "+2"^^xsd:decimal ;
+    wikibase:quantityUnit <http://www.wikidata.org/entity/Q199> .

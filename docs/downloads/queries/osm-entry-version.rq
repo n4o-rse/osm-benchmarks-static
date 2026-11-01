@@ -1,0 +1,18 @@
+PREFIX obsp: <https://n4o-rse.github.io/osm-benchmarks-static/prop/>
+PREFIX obspq: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/>
+PREFIX obsps: <https://n4o-rse.github.io/osm-benchmarks-static/prop/statement/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?item ?label ?entryVersion ?since ?selection WHERE {
+  ?item obsp:P107 ?entry ;
+        obsp:P101 ?version ;
+        rdfs:label ?label .
+  ?entry obsps:P107 ?url ;
+         obspq:P109 ?selection .
+  ?version obsps:P101 ?url ;
+           obspq:P102 ?entryVersion ;
+           obspq:P103 ?since .
+  FILTER(LANG(?label) = "en")
+}
+ORDER BY DESC(?entryVersion) ?since ?label
+LIMIT 200

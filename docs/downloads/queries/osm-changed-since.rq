@@ -1,0 +1,17 @@
+PREFIX obsp: <https://n4o-rse.github.io/osm-benchmarks-static/prop/>
+PREFIX obspq: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+SELECT ?item ?label ?number ?timestamp ?user WHERE {
+  ?item obsp:P101 ?version ;
+        rdfs:label ?label .
+  ?version wikibase:rank wikibase:PreferredRank ;
+           obspq:P102 ?number ;
+           obspq:P103 ?timestamp ;
+           obspq:P105 ?user .
+  FILTER(LANG(?label) = "en")
+  FILTER(?timestamp >= "2025-01-01T00:00:00Z")
+}
+ORDER BY DESC(?timestamp) ?label ?item
+LIMIT 200

@@ -1,0 +1,10 @@
+PREFIX obsp: <https://n4o-rse.github.io/osm-benchmarks-static/prop/>
+PREFIX obspq: <https://n4o-rse.github.io/osm-benchmarks-static/prop/qualifier/>
+
+SELECT ?user (COUNT(?version) AS ?versions) (COUNT(DISTINCT ?item) AS ?elements) WHERE {
+  ?item obsp:P101 ?version .
+  ?version obspq:P105 ?user .
+}
+GROUP BY ?user
+ORDER BY DESC(?versions) ?user
+LIMIT 20

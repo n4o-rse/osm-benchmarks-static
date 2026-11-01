@@ -1,4 +1,4 @@
 # The tool that renders this site.
-# Needs wikibase-static 0.20.0 or later: it has the importer for OpenStreetMap data (verb import-osm, PRIMER.md, S3).
+# Needs wikibase-static 0.21.0 or later: its verb import-osm asks Overpass and the OSM API and imports the answers (PRIMER.md, S3 and S5).
 # Pin a tag or commit here once wikibase-static has releases.
 wikibase-static @ git+https://github.com/n4o-rse/wikibase-static.git

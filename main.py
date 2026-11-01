@@ -5,15 +5,16 @@
     python main.py --strict             the same, but any WARN line (a dead link, a model rule) is an error
     python main.py --strict check-crm   SHACL check: every class reaches the CIDOC CRM (after the default run)
     python main.py csv-fmt              bring the tables in data/csv/ into canonical form (--check: only report)
-    python main.py import-osm --offline OSM element histories (data/raw/osm/history/) -> data/csv/ (writes source files)
+    python main.py import-osm           Overpass + OSM API -> data/raw/osm/, then data/csv/ (network; --probe, --refresh, --offline)
     python main.py --list               print the steps and exit
 
-Everything is done by the installed package ``wikibase-static`` (0.20.0 or later); this file only points it at this
+Everything is done by the installed package ``wikibase-static`` (0.21.0 or later); this file only points it at this
 repository (WBS_ROOT) and starts the steps. Any further arguments are passed to the step.
 
-The verb ``import-osm`` turns the OSM element histories in data/raw/osm/history/ into rows of data/csv/ (wikibase-static 0.20.0,
-PRIMER.md, step S3). It is offline in 0.20.0; the network part (Overpass, history requests) comes with step S5. It is a verb:
-it never runs in the default run, because it writes source files.
+The verb ``import-osm`` asks Overpass (data/seeds/overpass-benchmarks.overpassql), fetches the history of the new or changed
+elements from the OSM API into data/raw/osm/ and turns it into rows of data/csv/ (wikibase-static 0.21.0, PRIMER.md, step S5).
+``--probe`` sends one request and writes nothing; ``--offline`` imports the stored files without the network. It is the only step
+that uses the network and a verb: it never runs in the default run, because it writes source files.
 
 ``--strict`` is what the GitHub workflow runs (.github/workflows/site.yml): the steps write ``WARN: ...``
 lines for problems and this wrapper turns them into exit code 1, as the package's own main.py does.

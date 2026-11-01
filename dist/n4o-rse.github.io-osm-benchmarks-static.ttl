@@ -1,5 +1,5 @@
 # RDF export of OSM benchmarks (static Wikibase), Wikibase data model; base URI https://n4o-rse.github.io/osm-benchmarks-static
-# Generated with wikibase-static 0.20.0; data as of 2026-11-01T00:00:00Z
+# Generated with wikibase-static 0.21.0; data as of 2026-11-01T00:00:00Z
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -70,7 +70,9 @@ obscat:items
         <https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q118.ttl#dataset>,
         <https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q119.ttl#dataset>,
         <https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q120.ttl#dataset>,
-        <https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q121.ttl#dataset> .
+        <https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q121.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q122.ttl#dataset>,
+        <https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q123.ttl#dataset> .
 
 obscat:properties
     a dcat:Catalog ;
@@ -962,6 +964,38 @@ obscat:wikibase-ontology
         obsdist:Q121-json,
         obsdist:Q121-ttl ;
     dcat:landingPage <https://n4o-rse.github.io/osm-benchmarks-static/Q121.html> .
+
+<https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q122.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "OpenStreetMap node 14257817434"@en ;
+    dcterms:identifier "Q122" ;
+    dcterms:isPartOf obscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject obs:Q122 ;
+    dcterms:title "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138"@en ;
+    schema:about obs:Q122 ;
+    dcat:distribution obsdist:Q122-html,
+        obsdist:Q122-json,
+        obsdist:Q122-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-benchmarks-static/Q122.html> .
+
+<https://n4o-rse.github.io/osm-benchmarks-static/ttl/Q123.ttl#dataset>
+    a schema:Dataset,
+        dcat:Dataset ;
+    cc:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:description "OpenStreetMap node 7709937682"@en ;
+    dcterms:identifier "Q123" ;
+    dcterms:isPartOf obscat:items ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:subject obs:Q123 ;
+    dcterms:title "Ballingarry benchmark"@en ;
+    schema:about obs:Q123 ;
+    dcat:distribution obsdist:Q123-html,
+        obsdist:Q123-json,
+        obsdist:Q123-ttl ;
+    dcat:landingPage <https://n4o-rse.github.io/osm-benchmarks-static/Q123.html> .
 
 obsdist:P1-html
     a dcat:Distribution ;
@@ -2188,6 +2222,56 @@ obsdist:Q121-ttl
     dcat:downloadURL obsdata:Q121.ttl ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
+obsdist:Q122-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q122, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-benchmarks-static/Q122.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+obsdist:Q122-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q122, as archived from the Wikibase API"@en ;
+    dcat:byteSize "11488"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q122.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+obsdist:Q122-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q122, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL obsdata:Q122.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+obsdist:Q123-html
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q123, page"@en ;
+    dcat:accessURL <https://n4o-rse.github.io/osm-benchmarks-static/Q123.html> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/html> .
+
+obsdist:Q123-json
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q123, as archived from the Wikibase API"@en ;
+    dcat:byteSize "24904"^^xsd:nonNegativeInteger ;
+    dcat:downloadURL <https://n4o-rse.github.io/osm-benchmarks-static/json/Q123.json> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
+
+obsdist:Q123-ttl
+    a dcat:Distribution ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+    dcterms:license <https://opendatacommons.org/licenses/odbl/1-0/> ;
+    dcterms:title "Q123, RDF in the Wikibase data model"@en ;
+    dcat:downloadURL obsdata:Q123.ttl ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
 obsdist:export
     a dcat:Distribution ;
     dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
@@ -3019,6 +3103,82 @@ obs:Q121
         "historic=yes",
         "man_made=survey_point",
         "source=survey;OS 6'' Cassini map" .
+
+obs:Q122
+    a wikibase:Item ;
+    schema:description "OpenStreetMap node 14257817434"@en ;
+    schema:name "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "11"^^xsd:integer ;
+    rdfs:label "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138"@en ;
+    skos:prefLabel "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138"@en ;
+    obsp:P2 obss:Q122-0C48C86F-CC73-59E4-9DC0-00F968613CD5 ;
+    obsp:P100 obss:Q122-D1E0C81B-BF8E-554D-A133-8F77B806AE30 ;
+    obsp:P101 obss:Q122-91CE90DD-8FA3-59FE-8ADD-720AF5C5BE9F ;
+    obsp:P107 obss:Q122-A18CA7A8-E1B6-59D6-A946-8587C3A259D4 ;
+    obsp:P110 obss:Q122-D15A0620-0DA0-5307-8591-E759AA0047E4 ;
+    obsp:P111 obss:Q122-F7F802BF-7B85-5535-938D-0242BF3C7401 ;
+    obsp:P112 obss:Q122-43C5872A-1523-5C39-9B15-642FCD61D4ED ;
+    obsp:P113 obss:Q122-947B62F7-2F77-5C0C-8D8D-833B93C7D9CA,
+        obss:Q122-61636F51-4CA3-5DF4-AD8F-992E41FFFE5C,
+        obss:Q122-68565A80-EC0B-5ABF-B609-52BAD5DA2754,
+        obss:Q122-E4F36083-E4A8-5967-9A80-E8864A381B75 ;
+    obst:P2 obs:Q100 ;
+    obst:P100 <https://www.openstreetmap.org/node/14257817434> ;
+    obst:P101 <https://www.openstreetmap.org/node/14257817434/history/1> ;
+    obst:P107 <https://www.openstreetmap.org/node/14257817434/history/1> ;
+    obst:P110 "Point(-6.9063675 54.128786)"^^geo:wktLiteral ;
+    obst:P111 "POINT(-6.9063675 54.128786)" ;
+    obst:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Second%20Presbyterian%20Church%2C%20Ballybay%20-%20geograph.org.uk%20-%203013138.jpg> ;
+    obst:P113 "benchmark=yes",
+        "man_made=survey_point",
+        "source=wikimedia",
+        "survey_point:structure=cut" .
+
+obs:Q123
+    a wikibase:Item ;
+    schema:description "OpenStreetMap node 7709937682"@en ;
+    schema:name "Ballingarry benchmark"@en ;
+    wikibase:identifiers "0"^^xsd:integer ;
+    wikibase:statements "20"^^xsd:integer ;
+    rdfs:label "Ballingarry benchmark"@en ;
+    skos:prefLabel "Ballingarry benchmark"@en ;
+    obsp:P2 obss:Q123-3DB0D4BC-A809-5F04-AC7E-9EBFA11DCD2D ;
+    obsp:P100 obss:Q123-56401383-4068-5134-8B01-F9D12874BCB1 ;
+    obsp:P101 obss:Q123-9718A570-CCD9-5161-91DD-91A665736DCB,
+        obss:Q123-93536AA1-62B3-5C8B-9F24-5B3A20C76BB2,
+        obss:Q123-AA9584FB-3CCF-595F-B2FB-CB7E102EF820,
+        obss:Q123-C5BEBEEA-0348-50C8-BF64-5E54D9B19CA2,
+        obss:Q123-CD9C30BE-F2D1-5576-9666-96C779D49D36 ;
+    obsp:P107 obss:Q123-004755FE-1A73-523F-A14C-A3C21B280551 ;
+    obsp:P110 obss:Q123-2A6A9B58-9A6E-5258-B6E5-6E1BEA3C8E96 ;
+    obsp:P111 obss:Q123-2D005A50-B2EB-5051-8AE8-6646404BBACB,
+        obss:Q123-DE289D6D-4A4B-508C-B2DB-C49D683E6924 ;
+    obsp:P112 obss:Q123-FA00115F-8EE1-578A-8741-A3A17F0218CA ;
+    obsp:P113 obss:Q123-0D49C48D-5F95-5B98-A82E-547EB5DB09DF,
+        obss:Q123-0E49FF32-E086-5A74-B388-77F4A4515FDA,
+        obss:Q123-9D7A1A15-BD5F-5288-9C17-8CF455FD7FD2,
+        obss:Q123-16F43105-52A8-5064-BC88-4623B7793B9D,
+        obss:Q123-8136A5F3-7D0C-5927-AA15-520D2A848E90,
+        obss:Q123-123080E2-7A52-5442-9887-4A101B6CE1B7,
+        obss:Q123-B9149993-93D8-5742-8481-AC913FD7E174,
+        obss:Q123-C64C9F10-B5B4-5C18-A1B3-C4AEA72CAB76 ;
+    obst:P2 obs:Q100 ;
+    obst:P100 <https://www.openstreetmap.org/node/7709937682> ;
+    obst:P101 <https://www.openstreetmap.org/node/7709937682/history/5> ;
+    obst:P107 <https://www.openstreetmap.org/node/7709937682/history/5> ;
+    obst:P110 "Point(-7.5413562 52.5861876)"^^geo:wktLiteral ;
+    obst:P111 "POINT(-7.541375 52.5861786)",
+        "POINT(-7.5413562 52.5861876)" ;
+    obst:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Ballingarry%20benchmark.jpg> ;
+    obst:P113 "benchmark=yes",
+        "check_date=2026-07-30",
+        "ele:1913=675.9",
+        "man_made=survey_point",
+        "note=On the window sill.",
+        "source=survey;OS 25'' map",
+        "survey:date=2020-07-12",
+        "survey_point:structure=cut" .
 
 obs:P1
     a wikibase:Property ;
@@ -6466,6 +6626,256 @@ obss:Q121-F6EE246F-E917-5743-8ADD-41525BD5E348
     prov:wasDerivedFrom obsref:10a77d5e44b219e335a4138c48a2a3ade9531967 ;
     obsps:P113 "historic=yes" .
 
+obss:Q122-0C48C86F-CC73-59E4-9DC0-00F968613CD5
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P2 obs:Q100 .
+
+obss:Q122-43C5872A-1523-5C39-9B15-642FCD61D4ED
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:f13a310f28d3600651e2647eadfe8f4ef2b6aed0 ;
+    obsps:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Second%20Presbyterian%20Church%2C%20Ballybay%20-%20geograph.org.uk%20-%203013138.jpg> .
+
+obss:Q122-91CE90DD-8FA3-59FE-8ADD-720AF5C5BE9F
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2026-10-07T09:50:45Z" ;
+    obspq:P104 "190136070" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P101 <https://www.openstreetmap.org/node/14257817434/history/1> .
+
+obss:Q122-947B62F7-2F77-5C0C-8D8D-833B93C7D9CA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:f13a310f28d3600651e2647eadfe8f4ef2b6aed0 ;
+    obsps:P113 "survey_point:structure=cut" .
+
+obss:Q122-61636F51-4CA3-5DF4-AD8F-992E41FFFE5C
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:f13a310f28d3600651e2647eadfe8f4ef2b6aed0 ;
+    obsps:P113 "man_made=survey_point" .
+
+obss:Q122-68565A80-EC0B-5ABF-B609-52BAD5DA2754
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:f13a310f28d3600651e2647eadfe8f4ef2b6aed0 ;
+    obsps:P113 "source=wikimedia" .
+
+obss:Q122-A18CA7A8-E1B6-59D6-A946-8587C3A259D4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P109 "benchmarks" ;
+    obsps:P107 <https://www.openstreetmap.org/node/14257817434/history/1> .
+
+obss:Q122-D1E0C81B-BF8E-554D-A133-8F77B806AE30
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P100 <https://www.openstreetmap.org/node/14257817434> .
+
+obss:Q122-D15A0620-0DA0-5307-8591-E759AA0047E4
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:f13a310f28d3600651e2647eadfe8f4ef2b6aed0 ;
+    obsps:P110 "Point(-6.9063675 54.128786)"^^geo:wktLiteral ;
+    obspsv:P110 obsv:9a1b8c8bdca630f6c0ceb283682fd5f0 .
+
+obss:Q122-E4F36083-E4A8-5967-9A80-E8864A381B75
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:f13a310f28d3600651e2647eadfe8f4ef2b6aed0 ;
+    obsps:P113 "benchmark=yes" .
+
+obss:Q122-F7F802BF-7B85-5535-938D-0242BF3C7401
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:f13a310f28d3600651e2647eadfe8f4ef2b6aed0 ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2026-10-07T09:50:45Z" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P111 "POINT(-6.9063675 54.128786)" .
+
+obss:Q123-0D49C48D-5F95-5B98-A82E-547EB5DB09DF
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:128baef84745afc5924e7f68202f85cd1db64bc9 ;
+    obsps:P113 "note=On the window sill." .
+
+obss:Q123-0E49FF32-E086-5A74-B388-77F4A4515FDA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:128baef84745afc5924e7f68202f85cd1db64bc9 ;
+    obsps:P113 "survey_point:structure=cut" .
+
+obss:Q123-2A6A9B58-9A6E-5258-B6E5-6E1BEA3C8E96
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:128baef84745afc5924e7f68202f85cd1db64bc9 ;
+    obsps:P110 "Point(-7.5413562 52.5861876)"^^geo:wktLiteral ;
+    obspsv:P110 obsv:6fadf1893a3b129db63f0d59331c5d1c .
+
+obss:Q123-2D005A50-B2EB-5051-8AE8-6646404BBACB
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:6a7abfb1a7fcf07d14356e5b0e98deb57368134c ;
+    obspq:P102 "+4"^^xsd:decimal ;
+    obspq:P103 "2026-07-30T23:49:39Z" ;
+    obspqv:P102 obsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    obsps:P111 "POINT(-7.5413562 52.5861876)" .
+
+obss:Q123-3DB0D4BC-A809-5F04-AC7E-9EBFA11DCD2D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P2 obs:Q100 .
+
+obss:Q123-9D7A1A15-BD5F-5288-9C17-8CF455FD7FD2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:128baef84745afc5924e7f68202f85cd1db64bc9 ;
+    obsps:P113 "ele:1913=675.9" .
+
+obss:Q123-16F43105-52A8-5064-BC88-4623B7793B9D
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:128baef84745afc5924e7f68202f85cd1db64bc9 ;
+    obsps:P113 "check_date=2026-07-30" .
+
+obss:Q123-004755FE-1A73-523F-A14C-A3C21B280551
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P109 "benchmarks" ;
+    obsps:P107 <https://www.openstreetmap.org/node/7709937682/history/5> .
+
+obss:Q123-8136A5F3-7D0C-5927-AA15-520D2A848E90
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:128baef84745afc5924e7f68202f85cd1db64bc9 ;
+    obsps:P113 "benchmark=yes" .
+
+obss:Q123-9718A570-CCD9-5161-91DD-91A665736DCB
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+3"^^xsd:decimal ;
+    obspq:P103 "2025-04-26T22:03:57Z" ;
+    obspq:P104 "165484225" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:0bbe1280560b495eac2a68b29e4b1c4e ;
+    obsps:P101 <https://www.openstreetmap.org/node/7709937682/history/3> .
+
+obss:Q123-93536AA1-62B3-5C8B-9F24-5B3A20C76BB2
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:PreferredRank ;
+    obspq:P102 "+5"^^xsd:decimal ;
+    obspq:P103 "2026-07-30T23:53:53Z" ;
+    obspq:P104 "186676467" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:30e603cac620241526fa9f81268ba25c ;
+    obsps:P101 <https://www.openstreetmap.org/node/7709937682/history/5> .
+
+obss:Q123-123080E2-7A52-5442-9887-4A101B6CE1B7
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:128baef84745afc5924e7f68202f85cd1db64bc9 ;
+    obsps:P113 "source=survey;OS 25'' map" .
+
+obss:Q123-56401383-4068-5134-8B01-F9D12874BCB1
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obsps:P100 <https://www.openstreetmap.org/node/7709937682> .
+
+obss:Q123-AA9584FB-3CCF-595F-B2FB-CB7E102EF820
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+2"^^xsd:decimal ;
+    obspq:P103 "2023-01-02T17:00:11Z" ;
+    obspq:P104 "130795705" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:c295f8f927aa4b01b5401a2788a068ea ;
+    obsps:P101 <https://www.openstreetmap.org/node/7709937682/history/2> .
+
+obss:Q123-B9149993-93D8-5742-8481-AC913FD7E174
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:128baef84745afc5924e7f68202f85cd1db64bc9 ;
+    obsps:P113 "man_made=survey_point" .
+
+obss:Q123-C5BEBEEA-0348-50C8-BF64-5E54D9B19CA2
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2020-07-13T08:33:05Z" ;
+    obspq:P104 "87910134" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P101 <https://www.openstreetmap.org/node/7709937682/history/1> .
+
+obss:Q123-C64C9F10-B5B4-5C18-A1B3-C4AEA72CAB76
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:128baef84745afc5924e7f68202f85cd1db64bc9 ;
+    obsps:P113 "survey:date=2020-07-12" .
+
+obss:Q123-CD9C30BE-F2D1-5576-9666-96C779D49D36
+    a wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    obspq:P102 "+4"^^xsd:decimal ;
+    obspq:P103 "2026-07-30T23:49:39Z" ;
+    obspq:P104 "186676315" ;
+    obspq:P105 "b-unicycling" ;
+    obspq:P106 "1713634" ;
+    obspqv:P102 obsv:9eb0a11f783b50f51f04a9fc2aca89fb ;
+    obsps:P101 <https://www.openstreetmap.org/node/7709937682/history/4> .
+
+obss:Q123-DE289D6D-4A4B-508C-B2DB-C49D683E6924
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:b8c0b94b0e975419a0211c5c32920af52b0d8ac8 ;
+    obspq:P102 "+1"^^xsd:decimal ;
+    obspq:P103 "2020-07-13T08:33:05Z" ;
+    obspqv:P102 obsv:aa2e7afcc4dbda508bf34d1e83609f7e ;
+    obsps:P111 "POINT(-7.541375 52.5861786)" .
+
+obss:Q123-FA00115F-8EE1-578A-8741-A3A17F0218CA
+    a wikibase:BestRank,
+        wikibase:Statement ;
+    wikibase:rank wikibase:NormalRank ;
+    prov:wasDerivedFrom obsref:128baef84745afc5924e7f68202f85cd1db64bc9 ;
+    obsps:P112 <http://commons.wikimedia.org/wiki/Special:FilePath/Ballingarry%20benchmark.jpg> .
+
 obsref:0fad46cc7cdbdb3eaf317410451e87d8ee6e38dd
     a wikibase:Reference ;
     obspr:P6 <https://www.openstreetmap.org/node/12922675575/history/1> .
@@ -6489,6 +6899,10 @@ obsref:004f1e49feabc240758f178e47284c8ed2646b35
 obsref:5c3eb8c8849899fb5a7ee69682e9415e8a1f9bd7
     a wikibase:Reference ;
     obspr:P6 <https://www.openstreetmap.org/node/12919738910/history/1> .
+
+obsref:6a7abfb1a7fcf07d14356e5b0e98deb57368134c
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/7709937682/history/4> .
 
 obsref:6d464730582b3281df917f80b06328190a605636
     a wikibase:Reference ;
@@ -6553,6 +6967,10 @@ obsref:71c26182731b3eed1cc2af94e8585b3905d3b9d7
 obsref:99e37e33e8761d5fbb79871ebf95d9e3622c3922
     a wikibase:Reference ;
     obspr:P6 <https://www.openstreetmap.org/node/12923698705/history/1> .
+
+obsref:128baef84745afc5924e7f68202f85cd1db64bc9
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/7709937682/history/5> .
 
 obsref:0162d247d1e01cf48432c391dcfd73ba08f10c67
     a wikibase:Reference ;
@@ -6622,6 +7040,10 @@ obsref:b05efe145604c69c9d2d4da50351d24d950abd93
     a wikibase:Reference ;
     obspr:P6 <https://www.openstreetmap.org/node/7873204616/history/1> .
 
+obsref:b8c0b94b0e975419a0211c5c32920af52b0d8ac8
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/7709937682/history/1> .
+
 obsref:b365e7de32b13f4ffbc5e505819fa5eda42ed173
     a wikibase:Reference ;
     obspr:P6 <https://www.openstreetmap.org/node/12924784584/history/2> .
@@ -6657,6 +7079,10 @@ obsref:dfcb9452ffd1426b10f61594b9a376edb18b9f69
 obsref:e359ba5e50c76ce739c2d75d87ca48bcd019c601
     a wikibase:Reference ;
     obspr:P6 <https://www.openstreetmap.org/node/12922675575/history/2> .
+
+obsref:f13a310f28d3600651e2647eadfe8f4ef2b6aed0
+    a wikibase:Reference ;
+    obspr:P6 <https://www.openstreetmap.org/node/14257817434/history/1> .
 
 obsref:fc6ae032523c42bc0e1b9f9966e1f8787f6f6185
     a wikibase:Reference ;
@@ -6707,11 +7133,25 @@ obsv:4b01e0925d08c41e018142c09f0827b6
     wikibase:geoLongitude "-6.0906714"^^xsd:double ;
     wikibase:geoPrecision "1e-06"^^xsd:double .
 
+obsv:6fadf1893a3b129db63f0d59331c5d1c
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "52.5861876"^^xsd:double ;
+    wikibase:geoLongitude "-7.5413562"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
 obsv:8b5045531f1676dd68fe398d70128545
     a wikibase:GlobecoordinateValue ;
     wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
     wikibase:geoLatitude "55.8568563"^^xsd:double ;
     wikibase:geoLongitude "-4.2453643"^^xsd:double ;
+    wikibase:geoPrecision "1e-06"^^xsd:double .
+
+obsv:9a1b8c8bdca630f6c0ceb283682fd5f0
+    a wikibase:GlobecoordinateValue ;
+    wikibase:geoGlobe <http://www.wikidata.org/entity/Q2> ;
+    wikibase:geoLatitude "54.128786"^^xsd:double ;
+    wikibase:geoLongitude "-6.9063675"^^xsd:double ;
     wikibase:geoPrecision "1e-06"^^xsd:double .
 
 obsv:9b9d92d5f7d14b8fd8f48c2ca514e260
@@ -7719,6 +8159,12 @@ obs:Q120
     a obs:Q100 .
 
 obs:Q121
+    a obs:Q100 .
+
+obs:Q122
+    a obs:Q100 .
+
+obs:Q123
     a obs:Q100 .
 
 crmdig:D1_Digital_Object

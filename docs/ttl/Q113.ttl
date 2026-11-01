@@ -1,5 +1,5 @@
 # Q113: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
-# Generated with wikibase-static 0.21.0; data as of 2026-11-01T00:00:00Z
+# Generated with wikibase-static 0.22.0; data as of 2026-11-01T00:00:00Z
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -74,11 +74,15 @@ obsdist:Q113-ttl
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 obs:Q113
-    a wikibase:Item ;
+    a wikibase:Item,
+        geo:Feature ;
     schema:description "OpenStreetMap node 12925489820"@en ;
     schema:name "Benchmark on the Cathedral gate lodge"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
+    geo:hasDefaultGeometry obss:Q113-BC8E4BFE-F783-5101-8D3B-E7F1BCE3EB6A ;
+    geo:hasGeometry obss:Q113-294A42B3-907B-596F-9B32-82614F8378AD,
+        obss:Q113-BC8E4BFE-F783-5101-8D3B-E7F1BCE3EB6A ;
     rdfs:label "Benchmark on the Cathedral gate lodge"@en ;
     skos:prefLabel "Benchmark on the Cathedral gate lodge"@en ;
     obsp:P2 obss:Q113-E5504893-DC29-57CE-831F-AD05B393D176 ;
@@ -141,8 +145,10 @@ obss:Q113-20B992AE-E215-5ACD-AD46-89D080C69A1B
 
 obss:Q113-294A42B3-907B-596F-9B32-82614F8378AD
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-4.2353803 55.8623446)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:843bf0bdd4e44832896fa41298da7364f3870400 ;
     obspq:P102 "+1"^^xsd:decimal ;
     obspq:P103 "2025-06-19T08:55:39Z" ;
@@ -191,8 +197,10 @@ obss:Q113-B8622D6E-2F31-5AB1-9ACC-748AD037442A
 
 obss:Q113-BC8E4BFE-F783-5101-8D3B-E7F1BCE3EB6A
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-4.2353755 55.8623444)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:973eaef1ef8c1ad263454c72c0ca579e4df74c93 ;
     obspq:P102 "+2"^^xsd:decimal ;
     obspq:P103 "2025-06-19T22:06:14Z" ;

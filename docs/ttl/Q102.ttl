@@ -1,5 +1,5 @@
 # Q102: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
-# Generated with wikibase-static 0.21.0; data as of 2026-11-01T00:00:00Z
+# Generated with wikibase-static 0.22.0; data as of 2026-11-01T00:00:00Z
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -74,11 +74,15 @@ obsdist:Q102-ttl
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 obs:Q102
-    a wikibase:Item ;
+    a wikibase:Item,
+        geo:Feature ;
     schema:description "OpenStreetMap node 12888689968"@en ;
     schema:name "Benchmark at Ardreigh Lock"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
+    geo:hasDefaultGeometry obss:Q102-4D73754D-554F-512F-ADF4-A77A1BD7772F ;
+    geo:hasGeometry obss:Q102-4D73754D-554F-512F-ADF4-A77A1BD7772F,
+        obss:Q102-7F4E8602-2859-57C3-AAE5-F978D63A7CEA ;
     rdfs:label "Benchmark at Ardreigh Lock"@en ;
     skos:prefLabel "Benchmark at Ardreigh Lock"@en ;
     obsp:P2 obss:Q102-3D2B0284-F827-5757-9E3B-057B6294411D ;
@@ -125,8 +129,10 @@ obss:Q102-3D2B0284-F827-5757-9E3B-057B6294411D
 
 obss:Q102-4D73754D-554F-512F-ADF4-A77A1BD7772F
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.9790004 52.9774432)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:c01c7fb36cc6bda781baeb25336ed962786d8496 ;
     obspq:P102 "+2"^^xsd:decimal ;
     obspq:P103 "2025-06-05T20:53:32Z" ;
@@ -156,8 +162,10 @@ obss:Q102-6E27D6AB-54F5-5337-B4D2-FA21B27A453D
 
 obss:Q102-7F4E8602-2859-57C3-AAE5-F978D63A7CEA
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.9789703 52.9774212)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:7c4d4969f7f656fcd252cc2855a13688bbd3c441 ;
     obspq:P102 "+1"^^xsd:decimal ;
     obspq:P103 "2025-06-05T12:21:00Z" ;

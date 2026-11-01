@@ -1,5 +1,5 @@
 # Q106: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
-# Generated with wikibase-static 0.21.0; data as of 2026-11-01T00:00:00Z
+# Generated with wikibase-static 0.22.0; data as of 2026-11-01T00:00:00Z
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -74,11 +74,14 @@ obsdist:Q106-ttl
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 obs:Q106
-    a wikibase:Item ;
+    a wikibase:Item,
+        geo:Feature ;
     schema:description "OpenStreetMap node 12923698705"@en ;
     schema:name "Benchmark on City Union Railway Bridge"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
+    geo:hasDefaultGeometry obss:Q106-83CC5E99-8167-56A6-BF7D-8129623A459A ;
+    geo:hasGeometry obss:Q106-83CC5E99-8167-56A6-BF7D-8129623A459A ;
     rdfs:label "Benchmark on City Union Railway Bridge"@en ;
     skos:prefLabel "Benchmark on City Union Railway Bridge"@en ;
     obsp:P2 obss:Q106-2FE8F952-DFA1-59DA-8735-99A45223DCAB ;
@@ -166,8 +169,10 @@ obss:Q106-52EF5FD6-B910-5C33-9128-13CADDC444D9
 
 obss:Q106-83CC5E99-8167-56A6-BF7D-8129623A459A
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-4.2497576 55.8526441)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:99e37e33e8761d5fbb79871ebf95d9e3622c3922 ;
     obspq:P102 "+1"^^xsd:decimal ;
     obspq:P103 "2025-06-18T17:11:57Z" ;

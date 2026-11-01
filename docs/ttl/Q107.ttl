@@ -1,5 +1,5 @@
 # Q107: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
-# Generated with wikibase-static 0.21.0; data as of 2026-11-01T00:00:00Z
+# Generated with wikibase-static 0.22.0; data as of 2026-11-01T00:00:00Z
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -74,11 +74,14 @@ obsdist:Q107-ttl
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 obs:Q107
-    a wikibase:Item ;
+    a wikibase:Item,
+        geo:Feature ;
     schema:description "OpenStreetMap node 12923704831"@en ;
     schema:name "Benchmark on Albert Bridge"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
+    geo:hasDefaultGeometry obss:Q107-0FF1A56B-DA06-5BF0-9771-ED2F691A5C24 ;
+    geo:hasGeometry obss:Q107-0FF1A56B-DA06-5BF0-9771-ED2F691A5C24 ;
     rdfs:label "Benchmark on Albert Bridge"@en ;
     skos:prefLabel "Benchmark on Albert Bridge"@en ;
     obsp:P2 obss:Q107-1F93CACF-4E8A-55D5-865C-8181373DD66C ;
@@ -107,8 +110,10 @@ obs:Q107
 
 obss:Q107-0FF1A56B-DA06-5BF0-9771-ED2F691A5C24
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-4.247294 55.8527993)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:22cebe471ffc342719513eab0b4f0456c7eed54c ;
     obspq:P102 "+1"^^xsd:decimal ;
     obspq:P103 "2025-06-18T17:15:30Z" ;

@@ -1,5 +1,5 @@
 # Q103: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
-# Generated with wikibase-static 0.21.0; data as of 2026-11-01T00:00:00Z
+# Generated with wikibase-static 0.22.0; data as of 2026-11-01T00:00:00Z
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -74,11 +74,15 @@ obsdist:Q103-ttl
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 obs:Q103
-    a wikibase:Item ;
+    a wikibase:Item,
+        geo:Feature ;
     schema:description "OpenStreetMap node 12919476068"@en ;
     schema:name "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "20"^^xsd:integer ;
+    geo:hasDefaultGeometry obss:Q103-7FDD4E6B-FF40-5625-8B5B-DAD5E020C44C ;
+    geo:hasGeometry obss:Q103-7FDD4E6B-FF40-5625-8B5B-DAD5E020C44C,
+        obss:Q103-85672352-62D4-5E88-8286-F81E3A8D4C8C ;
     rdfs:label "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
     skos:prefLabel "NO145 BATH ST SE FACE E ANG 1989 37,995m"@en ;
     obsp:P2 obss:Q103-54055322-9D86-5B37-A1AE-D6BEFA56FDEC ;
@@ -140,8 +144,10 @@ obss:Q103-4B7F6488-F853-576A-990E-5BE597C81ACD
 
 obss:Q103-7FDD4E6B-FF40-5625-8B5B-DAD5E020C44C
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-4.260726 55.8642448)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:35405d5e71a291f3c88cc90bf5b0ab09d50ca214 ;
     obspq:P102 "+2"^^xsd:decimal ;
     obspq:P103 "2025-06-16T20:35:12Z" ;
@@ -185,8 +191,10 @@ obss:Q103-54055322-9D86-5B37-A1AE-D6BEFA56FDEC
 
 obss:Q103-85672352-62D4-5E88-8286-F81E3A8D4C8C
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-4.2607179 55.8642366)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:528fe18566d9d5bbbf54fdf0749d045766864776 ;
     obspq:P102 "+1"^^xsd:decimal ;
     obspq:P103 "2025-06-16T14:32:42Z" ;

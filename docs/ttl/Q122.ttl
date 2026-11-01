@@ -1,5 +1,5 @@
 # Q122: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
-# Generated with wikibase-static 0.21.0; data as of 2026-11-01T00:00:00Z
+# Generated with wikibase-static 0.22.0; data as of 2026-11-01T00:00:00Z
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -74,11 +74,14 @@ obsdist:Q122-ttl
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 obs:Q122
-    a wikibase:Item ;
+    a wikibase:Item,
+        geo:Feature ;
     schema:description "OpenStreetMap node 14257817434"@en ;
     schema:name "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "11"^^xsd:integer ;
+    geo:hasDefaultGeometry obss:Q122-F7F802BF-7B85-5535-938D-0242BF3C7401 ;
+    geo:hasGeometry obss:Q122-F7F802BF-7B85-5535-938D-0242BF3C7401 ;
     rdfs:label "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138"@en ;
     skos:prefLabel "Second Presbyterian Church, Ballybay - geograph.org.uk - 3013138"@en ;
     obsp:P2 obss:Q122-0C48C86F-CC73-59E4-9DC0-00F968613CD5 ;
@@ -180,8 +183,10 @@ obss:Q122-E4F36083-E4A8-5967-9A80-E8864A381B75
 
 obss:Q122-F7F802BF-7B85-5535-938D-0242BF3C7401
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.9063675 54.128786)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:f13a310f28d3600651e2647eadfe8f4ef2b6aed0 ;
     obspq:P102 "+1"^^xsd:decimal ;
     obspq:P103 "2026-10-07T09:50:45Z" ;

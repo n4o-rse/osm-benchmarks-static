@@ -1,5 +1,5 @@
 # Q101: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
-# Generated with wikibase-static 0.21.0; data as of 2026-11-01T00:00:00Z
+# Generated with wikibase-static 0.22.0; data as of 2026-11-01T00:00:00Z
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -74,11 +74,16 @@ obsdist:Q101-ttl
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 obs:Q101
-    a wikibase:Item ;
+    a wikibase:Item,
+        geo:Feature ;
     schema:description "OpenStreetMap node 12600848879"@en ;
     schema:name "Benchmark at St. Nicholas' Collegiate Church"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "21"^^xsd:integer ;
+    geo:hasDefaultGeometry obss:Q101-4D902827-C11A-5277-B493-BE586D77FF29 ;
+    geo:hasGeometry obss:Q101-4D902827-C11A-5277-B493-BE586D77FF29,
+        obss:Q101-8EB6BF1E-A7DB-5444-A5E7-D3A9AC73B3F7,
+        obss:Q101-833B2BE0-11FA-5A3D-9F13-DDAFF5ACF799 ;
     rdfs:label "Benchmark at St. Nicholas' Collegiate Church"@en ;
     skos:prefLabel "Benchmark at St. Nicholas' Collegiate Church"@en ;
     obsp:P2 obss:Q101-07A372F5-2E9F-5447-A90A-37F4B9B3C28F ;
@@ -129,8 +134,10 @@ obss:Q101-1CC6E499-BEAF-5270-ACC5-83AB1C535DA4
 
 obss:Q101-4D902827-C11A-5277-B493-BE586D77FF29
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-9.0538691 53.2725397)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:7ab2f0906ce1cdba930c992537b7ef4445d59926 ;
     obspq:P102 "+3"^^xsd:decimal ;
     obspq:P103 "2025-02-20T23:17:01Z" ;
@@ -175,8 +182,10 @@ obss:Q101-7F6DB629-E7FC-5A3A-9BDA-21BCF59501E1
 
 obss:Q101-8EB6BF1E-A7DB-5444-A5E7-D3A9AC73B3F7
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-9.0539459 53.2725582)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:0162d247d1e01cf48432c391dcfd73ba08f10c67 ;
     obspq:P102 "+1"^^xsd:decimal ;
     obspq:P103 "2025-02-19T14:49:47Z" ;
@@ -205,8 +214,10 @@ obss:Q101-65D7475A-4EFF-547C-8DDE-326A21FBC8AD
 
 obss:Q101-833B2BE0-11FA-5A3D-9F13-DDAFF5ACF799
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-9.0538687 53.2725388)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:65c54d674609da8db4e8f3688492d49d0cebce9c ;
     obspq:P102 "+2"^^xsd:decimal ;
     obspq:P103 "2025-02-19T17:41:16Z" ;

@@ -1,5 +1,5 @@
 # Q108: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
-# Generated with wikibase-static 0.21.0; data as of 2026-11-01T00:00:00Z
+# Generated with wikibase-static 0.22.0; data as of 2026-11-01T00:00:00Z
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -74,11 +74,15 @@ obsdist:Q108-ttl
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 obs:Q108
-    a wikibase:Item ;
+    a wikibase:Item,
+        geo:Feature ;
     schema:description "OpenStreetMap node 12923752174"@en ;
     schema:name "Benchmark at the corner of Trongate- Chrisholm Street"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
+    geo:hasDefaultGeometry obss:Q108-E406D523-1B98-5722-9B99-11E44A96B7BB ;
+    geo:hasGeometry obss:Q108-7C9918F4-1B94-54F9-9B28-82867E053E24,
+        obss:Q108-E406D523-1B98-5722-9B99-11E44A96B7BB ;
     rdfs:label "Benchmark at the corner of Trongate- Chrisholm Street"@en ;
     skos:prefLabel "Benchmark at the corner of Trongate- Chrisholm Street"@en ;
     obsp:P2 obss:Q108-2650679E-8FD2-5447-9458-B967CD435F9A ;
@@ -110,8 +114,10 @@ obs:Q108
 
 obss:Q108-7C9918F4-1B94-54F9-9B28-82867E053E24
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-4.2453563 55.8568545)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:059e43ac2839351ea1c4d254b7b0b72c60555b0c ;
     obspq:P102 "+1"^^xsd:decimal ;
     obspq:P103 "2025-06-18T17:52:38Z" ;
@@ -209,8 +215,10 @@ obss:Q108-A2BC49FD-5EDF-5753-8870-351E772E8754
 
 obss:Q108-E406D523-1B98-5722-9B99-11E44A96B7BB
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-4.2453643 55.8568563)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:31302e034b8f8a3a5a1549039818db5c208a383f ;
     obspq:P102 "+3"^^xsd:decimal ;
     obspq:P103 "2025-08-06T20:45:09Z" ;

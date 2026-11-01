@@ -1,5 +1,5 @@
 # Q119: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
-# Generated with wikibase-static 0.21.0; data as of 2026-11-01T00:00:00Z
+# Generated with wikibase-static 0.22.0; data as of 2026-11-01T00:00:00Z
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -74,11 +74,15 @@ obsdist:Q119-ttl
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 obs:Q119
-    a wikibase:Item ;
+    a wikibase:Item,
+        geo:Feature ;
     schema:description "OpenStreetMap node 6721748182"@en ;
     schema:name "MilestoneDublin9Howth"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "17"^^xsd:integer ;
+    geo:hasDefaultGeometry obss:Q119-EEBDF477-1409-5594-9498-CD0035C9F681 ;
+    geo:hasGeometry obss:Q119-CA16E98D-5B2B-5636-AAFF-E9B5995675D3,
+        obss:Q119-EEBDF477-1409-5594-9498-CD0035C9F681 ;
     rdfs:label "MilestoneDublin9Howth"@en ;
     skos:prefLabel "MilestoneDublin9Howth"@en ;
     obsp:P2 obss:Q119-796B44C4-8AF1-5DA2-B9BF-FFAB2EE3FA6B ;
@@ -212,8 +216,10 @@ obss:Q119-A99CD249-CCB3-5189-A856-A8768E12FC4E
 
 obss:Q119-CA16E98D-5B2B-5636-AAFF-E9B5995675D3
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.06809 53.387743)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:1500d388fbce77e2e06f3374c0b12fc78f1cbfd6 ;
     obspq:P102 "+1"^^xsd:decimal ;
     obspq:P103 "2019-08-18T20:28:36Z" ;
@@ -236,8 +242,10 @@ obss:Q119-DFB2FC8E-A932-51A0-A94D-C7E112EADFB6
 
 obss:Q119-EEBDF477-1409-5594-9498-CD0035C9F681
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-6.0681842 53.387749)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:44a5f12a10c93fa75180f031d853fece4e5d435c ;
     obspq:P102 "+2"^^xsd:decimal ;
     obspq:P103 "2019-08-18T22:11:42Z" ;

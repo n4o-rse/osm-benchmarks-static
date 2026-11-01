@@ -1,5 +1,5 @@
 # Q121: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
-# Generated with wikibase-static 0.21.0; data as of 2026-11-01T00:00:00Z
+# Generated with wikibase-static 0.22.0; data as of 2026-11-01T00:00:00Z
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -74,11 +74,14 @@ obsdist:Q121-ttl
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 obs:Q121
-    a wikibase:Item ;
+    a wikibase:Item,
+        geo:Feature ;
     schema:description "OpenStreetMap node 7873204616"@en ;
     schema:name "Benchmark at Scots Church"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "14"^^xsd:integer ;
+    geo:hasDefaultGeometry obss:Q121-5196786B-23DD-5AB1-9CC2-D268037CD70D ;
+    geo:hasGeometry obss:Q121-5196786B-23DD-5AB1-9CC2-D268037CD70D ;
     rdfs:label "Benchmark at Scots Church"@en ;
     skos:prefLabel "Benchmark at Scots Church"@en ;
     obsp:P2 obss:Q121-A10D8DE7-CC1C-5803-8454-1E68E0FA86C1 ;
@@ -180,8 +183,10 @@ obss:Q121-247532E4-31B2-5F08-8E40-3E03E0390479
 
 obss:Q121-5196786B-23DD-5AB1-9CC2-D268037CD70D
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.6966593 52.3531682)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:b05efe145604c69c9d2d4da50351d24d950abd93 ;
     obspq:P102 "+1"^^xsd:decimal ;
     obspq:P103 "2020-09-03T17:06:51Z" ;

@@ -1,5 +1,5 @@
 # Q115: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
-# Generated with wikibase-static 0.21.0; data as of 2026-11-01T00:00:00Z
+# Generated with wikibase-static 0.22.0; data as of 2026-11-01T00:00:00Z
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -74,11 +74,14 @@ obsdist:Q115-ttl
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 obs:Q115
-    a wikibase:Item ;
+    a wikibase:Item,
+        geo:Feature ;
     schema:description "OpenStreetMap node 12925919541"@en ;
     schema:name "Govan Road benchmark"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
+    geo:hasDefaultGeometry obss:Q115-FD8ED23F-7DFF-5D0C-9C88-C67C169FE38C ;
+    geo:hasGeometry obss:Q115-FD8ED23F-7DFF-5D0C-9C88-C67C169FE38C ;
     rdfs:label "Govan Road benchmark"@en ;
     skos:prefLabel "Govan Road benchmark"@en ;
     obsp:P2 obss:Q115-8E0C29EA-5138-56C2-A65B-8AC331159EFE ;
@@ -192,8 +195,10 @@ obss:Q115-E420BFFF-99BA-5F44-81FD-2D1C5D5FB5F8
 
 obss:Q115-FD8ED23F-7DFF-5D0C-9C88-C67C169FE38C
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-4.3147383 55.8636907)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:9a0040d370daaf18163a54f7fd8ad2999ca03061 ;
     obspq:P102 "+1"^^xsd:decimal ;
     obspq:P103 "2025-06-19T14:30:25Z" ;

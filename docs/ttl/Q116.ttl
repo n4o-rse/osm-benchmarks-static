@@ -1,5 +1,5 @@
 # Q116: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
-# Generated with wikibase-static 0.21.0; data as of 2026-11-01T00:00:00Z
+# Generated with wikibase-static 0.22.0; data as of 2026-11-01T00:00:00Z
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -74,11 +74,16 @@ obsdist:Q116-ttl
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 obs:Q116
-    a wikibase:Item ;
+    a wikibase:Item,
+        geo:Feature ;
     schema:description "OpenStreetMap node 12936028929"@en ;
     schema:name "Benchmark at Melrose Abbey"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "15"^^xsd:integer ;
+    geo:hasDefaultGeometry obss:Q116-DB387D44-D700-5E25-8299-3D9D9A3360EC ;
+    geo:hasGeometry obss:Q116-BF46AA1D-963C-5826-B8C5-077E17421848,
+        obss:Q116-C407EF84-4B22-5B55-B3BC-AB3ABFB7F76C,
+        obss:Q116-DB387D44-D700-5E25-8299-3D9D9A3360EC ;
     rdfs:label "Benchmark at Melrose Abbey"@en ;
     skos:prefLabel "Benchmark at Melrose Abbey"@en ;
     obsp:P2 obss:Q116-8824B569-26C1-5DE6-A840-EF42D21FC062 ;
@@ -189,8 +194,10 @@ obss:Q116-AECD2629-9F28-5067-AE1B-6104EE569DC9
 
 obss:Q116-BF46AA1D-963C-5826-B8C5-077E17421848
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-2.7180546 55.5989369)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:a17c54e7182bd5a91fa52aba3162a7bca5403b89 ;
     obspq:P102 "+1"^^xsd:decimal ;
     obspq:P103 "2025-06-20T16:13:36Z" ;
@@ -199,8 +206,10 @@ obss:Q116-BF46AA1D-963C-5826-B8C5-077E17421848
 
 obss:Q116-C407EF84-4B22-5B55-B3BC-AB3ABFB7F76C
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-2.7178856 55.5989365)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:ab4ddcc63e7b6b937a9d6f1ce93ecc98addb9893 ;
     obspq:P102 "+2"^^xsd:decimal ;
     obspq:P103 "2025-06-22T15:24:26Z" ;
@@ -228,8 +237,10 @@ obss:Q116-D1177641-7CDE-5D32-8AAF-495C6BFFD7A9
 
 obss:Q116-DB387D44-D700-5E25-8299-3D9D9A3360EC
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-2.7178857 55.5989376)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:fc6ae032523c42bc0e1b9f9966e1f8787f6f6185 ;
     obspq:P102 "+3"^^xsd:decimal ;
     obspq:P103 "2025-06-22T16:38:56Z" ;

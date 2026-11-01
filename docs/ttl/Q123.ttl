@@ -1,5 +1,5 @@
 # Q123: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
-# Generated with wikibase-static 0.21.0; data as of 2026-11-01T00:00:00Z
+# Generated with wikibase-static 0.22.0; data as of 2026-11-01T00:00:00Z
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -74,11 +74,15 @@ obsdist:Q123-ttl
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 obs:Q123
-    a wikibase:Item ;
+    a wikibase:Item,
+        geo:Feature ;
     schema:description "OpenStreetMap node 7709937682"@en ;
     schema:name "Ballingarry benchmark"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "20"^^xsd:integer ;
+    geo:hasDefaultGeometry obss:Q123-2D005A50-B2EB-5051-8AE8-6646404BBACB ;
+    geo:hasGeometry obss:Q123-2D005A50-B2EB-5051-8AE8-6646404BBACB,
+        obss:Q123-DE289D6D-4A4B-508C-B2DB-C49D683E6924 ;
     rdfs:label "Ballingarry benchmark"@en ;
     skos:prefLabel "Ballingarry benchmark"@en ;
     obsp:P2 obss:Q123-3DB0D4BC-A809-5F04-AC7E-9EBFA11DCD2D ;
@@ -142,8 +146,10 @@ obss:Q123-2A6A9B58-9A6E-5258-B6E5-6E1BEA3C8E96
 
 obss:Q123-2D005A50-B2EB-5051-8AE8-6646404BBACB
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.5413562 52.5861876)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:6a7abfb1a7fcf07d14356e5b0e98deb57368134c ;
     obspq:P102 "+4"^^xsd:decimal ;
     obspq:P103 "2026-07-30T23:49:39Z" ;
@@ -269,8 +275,10 @@ obss:Q123-CD9C30BE-F2D1-5576-9666-96C779D49D36
 
 obss:Q123-DE289D6D-4A4B-508C-B2DB-C49D683E6924
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.541375 52.5861786)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:b8c0b94b0e975419a0211c5c32920af52b0d8ac8 ;
     obspq:P102 "+1"^^xsd:decimal ;
     obspq:P103 "2020-07-13T08:33:05Z" ;

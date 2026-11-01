@@ -1,4 +1,4 @@
 # The tool that renders this site.
-# Needs wikibase-static 0.21.0 or later: its verb import-osm asks Overpass and the OSM API and imports the answers (PRIMER.md, S3 and S5).
+# Needs wikibase-static 0.22.0 or later: its verb import-osm asks Overpass and the OSM API, imports the answers, and builds the shapes of ways and relations (PRIMER.md, S3, S5, S6).
 # Pin a tag or commit here once wikibase-static has releases.
 wikibase-static @ git+https://github.com/n4o-rse/wikibase-static.git

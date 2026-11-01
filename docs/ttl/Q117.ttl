@@ -1,5 +1,5 @@
 # Q117: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
-# Generated with wikibase-static 0.21.0; data as of 2026-11-01T00:00:00Z
+# Generated with wikibase-static 0.22.0; data as of 2026-11-01T00:00:00Z
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -74,11 +74,14 @@ obsdist:Q117-ttl
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 obs:Q117
-    a wikibase:Item ;
+    a wikibase:Item,
+        geo:Feature ;
     schema:description "OpenStreetMap node 13331549275"@en ;
     schema:name "OS benchmark"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
+    geo:hasDefaultGeometry obss:Q117-3060092D-2C48-5398-8DEC-0DF2C52F910B ;
+    geo:hasGeometry obss:Q117-3060092D-2C48-5398-8DEC-0DF2C52F910B ;
     rdfs:label "OS benchmark"@en ;
     skos:prefLabel "OS benchmark"@en ;
     obsp:P2 obss:Q117-6D087126-E8B0-5594-9CEE-72945CDD606C ;
@@ -185,8 +188,10 @@ obss:Q117-781898A6-F0A2-572E-ADCE-E6774120B4AC
 
 obss:Q117-3060092D-2C48-5398-8DEC-0DF2C52F910B
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-8.4683873 54.2726815)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:1657f6f4bdec34c4aa4ef2686d8a50fd13b31ea9 ;
     obspq:P102 "+1"^^xsd:decimal ;
     obspq:P103 "2025-11-25T18:06:56Z" ;

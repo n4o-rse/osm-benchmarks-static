@@ -1,5 +1,5 @@
 # Q120: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
-# Generated with wikibase-static 0.21.0; data as of 2026-11-01T00:00:00Z
+# Generated with wikibase-static 0.22.0; data as of 2026-11-01T00:00:00Z
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -74,11 +74,14 @@ obsdist:Q120-ttl
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 obs:Q120
-    a wikibase:Item ;
+    a wikibase:Item,
+        geo:Feature ;
     schema:description "OpenStreetMap node 6967103228"@en ;
     schema:name "Milestone Old Dublin Road"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "17"^^xsd:integer ;
+    geo:hasDefaultGeometry obss:Q120-F64D14DE-EA13-5462-B1B4-FFC059A96E5B ;
+    geo:hasGeometry obss:Q120-F64D14DE-EA13-5462-B1B4-FFC059A96E5B ;
     rdfs:label "Milestone Old Dublin Road"@en ;
     skos:prefLabel "Milestone Old Dublin Road"@en ;
     obsp:P2 obss:Q120-BEBDB9BE-A54E-56C3-A1F1-7F116E1C828A ;
@@ -246,8 +249,10 @@ obss:Q120-F0D2240C-5A5A-5D81-B467-E35F57D6AF77
 
 obss:Q120-F64D14DE-EA13-5462-B1B4-FFC059A96E5B
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-7.2121484 52.6468593)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:ab3513ce4c581a6f5f3307aa17c2ed78da8e811b ;
     obspq:P102 "+1"^^xsd:decimal ;
     obspq:P103 "2019-11-11T17:35:05Z" ;

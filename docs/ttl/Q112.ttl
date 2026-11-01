@@ -1,5 +1,5 @@
 # Q112: the part of the RDF export of OSM benchmarks (static Wikibase) that describes this entity
-# Generated with wikibase-static 0.21.0; data as of 2026-11-01T00:00:00Z
+# Generated with wikibase-static 0.22.0; data as of 2026-11-01T00:00:00Z
 # Licence: ODbL 1.0, © OpenStreetMap contributors
 # The prefixes obs:, obst:, obsp: and so on are this site's own and are not Wikidata's wd:, wdt:, p:. Only obs:<ID> opens a page (entity/<ID>, which forwards to <ID>.html); statement, reference, value and property-path IRIs are identifiers and do not resolve.
 
@@ -74,11 +74,14 @@ obsdist:Q112-ttl
     dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
 
 obs:Q112
-    a wikibase:Item ;
+    a wikibase:Item,
+        geo:Feature ;
     schema:description "OpenStreetMap node 12924784584"@en ;
     schema:name "Benchmark on the South side of the City Chambers"@en ;
     wikibase:identifiers "0"^^xsd:integer ;
     wikibase:statements "12"^^xsd:integer ;
+    geo:hasDefaultGeometry obss:Q112-14DAFCD7-4B33-578F-A990-02327E7FCCD8 ;
+    geo:hasGeometry obss:Q112-14DAFCD7-4B33-578F-A990-02327E7FCCD8 ;
     rdfs:label "Benchmark on the South side of the City Chambers"@en ;
     skos:prefLabel "Benchmark on the South side of the City Chambers"@en ;
     obsp:P2 obss:Q112-164F7B71-2888-5BB8-9C75-E4D14341709C ;
@@ -114,8 +117,10 @@ obss:Q112-1BFA535F-B98B-55E2-BE70-516F2BFB8ADA
 
 obss:Q112-14DAFCD7-4B33-578F-A990-02327E7FCCD8
     a wikibase:BestRank,
-        wikibase:Statement ;
+        wikibase:Statement,
+        geo:Geometry ;
     wikibase:rank wikibase:NormalRank ;
+    geo:asWKT "POINT(-4.2485537 55.8606261)"^^geo:wktLiteral ;
     prov:wasDerivedFrom obsref:4971739204f63eb081b56a417229483d735c8d37 ;
     obspq:P102 "+1"^^xsd:decimal ;
     obspq:P103 "2025-06-18T21:19:17Z" ;

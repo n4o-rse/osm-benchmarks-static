@@ -21,3 +21,4 @@ formatter_property: P5
 license:
   name: ODbL 1.0, © OpenStreetMap contributors
   url: https://opendatacommons.org/licenses/odbl/1-0/
+wkt_property: P111          # geometry history (WKT): the page draws the last shape, the RDF export gets GeoSPARQL
